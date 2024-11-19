@@ -701,5 +701,69 @@ input:focus + .validation-message {
   display: block;
 }
 
-
 /* Login & signup page ends*/
+
+
+/* dropdown menu for the user profile ends */
+
+/* Profile dropdown styling */
+.nav-links .dropdown {
+  position: relative;
+}
+
+.nav-links .dropdown-toggle {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav-links .dropdown-menu {
+  display: none;
+  position: absolute;
+  background: white;
+  top: 100%;
+  right: 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+.nav-links .dropdown-menu li {
+  padding: 5px 20px;
+}
+
+.nav-links .dropdown-menu li a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-links .dropdown-menu li a:hover {
+  color: #007bff;
+}
+
+.nav-links .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar-nav .dropdown-menu {
+  background: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+  color: #343a40;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+  background: #007bff;
+  color: white;
+}
+
+
+/* dropdown menu for the user profile ends */

@@ -45,35 +45,161 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 	};
 	scrollWindow();
 
-	document.addEventListener("DOMContentLoaded", () => {
-		// Check if a user is logged in
-		const loggedInUser = localStorage.getItem("loggedInUser");
+	// login-signup starts
+
+	document.addEventListener("DOMContentLoaded", function () {
+		// Get form elements
+		console.log("Hello DOM");
+		const signupForm = document.getElementById("signup-form");
+		const loginForm = document.getElementById("login-form");
 	
-		if (loggedInUser) {
-			// Parse user details
-			const user = JSON.parse(loggedInUser);
+		// Helper to show validation messages
+		function showValidationMessage(input, message) {
+			const messageElement = input.nextElementSibling;
+			messageElement.textContent = message;
+			messageElement.style.display = message ? "block" : "none";
+		}
 	
-			// Show user profile and hide login link
-			document.getElementById("user-profile").classList.remove("hidden");
-			document.getElementById("login-link").classList.add("hidden");
+		// Basic password encryption using Base64 (for demonstration purposes only)
+		function encryptPassword(password) {
+			return btoa(password); // Base64 encoding (not secure for production use)
+		}
 	
-			// Set the username and avatar (default if not provided)
-			const usernameDisplay = document.getElementById("username-display");
-			usernameDisplay.textContent = user.name;
+		// Function to update navbar based on login status
+		function updateNavbar() {
+			const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+			const userProfile = document.getElementById("user-profile");
+			const loginLink = document.getElementById("login-link");
+			const profileName = document.getElementById("profile-name");
 	
-			const userIcon = document.querySelector(".user-icon");
-			userIcon.src = user.avatar || "default-avatar.png"; // Default avatar
+			if (currentUser) {
+				// Show user profile and hide login link
+				userProfile.style.display = "block";
+				loginLink.style.display = "none";
+				profileName.textContent = currentUser.fullName;
+			} else {
+				// Show login link and hide user profile
+				userProfile.style.display = "none";
+				loginLink.style.display = "block";
+			}
 		}
 	
 		// Logout functionality
-		const logoutBtn = document.getElementById("logout-btn");
-		if (logoutBtn) {
-			logoutBtn.addEventListener("click", () => {
-				localStorage.removeItem("loggedInUser");
+		const logoutButton = document.getElementById("logout-button");
+		if (logoutButton) {
+			logoutButton.addEventListener("click", function () {
+				localStorage.removeItem("currentUser");
+				alert("You have been logged out.");
+				window.location.href = "index.html";
+			});
+		}
+	
+		// Sign Up functionality
+		if (signupForm) {
+			signupForm.addEventListener("submit", function (e) {
+				e.preventDefault(); // Prevent form submission
+	
+				// Get input values
+				const fullName = document.getElementById("signup-name");
+				const email = document.getElementById("signup-email");
+				const password = document.getElementById("signup-password");
+				const confirmPassword = document.getElementById("signup-confirm-password");
+	
+				// Clear previous validation messages
+				showValidationMessage(fullName, "");
+				showValidationMessage(email, "");
+				showValidationMessage(password, "");
+				showValidationMessage(confirmPassword, "");
+	
+				// Validate inputs
+				let isValid = true;
+				if (!fullName.value.trim()) {
+					showValidationMessage(fullName, "Full name is required.");
+					isValid = false;
+				}
+				if (!email.value.trim() || !email.value.includes("@")) {
+					showValidationMessage(email, "Valid email is required.");
+					isValid = false;
+				}
+				if (password.value.length < 6) {
+					showValidationMessage(password, "Password must be at least 6 characters long.");
+					isValid = false;
+				}
+				if (password.value !== confirmPassword.value) {
+					showValidationMessage(confirmPassword, "Passwords do not match.");
+					isValid = false;
+				}
+	
+				if (!isValid) return;
+	
+				// Check if the user already exists
+				const users = JSON.parse(localStorage.getItem("users")) || [];
+				const userExists = users.some((user) => user.email === email.value);
+	
+				if (userExists) {
+					alert("User with this email already exists.");
+					return;
+				}
+	
+				// Save user to localStorage with encrypted password
+				users.push({ fullName: fullName.value, email: email.value, password: encryptPassword(password.value) });
+				localStorage.setItem("users", JSON.stringify(users));
+	
+				alert("Sign up successful! Redirecting to login page...");
+				signupForm.reset(); // Clear the form
 				window.location.href = "login.html"; // Redirect to login page
 			});
 		}
+	
+		// Login functionality
+		if (loginForm) {
+			loginForm.addEventListener("submit", function (e) {
+				e.preventDefault(); // Prevent form submission
+	
+				// Get input values
+				const email = document.getElementById("login-email");
+				const password = document.getElementById("login-password");
+	
+				// Clear previous validation messages
+				showValidationMessage(email, "");
+				showValidationMessage(password, "");
+	
+				// Validate inputs
+				let isValid = true;
+				if (!email.value.trim()) {
+					showValidationMessage(email, "Email is required.");
+					isValid = false;
+				}
+				if (!password.value.trim()) {
+					showValidationMessage(password, "Password is required.");
+					isValid = false;
+				}
+	
+				if (!isValid) return;
+	
+				// Fetch users from localStorage
+				const users = JSON.parse(localStorage.getItem("users")) || [];
+				const user = users.find((user) => user.email === email.value && user.password === encryptPassword(password.value));
+	
+				if (user) {
+					// Save current user to localStorage
+					localStorage.setItem("currentUser", JSON.stringify(user));
+	
+					alert(`Welcome back, ${user.fullName}! Redirecting to the homepage...`);
+					loginForm.reset(); // Clear the form
+					window.location.href = "index.html"; // Redirect to homepage
+				} else {
+					alert("Invalid email or password. Please try again.");
+				}
+			});
+		}
+	
+		// Call updateNavbar on page load to ensure navbar reflects login state
+		updateNavbar();
 	});
+	
+
+	// login-signup ends
 	
 	
 	

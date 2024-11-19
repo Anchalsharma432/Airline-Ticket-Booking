@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Profile</h1>
+        <p><strong>Full Name:</strong> <span id="profile-fullname"></span></p>
+        <p><strong>Email:</strong> <span id="profile-email"></span></p>
+        <button id="logout-button">Logout</button>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+            if (!currentUser) {
+                alert("You need to log in first.");
+                window.location.href = "login.html";
+                return;
+            }
+
+            document.getElementById("profile-fullname").textContent = currentUser.fullName;
+            document.getElementById("profile-email").textContent = currentUser.email;
+
+            document.getElementById("logout-button").addEventListener("click", function () {
+                localStorage.removeItem("currentUser");
+                alert("You have been logged out.");
+                window.location.href = "index.html";
+            });
+        });
+    </script>
+</body>
+</html>

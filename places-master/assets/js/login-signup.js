@@ -5,7 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Helper to show validation messages
     function showValidationMessage(input, message) {
-        const messageElement = input.nextElementSibling;
+        let messageElement = input.nextElementSibling;
+        if (!messageElement || !messageElement.classList.contains("validation-message")) {
+            // Create a validation message element if it doesn't exist
+            messageElement = document.createElement("div");
+            messageElement.className = "validation-message";
+            messageElement.style.color = "red";
+            messageElement.style.fontSize = "0.875rem";
+            input.parentElement.appendChild(messageElement);
+        }
         messageElement.textContent = message;
         messageElement.style.display = message ? "block" : "none";
     }
@@ -15,10 +23,37 @@ document.addEventListener("DOMContentLoaded", function () {
         return btoa(password); // Base64 encoding (not secure for production use)
     }
 
+    // Update navigation bar based on login status
+    function updateNavbar() {
+        const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+        const userProfile = document.getElementById("user-profile");
+        const loginLink = document.getElementById("login-link");
+        const profileName = document.getElementById("profile-name");
+
+        if (currentUser) {
+            userProfile.style.display = "block";
+            loginLink.style.display = "none";
+            profileName.textContent = currentUser.fullName;
+        } else {
+            userProfile.style.display = "none";
+            loginLink.style.display = "block";
+        }
+    }
+
+    // Logout functionality
+    const logoutButton = document.getElementById("logout-button");
+    if (logoutButton) {
+        logoutButton.addEventListener("click", function () {
+            localStorage.removeItem("currentUser");
+            alert("You have been logged out.");
+            window.location.href = "index.html";
+        });
+    }
+
     // Sign Up functionality
     if (signupForm) {
         signupForm.addEventListener("submit", function (e) {
-            e.preventDefault(); // Prevent form submission
+            e.preventDefault();
 
             // Get input values
             const fullName = document.getElementById("signup-name");
@@ -67,15 +102,15 @@ document.addEventListener("DOMContentLoaded", function () {
             localStorage.setItem("users", JSON.stringify(users));
 
             alert("Sign up successful! Redirecting to login page...");
-            signupForm.reset(); // Clear the form
-            window.location.href = "login.html"; // Redirect to login page
+            signupForm.reset();
+            window.location.href = "login.html";
         });
     }
 
     // Login functionality
     if (loginForm) {
         loginForm.addEventListener("submit", function (e) {
-            e.preventDefault(); // Prevent form submission
+            e.preventDefault();
 
             // Get input values
             const email = document.getElementById("login-email");
@@ -103,12 +138,17 @@ document.addEventListener("DOMContentLoaded", function () {
             const user = users.find((user) => user.email === email.value && user.password === encryptPassword(password.value));
 
             if (user) {
+                // Save current user session
+                localStorage.setItem("currentUser", JSON.stringify(user));
+
                 alert(`Welcome back, ${user.fullName}! Redirecting to the homepage...`);
-                loginForm.reset(); // Clear the form
-                window.location.href = "index.html"; // Redirect to homepage
+                loginForm.reset();
+                window.location.href = "index.html";
             } else {
                 alert("Invalid email or password. Please try again.");
             }
         });
     }
+
+    updateNavbar(); // Update the navigation bar on page load
 });
