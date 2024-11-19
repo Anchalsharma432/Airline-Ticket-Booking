@@ -10,7 +10,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<title>Places &mdash; Free HTML5 Bootstrap 4 Theme by ProBootstrap.com</title>
+		<title>FE II Final Project</title>
 		<meta name="description" content="Free Bootstrap 4 Theme by ProBootstrap.com">
 		<meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
     
@@ -33,6 +33,9 @@
     <link rel="stylesheet" href="assets/css/helpers.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <link rel="stylesheet" href="./assets/css/destinations.css">
+    <link rel="stylesheet" href="assets/fonts/flaticon/font/flaticon.css">
+
 	</head>
 	<body>
   
@@ -46,9 +49,9 @@
         <div class="collapse navbar-collapse" id="probootstrap-menu">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="city-guides.html">City Guides</a></li>
             <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
             <li class="nav-item"><a class="nav-link" href="travel.html">Travel With Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="favorites.html">Favorites</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
           </ul>
@@ -162,66 +165,17 @@
     <!-- END section -->
     
 
-    <section class="probootstrap_section" id="section-feature-testimonial">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-12 text-center mb-5 probootstrap-animate">
-            <h2 class="display-4 border-bottom probootstrap-section-heading">Why we Love Places</h2>
-            <blockquote class="">
-              <p class="lead mb-4"><em>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</em></p>
-              <p class="probootstrap-author">
-                <a href="https://probootstrap.com/" target="_blank">
-                  <img src="assets/images/person_1.jpg" alt="Free Template by ProBootstrap.com" class="rounded-circle">
-                  <span class="probootstrap-name">James Smith</span>
-                  <span class="probootstrap-title">Chief Executive Officer</span>
-                </a>
-              </p>
-            </blockquote>
-
-          </div>
-        </div>
-        
-      </div>
-    </section>
-    <!-- END section -->
-
-
     <section class="probootstrap_section" id="section-city-guides">
       <div class="container">
         <div class="row text-center mb-5 probootstrap-animate">
           <div class="col-md-12">
-            <h2 class="display-4 border-bottom probootstrap-section-heading">Top Places Around The World</h2>
+            <h2 class="display-4 border-bottom probootstrap-section-heading">Explore Destinations</h2>
           </div>
+          <button id="view-favorites" class="view-favorites-btn">View Favorites</button>
         </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6 probootstrap-animate mb-3">
-            <a href="#" class="probootstrap-thumbnail">
-              <img src="assets/images/img_1.jpg" alt="Free Template by ProBootstrap.com" class="img-fluid">
-              <div class="probootstrap-text">
-                <h3>Buena</h3>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-6 probootstrap-animate mb-3">
-            <a href="#" class="probootstrap-thumbnail">
-              <img src="assets/images/img_2.jpg" alt="Free Template by ProBootstrap.com" class="img-fluid">
-              <h3>Road</h3>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-6 probootstrap-animate mb-3">
-            <a href="#" class="probootstrap-thumbnail">
-              <img src="assets/images/img_3.jpg" alt="Free Template by ProBootstrap.com" class="img-fluid">
-              <h3>Australia</h3>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-6 probootstrap-animate mb-3">
-            <a href="#" class="probootstrap-thumbnail">
-              <img src="assets/images/img_4.jpg" alt="Free Template by ProBootstrap.com" class="img-fluid">
-              <h3>Japan</h3>
-            </a>
-          </div>
+        <div id="destination-list" class="cards-container">
+          <!-- Destination cards will be dynamically loaded here -->
         </div>
-      </div>
     </section>
     
   
@@ -675,5 +629,7 @@
     <script src="assets/js/select2.min.js"></script>
 
     <script src="assets/js/main.js"></script>
+
+    <script src="./assets/js/destinations.js"></script>
 	</body>
 </html>

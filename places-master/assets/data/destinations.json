@@ -1,0 +1,39 @@
+[
+    {
+      "Country": "Canada",
+      "City": "Toronto",
+      "PromotionExpirationDate": "2024-12-31",
+      "Price": 1500
+    },
+    {
+      "Country": "USA",
+      "City": "New York",
+      "PromotionExpirationDate": "2024-12-15",
+      "Price": 2000
+    },
+    {
+      "Country": "France",
+      "City": "Paris",
+      "PromotionExpirationDate": "2025-01-01",
+      "Price": 2500
+    },
+    {
+      "Country": "Japan",
+      "City": "Tokyo",
+      "PromotionExpirationDate": "2024-11-30",
+      "Price": 3000
+    },
+    {
+      "Country": "Italy",
+      "City": "Rome",
+      "PromotionExpirationDate": "2025-02-15",
+      "Price": 1800
+    },
+    {
+      "Country": "Australia",
+      "City": "Sydney",
+      "PromotionExpirationDate": "2025-03-10",
+      "Price": 2200
+    }
+  ]
+  

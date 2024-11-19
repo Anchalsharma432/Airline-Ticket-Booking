@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorites</title>
+  <link rel="stylesheet" href="./assets/css/favorites.css"> 
+  <link rel="stylesheet" href="./assets/css/destinations.css">  <!-- To style cards of favorites as the destinations -->
+</head>
+<body>
+    <div class="video-background">
+        <p>I will add a background video for the whole Body of a airplane moving. this is the Div containing the video tag</p>
+        <video autoplay muted loop id="bg-video">
+          <source src="path-to-your-video.mp4" type="video/mp4">   
+        </video>
+      </div>
+  <header>
+    <h1>Your Favorite Destinations</h1>
+  </header>
+  <main>
+    <div id="favorites-container">
+        <div id="favorites-list" class="favorites-list-container">
+          <!-- This will be populated with the favorite cards dynamically -->
+        </div>
+        
+        <div id="total-price-container">
+          <h3>Total Price: $<span id="total-price">0</span></h3>
+        </div>
+    </div>
+  </main>
+  <script src="./assets/js/favorites.js"></script>
+</body>
+</html>
