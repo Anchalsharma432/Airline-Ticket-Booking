@@ -33,7 +33,7 @@ function toggleFavorite(city, country, price, expirationDate, button) {
       country,
       price,
       quantity: 1,
-      promotionExpirationDate: expirationDate 
+      PromotionExpirationDate: expirationDate 
     });
     alert(`${city}, ${country} added to favorites!`);
   } else {
