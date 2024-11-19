@@ -120,8 +120,8 @@
 }
 
 #footer-favorites p{
-  color: white;
+  color: black;
   display: inline-block;
-  -webkit-text-stroke: 0.5px lightgray; /* Border thickness and color */
-  text-stroke: 0.5px lightgray;         /* For modern browsers (fallback) */
+  background-color: lightgrey;
+  border-radius: 10px;
 }
