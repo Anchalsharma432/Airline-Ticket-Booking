@@ -213,7 +213,48 @@
 	});
 
 	// login-signup ends
+
+	//search form starts
+
+	document.getElementById('form_search').addEventListener('submit', function(event) {
+		event.preventDefault(); // Prevent the form from refreshing the page
+		
+		const data = {
+		  from: document.getElementById('id_label_single').value,
+		  to: document.getElementById('id_label_single2').value,
+		  flightClass: document.getElementById('flight_class').value,
+		  adults: document.getElementById('num_of_adult').value,
+		  children: document.getElementById('num_of_kids').value,
+		  infants: document.getElementById('num_of_infs').value,
+		  departureDate: document.getElementById('probootstrap-date-departure').value,
+		  arrivalDate: document.getElementById('probootstrap-date-arrival').value,
+		  direction: document.querySelector('input[name="direction"]:checked') ? document.querySelector('input[name="direction"]:checked').value : '',
+		};
+	  
+		// Save form data in sessionStorage
+		sessionStorage.setItem('searchData', JSON.stringify(data));
+	  
+		// Optionally, redirect to search page
+		window.location.href = 'searchflights.html'; // Or wherever you need to go
+	  });
+	  
+
+	//search form ends
 	
+	//
+	
+	// Get today's date in YYYY-MM-DD format
+	const today = new Date();
+	const year = today.getFullYear();
+	const month = String(today.getMonth() + 1).padStart(2, '0'); // Add leading zero if needed
+	const day = String(today.getDate()).padStart(2, '0'); // Add leading zero if needed
+	const todayDate = `${year}-${month}-${day}`;
+
+	// Set the min attribute to today's date for the relevant date inputs
+	document.getElementById('probootstrap-date-departure').setAttribute('min', todayDate);
+	document.getElementById('probootstrap-date-arrival').setAttribute('min', todayDate);
+
+	//
 	
 	
 	// navigation
