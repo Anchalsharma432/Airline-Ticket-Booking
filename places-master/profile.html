@@ -4,33 +4,256 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Profile</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <!-- Load jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Load Toastr -->
+    <script src="https://cdn.jsdelivr.net/npm/toastr@latest/toastr.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastr@latest/toastr.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .profile-card {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .profile-card .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #ddd;
+            background-image: url('./assets/images/user_profile.png');
+            background-size: cover;
+            background-position: center;
+            margin: 0 auto 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-card h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .profile-card p {
+            font-size: 16px;
+            color: #777;
+        }
+
+        .profile-card .details {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .profile-card .details div {
+            display: flex;
+            justify-content: space-between;
+            margin: 8px 0;
+        }
+
+        .profile-card .details span {
+            font-weight: bold;
+        }
+
+        .edit-button {
+            background-color: #4facfe;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 30px;
+            width: 100%;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .edit-button:hover {
+            background-color: #00f2fe;
+        }
+
+        .logout-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #ff5c5c;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .logout-button:hover {
+            background-color: #e04c4c;
+        }
+        #save-button {
+            background-color: #28a745;
+        }
+
+        #save-button:hover {
+            background-color: #218838;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Your Profile</h1>
-        <p><strong>Full Name:</strong> <span id="profile-fullname"></span></p>
-        <p><strong>Email:</strong> <span id="profile-email"></span></p>
-        <button id="logout-button">Logout</button>
+    <div class="profile-card">
+        <div class="profile-image"></div>
+        <h2 id="profile-name"></h2>
+        <p id="profile-email"></p>
+        <p id="profile-phone"></p>
+        <p id="profile-dob"></p>
+
+        <div class="details">
+            <div>
+                <span>Gender:</span>
+                <span id="profile-gender"></span>
+            </div>
+            <div>
+                <span>Username:</span>
+                <span id="profile-username"></span>
+            </div>
+        </div>
+
+        <button class="edit-button" id="edit-button">Edit Profile</button>
+        <button class="edit-button" id="save-button" style="display:none;">Save Changes</button>
     </div>
+
+    <button class="logout-button" id="logout-button">Logout</button>
+
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const currentUser = JSON.parse(localStorage.getItem("currentUser"));
-            if (!currentUser) {
-                alert("You need to log in first.");
-                window.location.href = "login.html";
-                return;
+        document.addEventListener("DOMContentLoaded", () => {
+        const currentUser = JSON.parse(localStorage.getItem("currentUser")); // Parse the object from localStorage
+        const editButton = document.getElementById("edit-button");
+        const saveButton = document.getElementById("save-button");
+
+        if (!currentUser || !currentUser.email) {
+            toastr.error("No logged-in user found. Please log in.");
+            window.location.href = "login.html";
+            return;
+        }
+
+        fetch(`http://localhost:4200/api/user/${currentUser.email}`)
+                .then((response) => response.json())
+                .then((data) => {
+                    if (data.success) {
+                        const user = data.user;
+    
+                        // Populate profile details
+                        document.getElementById("profile-name").textContent = user.name || "N/A";
+                        document.getElementById("profile-email").textContent = user.email || "N/A";
+                        document.getElementById("profile-phone").textContent = user.phone || "N/A";
+                        document.getElementById("profile-dob").textContent = `Date of Birth: ${user.dob || "N/A"}`;
+                        document.getElementById("profile-gender").textContent = user.gender || "N/A";
+                        document.getElementById("profile-username").textContent = user.username || "N/A";
+    
+                        // Edit profile logic
+                        editButton.addEventListener("click", () => {
+                            // Show input fields for editing
+                            toggleEditMode(true, user);
+                        });
+    
+                        saveButton.addEventListener("click", () => {
+                            // Save changes to the backend
+                            const updatedUser = {
+                                name: document.getElementById("edit-name").value.trim(),
+                                email: document.getElementById("edit-email").value.trim(),
+                                phone: document.getElementById("edit-phone").value.trim(),
+                                dob: document.getElementById("edit-dob").value.trim(),
+                                gender: document.getElementById("edit-gender").value.trim(),
+                                username: document.getElementById("edit-username").value.trim(),
+                            };
+    
+                            fetch(`http://localhost:4200/api/user/update`, {
+                                method: "PUT",
+                                headers: { "Content-Type": "application/json" },
+                                body: JSON.stringify(updatedUser),
+                            })
+                                .then((response) => response.json())
+                                .then((data) => {
+                                    if (data.success) {
+                                        toastr.success("Profile updated successfully!");
+                                        toggleEditMode(false, updatedUser);
+                                    } else {
+                                        toastr.error(data.message || "Failed to update profile.");
+                                    }
+                                })
+                                .catch((error) => {
+                                    console.error("Error updating user data:", error);
+                                    toastr.error("An error occurred while updating profile.");
+                                });
+                        });
+                    } else {
+                        toastr.error(data.message || "Failed to load user data.");
+                        window.location.href = "login.html";
+                    }
+                })
+                .catch((error) => {
+                    console.error("Error fetching user data:", error);
+                    toastr.error("An error occurred while fetching user data.");
+                    window.location.href = "login.html";
+                });
+
+        function toggleEditMode(editMode, user) {
+            const profileName = document.getElementById("profile-name");
+            const profileEmail = document.getElementById("profile-email");
+            const profilePhone = document.getElementById("profile-phone");
+            const profileDob = document.getElementById("profile-dob");
+            const profileGender = document.getElementById("profile-gender");
+            const profileUsername = document.getElementById("profile-username");
+
+            if (editMode) {
+                // Replace static fields with input fields
+                profileName.innerHTML = `<input id="edit-name" value="${user.name || ""}" />`;
+                profileEmail.innerHTML = `<input id="edit-email" value="${user.email || ""}" />`;
+                profilePhone.innerHTML = `<input id="edit-phone" value="${user.phone || ""}" />`;
+                profileDob.innerHTML = `<input id="edit-dob" type="date" value="${user.dob || ""}" />`;
+                profileGender.innerHTML = `<input id="edit-gender" value="${user.gender || ""}" />`;
+                profileUsername.innerHTML = `<input id="edit-username" value="${user.username || ""}" />`;
+
+                editButton.style.display = "none";
+                saveButton.style.display = "block";
+            } else {
+                // Restore static fields
+                profileName.textContent = user.name || "N/A";
+                profileEmail.textContent = user.email || "N/A";
+                profilePhone.textContent = user.phone || "N/A";
+                profileDob.textContent = `Date of Birth: ${user.dob || "N/A"}`;
+                profileGender.textContent = user.gender || "N/A";
+                profileUsername.textContent = user.username || "N/A";
+
+                editButton.style.display = "block";
+                saveButton.style.display = "none";
             }
+        }
 
-            document.getElementById("profile-fullname").textContent = currentUser.fullName;
-            document.getElementById("profile-email").textContent = currentUser.email;
+        document.getElementById("logout-button").addEventListener("click", function () {
+			localStorage.removeItem("currentUser");
+			location.reload(); // Reload to reflect changes
+		});
 
-            document.getElementById("logout-button").addEventListener("click", function () {
-                localStorage.removeItem("currentUser");
-                alert("You have been logged out.");
-                window.location.href = "index.html";
-            });
-        });
+    });
+
     </script>
+    
 </body>
 </html>

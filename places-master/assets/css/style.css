@@ -557,61 +557,29 @@ a {
 
 /* Login & signup page */
 
-/* General Page Styles */
-.auth-page {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(135deg, #1e3c72, #2a5298); /* Modern gradient */
-  font-family: 'Poppins', sans-serif; /* Sleek font */
-  margin: 0;
-}
-
 /* Auth Container */
 .auth-container {
-  background: rgba(255, 255, 255, 0.9); /* Semi-transparent for a modern look */
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-  width: 90%;
-  max-width: 400px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 380px;
+  padding: 30px;
   text-align: center;
   position: relative;
-  overflow: hidden;
 }
 
-/* Decorative Gradient Border */
-.auth-container::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(45deg, #4facfe, #00f2fe, #28a745, #007bff);
-  z-index: -1;
-  transition: 0.5s;
-  transform: rotate(0deg);
-  animation: gradient-rotation 6s linear infinite;
-}
-
-/* Smooth Rotating Gradient Animation */
-@keyframes gradient-rotation {
-  0% {
-      transform: rotate(0deg);
-  }
-  100% {
-      transform: rotate(360deg);
-  }
-}
-
-/* Title */
+/* Header Styling */
 .auth-title {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 1rem;
+  font-size: 24px;
   font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.auth-subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 30px;
 }
 
 /* Input Fields */
@@ -619,26 +587,22 @@ a {
   width: 100%;
   padding: 12px;
   margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 25px;
-  font-size: 1rem;
-  box-sizing: border-box;
-  outline: none;
-  transition: all 0.3s ease;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  transition: 0.3s;
 }
 
 .input-field:focus {
   border-color: #4facfe;
-  box-shadow: 0 0 8px rgba(79, 172, 254, 0.5);
+  background-color: #fff;
+  outline: none;
 }
 
-/* Buttons */
+/* Primary Button */
 .btn-primary {
-  display: inline-block;
-  width: 100%;
-  padding: 12px;
-  font-size: 1rem;
-  font-weight: bold;
+  background: #4facfe;
   color: #fff;
   background: #00CAFF;
   border: none;
@@ -653,54 +617,48 @@ a {
   transform: translateY(-2px);
 }
 
-/* Form Text */
-.form-text {
-  margin-top: 10px;
-  font-size: 0.95rem;
-  color: #555;
+/* Footer Links */
+.auth-footer {
+  margin-top: 20px;
+  font-size: 13px;
 }
 
-.form-link {
+.auth-footer a {
   color: #4facfe;
   text-decoration: none;
-  font-weight: bold;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
-.form-link:hover {
-  color: #007bff;
-  text-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Decorative Airplane Image */
+.airplane-image {
+  position: absolute;
+  top: -30px;
+  right: -40px;
+  width: 80px;
+  opacity: 0.9;
 }
 
 /* Responsive Design */
 @media (max-width: 480px) {
   .auth-container {
-      padding: 30px;
+      width: 90%;
+      padding: 20px;
   }
 
   .auth-title {
-      font-size: 2rem;
+      font-size: 20px;
   }
 
-  .btn-primary {
-      font-size: 0.9rem;
-      padding: 10px;
+  .airplane-image {
+      width: 60px;
   }
 }
 
-.validation-message {
-  font-size: 0.875em;
-  color: red;
-  margin-top: 5px;
-  display: none; /* Hidden by default */
-}
-
-input:focus + .validation-message {
-  display: block;
-}
-
-/* Login & signup page ends*/
-
+/* Login & signup page */
 
 /* dropdown menu for the user profile ends */
 
@@ -762,6 +720,13 @@ input:focus + .validation-message {
   background: #007bff;
   color: white;
 }
+
+.validation-message {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
 
 
 /* dropdown menu for the user profile ends */
