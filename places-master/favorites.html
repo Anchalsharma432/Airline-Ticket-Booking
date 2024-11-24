@@ -6,19 +6,46 @@
   <title>Favorites</title>
   <link rel="stylesheet" href="./assets/css/favorites.css"> 
   <link rel="stylesheet" href="./assets/css/destinations.css">  <!-- To style cards of favorites as the destinations -->
-
+  <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css"> 
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
 </head>
 <body>
     <div class="video-background">
         <video autoplay muted loop id="bg-video">
-          <source src="./assets/videos/airplane.mp4" type="video/mp4">   
+          <source src="./assets/videos/airplane1.mp4" type="video/mp4">   
         </video>
       </div>
-  <header>
-    <h1 id="favorite-destinations">Your Favorite Destinations</h1>
-  </header>
+      <nav class="navbar navbar-expand-lg navbar-dark probootstrap_navbar" id="probootstrap-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="/">BlueWings</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#probootstrap-menu" aria-controls="probootstrap-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="ion-navicon"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="probootstrap-menu">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+              <!-- <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="travel.html">Travel With Us</a></li> -->
+              <li class="nav-item"><a class="nav-link" href="favorites.html">Favorites</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              <li class="nav-item" id="login-link"><a class="nav-link" href="login.html">Login</a></li>
+              <li class="nav-item dropdown" id="user-profile" style="display: none;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                  <span id="profile-name"></span>
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="profile.html">Profile</a>
+                  <button class="dropdown-item" id="logout-button">Logout</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+        
+        </div>
+      </nav>
+      <!-- END nav -->
   <main class="content">
     <div id="favorites-container">
         <div id="favorites-list" class="favorites-list-container">
@@ -30,9 +57,9 @@
         </div>
     </div>
   </main>
-  <footer id="footer-favorites" class="probootstrap_section probootstrap-border-top">
+  <footer id="" class="probootstrap-border-top">
     <div class="container">       
-      <div class="row pt-5">
+      <div class="">
         <div class="col-md-12 text-center">
           <p class="probootstrap_font-14">&copy; 2024. All Rights Reserved. <br> &nbsp;&nbsp;Designed &amp; Anchal, Anjali, Alex and Harjot &nbsp;&nbsp;  </p>
           <br>

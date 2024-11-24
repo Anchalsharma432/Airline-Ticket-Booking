@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 100em;
+    margin: 20px auto;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.card-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.departure-info,
+.arrival-info {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.departure-code,
+.arrival-code {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.flight-duration,
+.flight-stops {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.divider {
+    height: 2px;
+    background-color: #ccc;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.card-right {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card-cabin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(33.33% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 11.5em;
+    padding-top:0.8em;
+}
+
+.cabin-name {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.cabin-price {
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+}
+.middle-details
+{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .card-content {
+        flex-direction: column;
+    }
+
+    .card-right {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .card-cabin {
+        width: 100%;
+    }
+}

@@ -145,7 +145,7 @@ a {
   .border-bottom:after {
     width: 50px;
     height: 2px;
-    background: #00CA4C;
+    background: #00CAFF;
     position: absolute;
     content: "";
     bottom: 0;
@@ -640,18 +640,16 @@ a {
   font-size: 1rem;
   font-weight: bold;
   color: #fff;
-  background: linear-gradient(45deg, #28a745, #218838);
+  background: #00CAFF;
   border: none;
-  border-radius: 25px;
+  border-radius: 5px;
   cursor: pointer;
   text-transform: uppercase;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 15px rgba(40, 167, 69, 0.4);
 }
 
 .btn-primary:hover {
-  background: linear-gradient(45deg, #218838, #28a745);
-  box-shadow: 0 12px 20px rgba(40, 167, 69, 0.6);
+  background: #0099CC;
   transform: translateY(-2px);
 }
 
