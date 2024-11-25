@@ -1,73 +1,111 @@
 <!DOCTYPE html>
 <html lang="en" id="html-favorites">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Favorites</title>
-  <link rel="stylesheet" href="./assets/css/favorites.css"> 
-  <link rel="stylesheet" href="./assets/css/destinations.css">  <!-- To style cards of favorites as the destinations -->
-  <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css"> 
+  <link rel="stylesheet" href="./assets/css/favorites.css">
+  <link rel="stylesheet" href="./assets/css/destinations.css"> <!-- To style cards of favorites as the destinations -->
+  <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      /* Ensures the content takes full viewport height */
+    }
+
+    .main {
+      flex: 1;
+      /* Allows the main content area to grow and push the footer down */
+    }
+
+    footer {
+      background: #ECECEC;
+      /* Optional */
+      border-top: 1px solid #ECECEC;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="video-background">
-        <video autoplay muted loop id="bg-video">
-          <source src="./assets/videos/airplane1.mp4" type="video/mp4">   
-        </video>
+  <div class="video-background">
+    <video autoplay muted loop id="bg-video">
+      <source src="./assets/videos/airplane1.mp4" type="video/mp4">
+    </video>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark probootstrap_navbar" id="probootstrap-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">BlueWings</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#probootstrap-menu"
+        aria-controls="probootstrap-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="ion-navicon"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="probootstrap-menu">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="travel.html">Travel With Us</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="favorites.html">Favorites</a></li>
+          <li class="nav-item"><a class="nav-link" href="searchflights.html">Booking</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item" id="login-link"><a class="nav-link" href="login.html">Login</a></li>
+          <li class="nav-item dropdown" id="user-profile" style="display: none;">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+              <span id="profile-name"></span>
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="profile.html">Profile</a>
+              <button class="dropdown-item" id="logout-button">Logout</button>
+            </div>
+          </li>
+        </ul>
       </div>
-      <nav class="navbar navbar-expand-lg navbar-dark probootstrap_navbar" id="probootstrap-navbar">
-        <div class="container">
-          <a class="navbar-brand" href="/">BlueWings</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#probootstrap-menu" aria-controls="probootstrap-menu" aria-expanded="false" aria-label="Toggle navigation">
-            <span><i class="ion-navicon"></i></span>
-          </button>
-          <div class="collapse navbar-collapse" id="probootstrap-menu">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-              <!-- <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-              <li class="nav-item"><a class="nav-link" href="travel.html">Travel With Us</a></li> -->
-              <li class="nav-item"><a class="nav-link" href="favorites.html">Favorites</a></li>
-              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-              <li class="nav-item" id="login-link"><a class="nav-link" href="login.html">Login</a></li>
-              <li class="nav-item dropdown" id="user-profile" style="display: none;">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
-                  <span id="profile-name"></span>
-                </a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="profile.html">Profile</a>
-                  <button class="dropdown-item" id="logout-button">Logout</button>
-                </div>
-              </li>
-            </ul>
-          </div>
-          
-        
-        </div>
-      </nav>
-      <!-- END nav -->
-  <main class="content">
-    <div id="favorites-container">
+
+
+    </div>
+  </nav>
+  <!-- END nav -->
+  <div class="content">
+    <main class="main">
+      <div id="favorites-container">
         <div id="favorites-list" class="favorites-list-container">
           <!-- This will be populated with the favorite cards dynamically -->
         </div>
-        
+
         <div id="total-price-container">
           <h3>Total Price: $<span id="total-price">0</span></h3>
         </div>
-    </div>
-  </main>
-  <footer id="" class="probootstrap-border-top">
-    <div class="container">       
-      <div class="">
-        <div class="col-md-12 text-center">
-          <p class="probootstrap_font-14">&copy; 2024. All Rights Reserved. <br> &nbsp;&nbsp;Designed &amp; Anchal, Anjali, Alex and Harjot &nbsp;&nbsp;  </p>
-          <br>
-          <p class="probootstrap_font-14"><a href="./contact.html" target="_blank">&nbsp;&nbsp;Contact us&nbsp;&nbsp;</a></p>
+      </div>
+    </main>
+    <footer class="probootstrap-border-top">
+      <div class="container">
+        <div class="">
+          <div class="col-md-12 text-center">
+            <p class="probootstrap_font-14">&copy; 2024. All Rights Reserved. <br> &nbsp;&nbsp;Designed &amp; Anchal,
+              Anjali, Alex and Harjot &nbsp;&nbsp; </p>
+            <br>
+            <p class="probootstrap_font-14"><a href="./contact.html" target="_blank">&nbsp;&nbsp;Contact
+                us&nbsp;&nbsp;</a></p>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+
+  </div>
+
   <script src="./assets/js/favorites.js"></script>
 </body>
+
 </html>

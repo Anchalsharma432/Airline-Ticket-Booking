@@ -1,152 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<title>FE II Final Project</title>
-		<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/select2.css">
-    <link rel="stylesheet" href="assets/css/helpers.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/destinations.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">                                         
-    <link rel="stylesheet" href="assets/fonts/flaticon/font/flaticon.css">
-    <!-- Toastr CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Toastr JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <title>FE II Final Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/select2.css">
+  <link rel="stylesheet" href="assets/css/helpers.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/destinations.css">
+  <link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="assets/fonts/flaticon/font/flaticon.css">
+  <!-- Toastr CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
 
-	</head>
-	<body>
-  
+  <!-- Toastr JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
-    <nav class="navbar navbar-expand-lg navbar-dark probootstrap_navbar" id="probootstrap-navbar">
-      <div class="container">
-        <a class="navbar-brand" href="/">BlueWings</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#probootstrap-menu" aria-controls="probootstrap-menu" aria-expanded="false" aria-label="Toggle navigation">
-          <span><i class="ion-navicon"></i></span>
-        </button>
-        <div class="collapse navbar-collapse" id="probootstrap-menu">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-            <!-- <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark probootstrap_navbar" id="probootstrap-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">BlueWings</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#probootstrap-menu"
+        aria-controls="probootstrap-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="ion-navicon"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="probootstrap-menu">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
             <li class="nav-item"><a class="nav-link" href="travel.html">Travel With Us</a></li> -->
-            <li class="nav-item"><a class="nav-link" href="favorites.html">Favorites</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            <li class="nav-item" id="login-link"><a class="nav-link" href="login.html">Login</a></li>
-            <li class="nav-item dropdown" id="user-profile" >
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
-                <span id="profile-name"></span>
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="profile.html">Profile</a>
-                <button class="dropdown-item" id="logout-button">Logout</button>
-              </div>
-            </li>
-          </ul>
-        </div>
-        
-      
+          <li class="nav-item"><a class="nav-link" href="favorites.html">Favorites</a></li>
+          <li class="nav-item"><a class="nav-link" href="searchflights.html">Booking</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item" id="login-link"><a class="nav-link" href="login.html">Login</a></li>
+          <li class="nav-item dropdown" id="user-profile">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+              <span id="profile-name"></span>
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="profile.html">Profile</a>
+              <button class="dropdown-item" id="logout-button">Logout</button>
+            </div>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- END nav -->
-    
 
-    <section class="probootstrap-cover overflow-hidden relative"  style="background-image: url('assets/images/bg_1.jpg');" data-stellar-background-ratio="0.5"  id="section-home">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md">
-            <h2 class="heading mb-2 display-4 font-light">Explore The World With Ease</h2>
-            <p class="lead mb-5 ">
-              
-          </div> 
-          <div class="col-md ">
-            <form action="#" class="probootstrap-form" id="form_search">
-              <div class="form-group">
-                <div class="row mb-3">
-                  <div class="col-md">
-                    <div class="form-group">
-                      <label for="id_label_single">From</label>
-                      <label for="id_label_single" style="width: 100%;">
-                        <select class="js-example-basic-single js-states form-control" id="id_label_single" style="width: 100%;" id="departure-code">
-                          <option value="YYZ" data-subtext="Pearson International Airport">Toronto, Canada (YYZ)</option>
-                          <option value="EZE" data-subtext="Ezeiza International Airport">Argentina, Ezeiza (EZE)</option>
-                          <option value="CCS" data-subtext="Simón Bolívar International Airport">Venezuela, Caracas (CCS)</option>
-                          <option value="AMD" data-subtext="Sardar Patel International Airport">Ahmedabad, India(AMD)</option>
-                          <option value="JFK" data-subtext="John F. Kennedy International Airport">New York, USA (JFK)</option>
-                          <option value="LHR" data-subtext="Heathrow Airport">London, UK (LHR)</option>
-                          <option value="DXB" data-subtext="Dubai International Airport">Dubai, UAE (DXB)</option>
-                          <option value="HND" data-subtext="Haneda Airport">Tokyo, Japan (HND)</option>
-                        </select>
-                      </label>
-                    </div>
+
+    </div>
+  </nav>
+  <!-- END nav -->
+
+
+  <section class="probootstrap-cover overflow-hidden relative" style="background-image: url('assets/images/bg_1.jpg');"
+    data-stellar-background-ratio="0.5" id="section-home">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md">
+          <h2 class="heading mb-2 display-4 font-light">Explore The World With Ease</h2>
+          <p class="lead mb-5 ">
+
+        </div>
+        <div class="col-md ">
+          <form action="#" class="probootstrap-form" id="form_search">
+            <div class="form-group">
+              <div class="row mb-3">
+                <div class="col-md">
+                  <div class="form-group">
+                    <label for="id_label_single">From</label>
+                    <label for="id_label_single" style="width: 100%;">
+                      <select class="js-example-basic-single js-states form-control" id="id_label_single"
+                        style="width: 100%;" id="departure-code">
+                        <option value="YYZ" data-subtext="Pearson International Airport">Toronto, Canada (YYZ)</option>
+                        <option value="EZE" data-subtext="Ezeiza International Airport">Argentina, Ezeiza (EZE)</option>
+                        <option value="CCS" data-subtext="Simón Bolívar International Airport">Venezuela, Caracas (CCS)
+                        </option>
+                        <option value="AMD" data-subtext="Sardar Patel International Airport">Ahmedabad, India(AMD)
+                        </option>
+                        <option value="JFK" data-subtext="John F. Kennedy International Airport">New York, USA (JFK)
+                        </option>
+                        <option value="LHR" data-subtext="Heathrow Airport">London, UK (LHR)</option>
+                        <option value="DXB" data-subtext="Dubai International Airport">Dubai, UAE (DXB)</option>
+                        <option value="HND" data-subtext="Haneda Airport">Tokyo, Japan (HND)</option>
+                      </select>
+                    </label>
                   </div>
-                  
-                  <div class="col-md">
-                    <div class="form-group">
-                      <label for="id_label_single2">To</label>
-                      <div class="probootstrap_select-wrap">
-                        <label for="id_label_single2" style="width: 100%;">
-                        <select class="js-example-basic-single js-states form-control" id="id_label_single2" style="width: 100%;" id="arrival-code">
-                          <option value="YYZ" data-subtext="Pearson International Airport">Toronto, Canada (YYZ)</option>
-                          <option value="EZE" data-subtext="Ezeiza International Airport">Argentina, Ezeiza (EZE)</option>
-                          <option value="CCS" data-subtext="Simón Bolívar International Airport">Venezuela, Caracas (CCS)</option>
-                          <option value="AMD" data-subtext="Sardar Patel International Airport">Ahmedabad, India(AMD)</option>
-                          <option value="JFK" data-subtext="John F. Kennedy International Airport">New York, USA (JFK)</option>
+                </div>
+
+                <div class="col-md">
+                  <div class="form-group">
+                    <label for="id_label_single2">To</label>
+                    <div class="probootstrap_select-wrap">
+                      <label for="id_label_single2" style="width: 100%;">
+                        <select class="js-example-basic-single js-states form-control" id="id_label_single2"
+                          style="width: 100%;" id="arrival-code">
+                          <option value="YYZ" data-subtext="Pearson International Airport">Toronto, Canada (YYZ)
+                          </option>
+                          <option value="EZE" data-subtext="Ezeiza International Airport">Argentina, Ezeiza (EZE)
+                          </option>
+                          <option value="CCS" data-subtext="Simón Bolívar International Airport">Venezuela, Caracas
+                            (CCS)</option>
+                          <option value="AMD" data-subtext="Sardar Patel International Airport">Ahmedabad, India(AMD)
+                          </option>
+                          <option value="JFK" data-subtext="John F. Kennedy International Airport">New York, USA (JFK)
+                          </option>
                           <option value="LHR" data-subtext="Heathrow Airport">London, UK (LHR)</option>
                           <option value="DXB" data-subtext="Dubai International Airport">Dubai, UAE (DXB)</option>
                           <option value="HND" data-subtext="Haneda Airport">Tokyo, Japan (HND)</option>
                           <option></option>
                         </select>
                       </label>
-                      </div>
-                    </div>
-                  </div> 
-                  <div class="col-md">
-                    <div class="form-group">
-                      <label for="flight_class">Class</label>
-                      <select class="js-example-basic-single form-control" id="flight_class" style="width: 100%;" >
-                        <option value="economy">Economy Class</option>
-                        <option value="premium_economy">Premium Economy</option>
-                        <option value="business">Business Class</option>
-                        <option value="first">First Class</option>
-                      </select>
                     </div>
                   </div>
                 </div>
-                <div class="form-group">
-                  <label for="probootstrap-date-departure">Passengers</label>
-                  <div class="row mb-5">
-                    <div class="col-md-4">
-                      <div class="form-group">
-                        <label for="probootstrap-date-departure">Adults</label>
-                        <div class="probootstrap-date-wrap">
-                          <input type="number" id="num_of_adult" class="form-control"  >
-                        </div>
+                <div class="col-md">
+                  <div class="form-group">
+                    <label for="flight_class">Class</label>
+                    <select class="js-example-basic-single form-control" id="flight_class" style="width: 100%;">
+                      <option value="economy">Economy Class</option>
+                      <option value="premium_economy">Premium Economy</option>
+                      <option value="business">Business Class</option>
+                      <option value="first">First Class</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="probootstrap-date-departure">Passengers</label>
+                <div class="row mb-5">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="probootstrap-date-departure">Adults</label>
+                      <div class="probootstrap-date-wrap">
+                        <input type="number" id="num_of_adult" class="form-control">
                       </div>
                     </div>
-                    <div class="col-md-4">
-                      <div class="form-group">
-                        <label>Children</label>
-                        <div class="probootstrap-date-wrap">
-                          <input type="number" id="num_of_kids" class="form-control">
-                        </div>
-                      </div>
-                    </div>  
-                    <div class="col-md-4">
-                      <div class="form-group">
-                        <label>Infants</label>
-                        <div class="probootstrap-date-wrap">
-                          <input type="number" id="num_of_infs" class="form-control">
-                        </div>
-                      </div>
-                    </div> 
                   </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label>Children</label>
+                      <div class="probootstrap-date-wrap">
+                        <input type="number" id="num_of_kids" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label>Infants</label>
+                      <div class="probootstrap-date-wrap">
+                        <input type="number" id="num_of_infs" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
                 <!-- END row -->
                 <div class="row mb-5">
@@ -154,7 +169,7 @@
                     <div class="form-group">
                       <label for="probootstrap-date-departure">Departure</label>
                       <div class="probootstrap-date-wrap">
-                        <input type="date" id="probootstrap-date-departure" class="form-control"  >
+                        <input type="date" id="probootstrap-date-departure" class="form-control">
                       </div>
                     </div>
                   </div>
@@ -165,80 +180,88 @@
                         <input type="date" id="probootstrap-date-arrival" class="form-control">
                       </div>
                     </div>
-                  </div>  
+                  </div>
                 </div>
                 <!-- END row -->
                 <div class="row">
                   <div class="col-md">
-                    <label for="round" class="mr-5"><input type="radio" id="round" name="direction" onclick="toggleTextInput(false)">Round</label>
-                    <label for="oneway"><input type="radio" id="oneway" name="direction" onclick="toggleTextInput(true)">Oneway</label>
-                  </div>  
+                    <label for="round" class="mr-5"><input type="radio" id="round" name="direction"
+                        onclick="toggleTextInput(false)">Round</label>
+                    <label for="oneway"><input type="radio" id="oneway" name="direction"
+                        onclick="toggleTextInput(true)">Oneway</label>
+                  </div>
                   <div class="col-md">
                     <input type="submit" value="Search Flights" class="btn btn-primary btn-block">
                   </div>
                 </div>
               </div>
-            </form>
-          </div>
+          </form>
         </div>
       </div>
-        </div>
-      </div>
-    
-    </section>
-    <!-- END section -->
-    
+    </div>
+    </div>
+    </div>
 
-    <section class="probootstrap_section" id="section-city-guides">
-      <div class="container">
-        <div class="row text-center mb-5 ">
-          <div class="col-md-12">
-            <h2 class="display-4 border-bottom probootstrap-section-heading">Explore Destinations</h2>
-          </div>
-          <button id="view-favorites" class="view-favorites-btn">View Favorites</button>
-        </div>
-        <div id="destination-list" class="cards-container">
-          <!-- Destination cards will be dynamically loaded here -->
-        </div>
-    </section>
-        
-    <section class="probootstrap-section-half d-md-flex">
-      <div class="probootstrap-image order-2 " data-animate-effect="fadeIn" style="background-image: url(assets/images/img_3.jpg)"></div>
-      <div class="probootstrap-text order-1">
-        <div class="probootstrap-inner " data-animate-effect="fadeInLeft">
-          <h2 class="heading mb-4">Payment Options</h2>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-          <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-          
-        </div>    
-      </div>
-    </section>
-    <!-- END section -->
+  </section>
+  <!-- END section -->
 
-    <footer class="probootstrap_section probootstrap-border-top">
-      <div class="container">       
-        <div class="row pt-5">
-          <div class="col-md-12 text-center">
-            <p class="probootstrap_font-14">&copy; 2024. All Rights Reserved. <br> Designed &amp; Anchal, Anjali, Alex and Harjot</p>
-            <p class="probootstrap_font-14"><a href="./contact.html" target="_blank">Contact us</a></p>
-          </div>
+
+  <section class="probootstrap_section" id="section-city-guides">
+    <div class="container">
+      <div class="row text-center mb-5 ">
+        <div class="col-md-12">
+          <h2 class="display-4 border-bottom probootstrap-section-heading">Explore Destinations</h2>
+        </div>
+        <button id="view-favorites" class="view-favorites-btn">View Favorites</button>
+      </div>
+      <div id="destination-list" class="cards-container">
+        <!-- Destination cards will be dynamically loaded here -->
+      </div>
+  </section>
+
+  <section class="probootstrap-section-half d-md-flex">
+    <div class="probootstrap-image order-2 " data-animate-effect="fadeIn"
+      style="background-image: url(assets/images/img_3.jpg)"></div>
+    <div class="probootstrap-text order-1">
+      <div class="probootstrap-inner " data-animate-effect="fadeInLeft">
+        <h2 class="heading mb-4">Payment Options</h2>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
+          texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One
+          day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of
+          Grammar.</p>
+
+      </div>
+    </div>
+  </section>
+  <!-- END section -->
+
+  <footer class="probootstrap_section probootstrap-border-top">
+    <div class="container">
+      <div class="row pt-5">
+        <div class="col-md-12 text-center">
+          <p class="probootstrap_font-14">&copy; 2024. All Rights Reserved. <br> Designed &amp; Anchal, Anjali, Alex and
+            Harjot</p>
+          <p class="probootstrap_font-14"><a href="./contact.html" target="_blank">Contact us</a></p>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/select2.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="./assets/js/destinations.js"></script>
-    <script src="assets/js/passing.js"></script>
-    <script>
-      //disable-date-picker
-	function toggleTextInput(disable) {
-		const textInput = document.getElementById('probootstrap-date-arrival');
-		textInput.disabled = disable;
-	}
-    </script>
-	</body>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/select2.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="./assets/js/destinations.js"></script>
+  <script src="assets/js/passing.js"></script>
+  <script>
+    //disable-date-picker
+    function toggleTextInput(disable) {
+      const textInput = document.getElementById('probootstrap-date-arrival');
+      textInput.disabled = disable;
+    }
+  </script>
+</body>
+
 </html>
