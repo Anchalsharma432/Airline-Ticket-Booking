@@ -1,7 +1,7 @@
 window.addEventListener('load', function() {
     // Retrieve the form data from sessionStorage
     const data = JSON.parse(sessionStorage.getItem('searchData'));
-  
+    const direction = sessionStorage.getItem('direction');
     if (data) {
       // Optionally, log or use the data
       console.log('Form Data:', data);
@@ -17,23 +17,23 @@ window.addEventListener('load', function() {
       document.getElementById('probootstrap-date-arrival').value = data.arrivalDate;
   
       // Check the radio button for direction
-      if (data.direction) {
-        document.querySelector(`input[name="direction"][value="${data.direction}"]`).checked = true;
-      }
-    } else {
-      console.log('No data found in sessionStorage');
-    }
-
+      if (direction) {
+        const directionRadio = document.querySelector(
+          `input[name="direction"][value="${direction}"]`);
+        if (directionRadio) {
+          directionRadio.checked = false;
+        }
+      }};
     	// Get today's date in YYYY-MM-DD format
-	const today = new Date();
-	const year = today.getFullYear();
-	const month = String(today.getMonth() + 1).padStart(2, '0'); // Add leading zero if needed
-	const day = String(today.getDate()).padStart(2, '0'); // Add leading zero if needed
-	const todayDate = `${year}-${month}-${day}`;
+      const today = new Date();
+      const year = today.getFullYear();
+      const month = String(today.getMonth() + 1).padStart(2, '0'); // Add leading zero if needed
+      const day = String(today.getDate()).padStart(2, '0'); // Add leading zero if needed
+      const todayDate = `${year}-${month}-${day}`;
 
-	// Set the min attribute to today's date for the relevant date inputs
-	document.getElementById('probootstrap-date-departure').setAttribute('min', todayDate);
-	document.getElementById('probootstrap-date-arrival').setAttribute('min', todayDate);
+      // Set the min attribute to today's date for the relevant date inputs
+      document.getElementById('probootstrap-date-departure').setAttribute('min', todayDate);
+      document.getElementById('probootstrap-date-arrival').setAttribute('min', todayDate);
 
 
 
@@ -45,10 +45,15 @@ window.addEventListener('load', function() {
         flight.arrival_airport_code === data.to &&
         flight.departure_date === data.departureDate
         );
-
+        console.log('Success');
         console.log("filteredFlights",filteredFlights);
+        displayFlights(filteredFlights);
+
+
+        
 
     })
+    
     .catch(error => console.error('Error fetching flights data:', error));
 
 
@@ -87,4 +92,81 @@ window.addEventListener('load', function() {
 
 
   })
+  function createFlightCard(flight) {
+    return `
+      <div class="card">
+        <div class="card-content">
+          <!-- Left Section -->
+          <div class="card-left">
+            <div class="card-details">
+              <!-- Departure Information -->
+              <div class="departure-info">
+                <span class="departure-code">${flight.departure_airport_code}</span>
+                <span class="departure-time">${flight.departure_time}</span>
+              </div>
+              
+              <!-- Additional Details Above Line -->
+              <div class="middle-details">
+                <div class="">
+                  <span class="travel-time">${flight.duration}</span>
+                </div>
+                
+                <!-- Horizontal Line -->
+                <div class="divider"></div>
+                
+                <!-- Additional Details Below Line -->
+                <div class="stop-info">
+                  <span class="stops">${flight.connections_or_stops} stop${
+                    flight.connections_or_stops > 1 ? 's' : ''
+                  }</span>
+                </div>
+              </div>
+              
+              <!-- Arrival Information -->
+              <div class="arrival-info">
+                <span class="arrival-code">${flight.arrival_airport_code}</span>
+                <span class="arrival-time">${flight.arrival_time}</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Right Section -->
+          <div class="card-right">
+            <div class="card-cabin">
+              <span class="cabin-price">${flight.aircraft_type}</span>
+              <span class="cabin-price">${flight.flight_id}</span>
+            </div>
+            <div class="card-cabin">
+              <span class="cabin-name">Economy</span>
+              <span class="cabin-price">CAD ${flight.economy_class_price.toFixed(
+                2
+              )}</span>
+            </div>
+            <div class="card-cabin">
+              <span class="cabin-name">Business</span>
+              <span class="cabin-price">CAD ${flight.business_class_price.toFixed(
+                2
+              )}</span>
+            </div>
+            <div class="card-cabin">
+              <span class="cabin-name">First</span>
+              <span class="cabin-price">CAD ${flight.first_class_price.toFixed(
+                2
+              )}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
   
+  function displayFlights(flights) {
+    const container = document.getElementById('containar_for_card');
+    container.innerHTML = ''; // Clear any existing cards
+  
+    // Generate and append cards for each flight
+    flights.forEach((flight) => {
+      const cardHTML = createFlightCard(flight);
+      container.innerHTML += cardHTML;
+    });
+  }

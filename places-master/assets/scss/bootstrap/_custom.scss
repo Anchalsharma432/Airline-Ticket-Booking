@@ -10,7 +10,7 @@ $pink:    #FF5B9C;
 $red:     #EE0427;
 $orange:  #EF6C35;
 $yellow:  #FFD500;
-$green:   #00CA4C;
+$light-blue:   #00caff;
 $teal:    #89D9D0;
 $cyan:    #A5E9DB;
 $navy:    #021993;
@@ -23,7 +23,7 @@ $colors: (
   red: $red,
   orange: $orange,
   yellow: $yellow,
-  green: $green,
+  light-blue: $light-blue,
   teal: $teal,
   cyan: $cyan,
   white: $white,
@@ -34,7 +34,7 @@ $colors: (
 $theme-colors: (
   primary: $green,
   secondary: $gray-600,
-  success: $green,
+  success: $light-blue,
   info: $teal,
   warning: $yellow,
   danger: $red,

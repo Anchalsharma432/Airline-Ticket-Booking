@@ -216,6 +216,10 @@
 
 	//search form starts
 
+		function search_Button(){
+
+		}
+
 	document.getElementById('form_search').addEventListener('submit', function(event) {
 		event.preventDefault(); // Prevent the form from refreshing the page
 		
@@ -228,17 +232,16 @@
 		  infants: document.getElementById('num_of_infs').value,
 		  departureDate: document.getElementById('probootstrap-date-departure').value,
 		  arrivalDate: document.getElementById('probootstrap-date-arrival').value,
-		  direction: document.querySelector('input[name="direction"]:checked') ? document.querySelector('input[name="direction"]:checked').value : '',
 		};
-	  
+		const direction = document.querySelector('input[name="direction"]:checked');
+	    const di_val = direction ? direction.value : '';
 		// Save form data in sessionStorage
 		sessionStorage.setItem('searchData', JSON.stringify(data));
-	  
+		sessionStorage.setItem('direction',di_val);
 		// Optionally, redirect to search page
 		window.location.href = 'searchflights.html'; // Or wherever you need to go
 	  });
 	  
-
 	//search form ends
 	
 	//
