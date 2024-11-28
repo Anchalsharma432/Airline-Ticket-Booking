@@ -31,9 +31,24 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh; /* Change from height to min-height */
             color: #333;
         }
+
+
+        .navbar-brand {
+            text-transform: uppercase;
+            letter-spacing: .3em;
+            color: white;
+            display: inline-block;
+            margin-top: 4rem;
+            margin-right: 1rem;
+            font-size: 1.25rem;
+            text-decoration: none;
+            line-height: inherit;
+            white-space: nowrap;
+        }
+
         /* Primary Button */
         .btn-primary {
         background: #4facfe;
@@ -56,6 +71,9 @@
 </head>
 <body>
     <div class="auth-page">
+        <div style="text-align: center;">
+            <a class="navbar-brand" href="index.html">BlueWings</a>
+        </div>
         <div class="auth-container">
             <h2 class="auth-title">Create Your Account</h2>
             <p class="auth-subtitle">Join us to explore amazing features and manage your account effortlessly!</p>

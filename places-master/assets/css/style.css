@@ -562,10 +562,13 @@ a {
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  width: 380px;
+  width: 100%;
+  max-width: 400px;
   padding: 30px;
   text-align: center;
   position: relative;
+  margin: 20px;
+  box-sizing: border-box;
 }
 
 /* Header Styling */
@@ -584,7 +587,7 @@ a {
 
 /* Input Fields */
 .input-field {
-  width: 93%;
+  width: 100%;
   padding: 12px;
   margin-bottom: 20px;
   border: 1px solid #ddd;
@@ -592,6 +595,7 @@ a {
   font-size: 14px;
   background-color: #f9f9f9;
   transition: 0.3s;
+  box-sizing: border-box;
 }
 
 .input-field:focus {
@@ -604,12 +608,14 @@ a {
 .btn-primary {
   background: #4facfe;
   color: #fff;
-  background: #00CAFF;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   text-transform: uppercase;
   transition: all 0.3s ease;
+  padding: 12px;
+  width: 100%;
+  font-size: 14px;
 }
 
 .btn-primary:hover {
@@ -643,20 +649,51 @@ a {
 }
 
 /* Responsive Design */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
   .auth-container {
-      width: 90%;
-      padding: 20px;
+    padding: 20px;
   }
-
   .auth-title {
-      font-size: 20px;
+    font-size: 20px;
   }
-
+  .auth-subtitle {
+    font-size: 12px;
+  }
+  .btn-primary {
+    font-size: 13px;
+  }
   .airplane-image {
-      width: 60px;
+    width: 60px;
+    top: -20px;
+    right: -30px;
   }
 }
+
+@media (max-width: 480px) {
+  body {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .auth-container {
+    padding: 15px;
+  }
+  .auth-title {
+    font-size: 18px;
+  }
+  .auth-subtitle {
+    font-size: 11px;
+  }
+  .btn-primary {
+    font-size: 12px;
+  }
+  .airplane-image {
+    display: none;
+  }
+}
+
 
 /* Login & signup page */
 

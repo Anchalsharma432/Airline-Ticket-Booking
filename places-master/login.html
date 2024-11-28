@@ -32,10 +32,25 @@
             background-repeat: no-repeat;
             background-size: cover;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             color: #333;
+        }
+
+        .navbar-brand {
+            text-transform: uppercase;
+            letter-spacing: .3em;
+            color: white;
+            display: inline-block;
+            padding-top: 0.3125rem;
+            padding-bottom: 0.7rem;
+            margin-right: 1rem;
+            font-size: 1.25rem;
+            text-decoration: none;
+            line-height: inherit;
+            white-space: nowrap;
         }
 
         /* Auth Container */
@@ -132,9 +147,9 @@
 </head>
 
 <body>
-    <!-- <div class="container">
+    <div >
         <a class="navbar-brand" href="index.html">BlueWings</a>
-    </div> -->
+    </div>
 
     <div class="auth-container">
         <h2 class="auth-title">Flight Login</h2>
@@ -159,64 +174,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(120deg, #4facfe, #00f2fe); /* Modern gradient */
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #333;
-        }
-    </style>
-</head>
-<body>
-    <div class="auth-page" style="background-image: url('./assets/images/bg_1.jpg'); background-size: cover;">
-        <div class="auth-container">
-            <h2 class="auth-title">Log in to Your Account</h2>
-            <p class="auth-subtitle">Explore the world with ease. Log in and manage your trips effortlessly.</p>
-            <form id="login-form">
-                <input type="email" id="login-email" class="input-field" placeholder="Email Address" required />
-                <span class="validation-message"></span>
-        
-                <input type="password" id="login-password" class="input-field" placeholder="Password" required />
-                <span class="validation-message"></span>
-        
-                <button type="submit" class="btn-primary">Log In</button>
-            </form>
-            <div class="auth-footer">
-                <p>Don't have an account? <a href="signup.html" class="form-link">Sign up</a></p>
-                <p><a href="#" class="form-link">Forgot your password?</a></p>
-            </div>
-        </div>
-    </div>
-</body>
-</html> -->
