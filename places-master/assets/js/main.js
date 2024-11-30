@@ -239,7 +239,7 @@
 		sessionStorage.setItem('searchData', JSON.stringify(data));
 		sessionStorage.setItem('direction',di_val);
 		// Optionally, redirect to search page
-		window.location.href = 'searchflights.html'; // Or wherever you need to go
+		window.location.href = 'loader.html'; // Or wherever you need to go
 	  });
 	  
 	//search form ends
