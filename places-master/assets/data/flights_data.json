@@ -1,1052 +1,3776 @@
 [
-  {
-    "departure_airport_name": "Singapore Changi Airport",
-    "departure_airport_city": "Singapore",
-    "departure_airport_country": "Singapore",
-    "departure_airport_code": "SIN",
-    "departure_date": "2024-12-04",
-    "departure_time": "23:00:00",
-    "arrival_airport_name": "Chhatrapati Shivaji Maharaj International Airport",
-    "arrival_airport_city": "Mumbai",
-    "arrival_airport_country": "India",
-    "arrival_airport_code": "BOM",
-    "arrival_date": "2024-12-07",
-    "arrival_time": "16:30:00",
-    "duration": "14h 15m",
-    "connections_or_stops": 1,
-    "aircraft_type": "Boeing 737",
-    "flight_id": "FL656",
-    "economy_class_price": 258.07,
-    "business_class_price": 891.91,
-    "first_class_price": 2062.96
-  },
-  {
-    "departure_airport_name": "John F. Kennedy International Airport",
-    "departure_airport_city": "New York",
-    "departure_airport_country": "United States",
-    "departure_airport_code": "JFK",
-    "departure_date": "2024-11-30",
-    "departure_time": "09:00:00",
-    "arrival_airport_name": "Singapore Changi Airport",
-    "arrival_airport_city": "Singapore",
-    "arrival_airport_country": "Singapore",
-    "arrival_airport_code": "SIN",
-    "arrival_date": "2024-11-29",
-    "arrival_time": "21:45:00",
-    "duration": "3h 45m",
-    "connections_or_stops": 1,
-    "aircraft_type": "Embraer 190",
-    "flight_id": "FL256",
-    "economy_class_price": 306.67,
-    "business_class_price": 808.45,
-    "first_class_price": 1986.23
-  },
-  {
-    "departure_airport_name": "Heathrow Airport",
-    "departure_airport_city": "London",
-    "departure_airport_country": "United Kingdom",
-    "departure_airport_code": "LHR",
-    "departure_date": "2024-11-30",
-    "departure_time": "06:30:00",
-    "arrival_airport_name": "John F. Kennedy International Airport",
-    "arrival_airport_city": "New York",
-    "arrival_airport_country": "United States",
-    "arrival_airport_code": "JFK",
-    "arrival_date": "2024-11-29",
-    "arrival_time": "16:00:00",
-    "duration": "2h 15m",
-    "connections_or_stops": 2,
-    "aircraft_type": "Embraer 190",
-    "flight_id": "FL736",
-    "economy_class_price": 246.17,
-    "business_class_price": 842.05,
-    "first_class_price": 2023.07
-  },
-  {
-    "departure_airport_name": "John F. Kennedy International Airport",
-    "departure_airport_city": "New York",
-    "departure_airport_country": "United States",
-    "departure_airport_code": "JFK",
-    "departure_date": "2024-12-04",
-    "departure_time": "20:00:00",
-    "arrival_airport_name": "Chhatrapati Shivaji Maharaj International Airport",
-    "arrival_airport_city": "Ahmedabad",
-    "arrival_airport_country": "India",
-    "arrival_airport_code": "AMD",
-    "arrival_date": "2024-12-07",
-    "arrival_time": "18:15:00",
-    "duration": "8h 45m",
-    "connections_or_stops": 1,
-    "aircraft_type": "Airbus A380",
-    "flight_id": "FL630",
-    "economy_class_price": 317.92,
-    "business_class_price": 939.52,
-    "first_class_price": 2054.93
-  },
-  {
-    "departure_airport_name": "Heathrow Airport",
-    "departure_airport_city": "London",
-    "departure_airport_country": "United Kingdom",
-    "departure_airport_code": "LHR",
-    "departure_date": "2024-11-30",
-    "departure_time": "22:00:00",
-    "arrival_airport_name": "Singapore Changi Airport",
-    "arrival_airport_city": "Singapore",
-    "arrival_airport_country": "Singapore",
-    "arrival_airport_code": "SIN",
-    "arrival_date": "2024-11-27",
-    "arrival_time": "18:15:00",
-    "duration": "1h 30m",
-    "connections_or_stops": 2,
-    "aircraft_type": "Airbus A380",
-    "flight_id": "FL401",
-    "economy_class_price": 253.83,
-    "business_class_price": 756.93,
-    "first_class_price": 2019.23
-  },
-  {
-    "departure_airport_name": "Toronto Pearson International Airport",
-    "departure_airport_city": "Toronto",
-    "departure_airport_country": "Canada",
-    "departure_airport_code": "YYZ",
-    "departure_date": "2024-12-01",
-    "departure_time": "13:45:00",
-    "arrival_airport_name": "John F. Kennedy International Airport",
-    "arrival_airport_city": "New York",
-    "arrival_airport_country": "United States",
-    "arrival_airport_code": "JFK",
-    "arrival_date": "2024-11-26",
-    "arrival_time": "23:00:00",
-    "duration": "5h 30m",
-    "connections_or_stops": 2,
-    "aircraft_type": "Airbus A320",
-    "flight_id": "FL365",
-    "economy_class_price": 165.53,
-    "business_class_price": 817.83,
-    "first_class_price": 2113.76
-  },
-  {
-    "departure_airport_name": "Toronto Pearson International Airport",
-    "departure_airport_city": "Toronto",
-    "departure_airport_country": "Canada",
-    "departure_airport_code": "YYZ",
-    "departure_date": "2024-11-28",
-    "departure_time": "20:30:00",
-    "arrival_airport_name": "John F. Kennedy International Airport",
-    "arrival_airport_city": "New York",
-    "arrival_airport_country": "United States",
-    "arrival_airport_code": "JFK",
-    "arrival_date": "2024-11-29",
-    "arrival_time": "07:00:00",
-    "duration": "11h 30m",
-    "connections_or_stops": 1,
-    "aircraft_type": "Embraer 190",
-    "flight_id": "FL604",
-    "economy_class_price": 217.45,
-    "business_class_price": 791.37,
-    "first_class_price": 2049.96
-  },
-  {
-    "departure_airport_name": "John F. Kennedy International Airport",
-    "departure_airport_city": "New York",
-    "departure_airport_country": "United States",
-    "departure_airport_code": "JFK",
-    "departure_date": "2024-11-25",
-    "departure_time": "08:00:00",
-    "arrival_airport_name": "Heathrow Airport",
-    "arrival_airport_city": "London",
-    "arrival_airport_country": "United Kingdom",
-    "arrival_airport_code": "LHR",
-    "arrival_date": "2024-12-06",
-    "arrival_time": "24:15:00",
-    "duration": "4h 0m",
-    "connections_or_stops": 0,
-    "aircraft_type": "Airbus A380",
-    "flight_id": "FL877",
-    "economy_class_price": 258.5,
-    "business_class_price": 865.79,
-    "first_class_price": 2079.07
-  },
-  {
-    "departure_airport_name": "Chhatrapati Shivaji Maharaj International Airport",
-    "departure_airport_city": "Mumbai",
-    "departure_airport_country": "India",
-    "departure_airport_code": "BOM",
-    "departure_date": "2024-11-28",
-    "departure_time": "07:45:00",
-    "arrival_airport_name": "Singapore Changi Airport",
-    "arrival_airport_city": "Singapore",
-    "arrival_airport_country": "Singapore",
-    "arrival_airport_code": "SIN",
-    "arrival_date": "2024-11-28",
-    "arrival_time": "20:15:00",
-    "duration": "1h 45m",
-    "connections_or_stops": 0,
-    "aircraft_type": "Airbus A380",
-    "flight_id": "FL193",
-    "economy_class_price": 275.87,
-    "business_class_price": 872.67,
-    "first_class_price": 1967.12
-  },
-  {
-    "departure_airport_name": "Heathrow Airport",
-    "departure_airport_city": "London",
-    "departure_airport_country": "United Kingdom",
-    "departure_airport_code": "LHR",
-    "departure_date": "2024-11-26",
-    "departure_time": "18:30:00",
-    "arrival_airport_name": "Chhatrapati Shivaji Maharaj International Airport",
-    "arrival_airport_city": "Mumbai",
-    "arrival_airport_country": "India",
-    "arrival_airport_code": "BOM",
-    "arrival_date": "2024-12-05",
-    "arrival_time": "14:00:00",
-    "duration": "11h 45m",
-    "connections_or_stops": 1,
-    "aircraft_type": "Boeing 737",
-    "flight_id": "FL240",
-    "economy_class_price": 322.51,
-    "business_class_price": 798.69,
-    "first_class_price": 2003.53
-  },
-  {
-    "departure_airport_name": "Chhatrapati Shivaji Maharaj International Airport",
-    "departure_airport_city": "Mumbai",
-    "departure_airport_country": "India",
-    "departure_airport_code": "BOM",
-    "departure_date": "2024-11-25",
-    "departure_time": "10:00:00",
-    "arrival_airport_name": "John F. Kennedy International Airport",
-    "arrival_airport_city": "New York",
-    "arrival_airport_country": "United States",
-    "arrival_airport_code": "JFK",
-    "arrival_date": "2024-11-28",
-    "arrival_time": "15:45:00",
-    "duration": "13h 0m",
-    "connections_or_stops": 0,
-    "aircraft_type": "Airbus A320",
-    "flight_id": "FL169",
-    "economy_class_price": 292.61,
-    "business_class_price": 906.54,
-    "first_class_price": 2014.61
-  },
-  {
-    "departure_airport_name": "Singapore Changi Airport",
-    "departure_airport_city": "Singapore",
-    "departure_airport_country": "Singapore",
-    "departure_airport_code": "SIN",
-    "departure_date": "2024-12-01",
-    "departure_time": "11:15:00",
-    "arrival_airport_name": "Toronto Pearson International Airport",
-    "arrival_airport_city": "Toronto",
-    "arrival_airport_country": "Canada",
-    "arrival_airport_code": "YYZ",
-    "arrival_date": "2024-12-08",
-    "arrival_time": "09:00:00",
-    "duration": "5h 0m",
-    "connections_or_stops": 0,
-    "aircraft_type": "Boeing 777",
-    "flight_id": "FL219",
-    "economy_class_price": 273.19,
-    "business_class_price": 784.81,
-    "first_class_price": 1991.38
-  },
-  {
-    "departure_airport_name": "Heathrow Airport",
-    "departure_airport_city": "London",
-    "departure_airport_country": "United Kingdom",
-    "departure_airport_code": "LHR",
-    "departure_date": "2024-12-04",
-    "departure_time": "06:45:00",
-    "arrival_airport_name": "Singapore Changi Airport",
-    "arrival_airport_city": "Singapore",
-    "arrival_airport_country": "Singapore",
-    "arrival_airport_code": "SIN",
-    "arrival_date": "2024-12-04",
-    "arrival_time": "18:15:00",
-    "duration": "8h 30m",
-    "connections_or_stops": 2,
-    "aircraft_type": "Airbus A320",
-    "flight_id": "FL842",
-    "economy_class_price": 176.3,
-    "business_class_price": 922.91,
-    "first_class_price": 2086.5
-  },
-  {
-    "departure_airport_name": "Heathrow Airport",
-    "departure_airport_city": "London",
-    "departure_airport_country": "United Kingdom",
-    "departure_airport_code": "LHR",
-    "departure_date": "2024-12-04",
-    "departure_time": "16:45:00",
-    "arrival_airport_name": "Chhatrapati Shivaji Maharaj International Airport",
-    "arrival_airport_city": "Mumbai",
-    "arrival_airport_country": "India",
-    "arrival_airport_code": "BOM",
-    "arrival_date": "2024-12-07",
-    "arrival_time": "23:45:00",
-    "duration": "8h 30m",
-    "connections_or_stops": 2,
-    "aircraft_type": "Embraer 190",
-    "flight_id": "FL630",
-    "economy_class_price": 311.78,
-    "business_class_price": 764.42,
-    "first_class_price": 2028.2
-  },
-  {
-    "departure_airport_name": "Singapore Changi Airport",
-    "departure_airport_city": "Singapore",
-    "departure_airport_country": "Singapore",
-    "departure_airport_code": "SIN",
-    "departure_date": "2024-12-01",
-    "departure_time": "20:15:00",
-    "arrival_airport_name": "Heathrow Airport",
-    "arrival_airport_city": "London",
-    "arrival_airport_country": "United Kingdom",
-    "arrival_airport_code": "LHR",
-    "arrival_date": "2024-12-08",
-    "arrival_time": "06:00:00",
-    "duration": "4h 45m",
-    "connections_or_stops": 2,
-    "aircraft_type": "Boeing 777",
-    "flight_id": "FL866",
-    "economy_class_price": 178.29,
-    "business_class_price": 878.25,
-    "first_class_price": 2132.41
-  },
-  {
-    "departure_airport_name": "Toronto Pearson International Airport",
-    "departure_airport_city": "Toronto",
-    "departure_airport_country": "Canada",
-    "departure_airport_code": "YYZ",
-    "departure_date": "2024-12-04",
-    "departure_time": "10:45:00",
-    "arrival_airport_name": "Heathrow Airport",
-    "arrival_airport_city": "London",
-    "arrival_airport_country": "United Kingdom",
-    "arrival_airport_code": "LHR",
-    "arrival_date": "2024-12-01",
-    "arrival_time": "07:00:00",
-    "duration": "12h 30m",
-    "connections_or_stops": 0,
-    "aircraft_type": "Embraer 190",
-    "flight_id": "FL763",
-    "economy_class_price": 190.78,
-    "business_class_price": 913.63,
-    "first_class_price": 2032.36
-  },
-  {
-    "departure_airport_name": "Heathrow Airport",
-    "departure_airport_city": "London",
-    "departure_airport_country": "United Kingdom",
-    "departure_airport_code": "LHR",
-    "departure_date": "2024-12-01",
-    "departure_time": "06:15:00",
-    "arrival_airport_name": "Singapore Changi Airport",
-    "arrival_airport_city": "Singapore",
-    "arrival_airport_country": "Singapore",
-    "arrival_airport_code": "SIN",
-    "arrival_date": "2024-11-29",
-    "arrival_time": "06:00:00",
-    "duration": "8h 45m",
-    "connections_or_stops": 0,
-    "aircraft_type": "Embraer 190",
-    "flight_id": "FL686",
-    "economy_class_price": 161.79,
-    "business_class_price": 915.27,
-    "first_class_price": 2054.15
-  },
-  {
-    "departure_airport_name": "Heathrow Airport",
-    "departure_airport_city": "London",
-    "departure_airport_country": "United Kingdom",
-    "departure_airport_code": "LHR",
-    "departure_date": "2024-12-03",
-    "departure_time": "12:30:00",
-    "arrival_airport_name": "Singapore Changi Airport",
-    "arrival_airport_city": "Singapore",
-    "arrival_airport_country": "Singapore",
-    "arrival_airport_code": "SIN",
-    "arrival_date": "2024-11-28",
-    "arrival_time": "06:00:00",
-    "duration": "13h 0m",
-    "connections_or_stops": 2,
-    "aircraft_type": "Boeing 737",
-    "flight_id": "FL716",
-    "economy_class_price": 203.4,
-    "business_class_price": 881.56,
-    "first_class_price": 2101.27
-  },
-  {
-    "departure_airport_name": "Heathrow Airport",
-    "departure_airport_city": "London",
-    "departure_airport_country": "United Kingdom",
-    "departure_airport_code": "LHR",
-    "departure_date": "2024-11-27",
-    "departure_time": "07:15:00",
-    "arrival_airport_name": "Chhatrapati Shivaji Maharaj International Airport",
-    "arrival_airport_city": "Mumbai",
-    "arrival_airport_country": "India",
-    "arrival_airport_code": "BOM",
-    "arrival_date": "2024-11-29",
-    "arrival_time": "18:45:00",
-    "duration": "11h 30m",
-    "connections_or_stops": 2,
-    "aircraft_type": "Embraer 190",
-    "flight_id": "FL313",
-    "economy_class_price": 337.94,
-    "business_class_price": 847.57,
-    "first_class_price": 2041.57
-  },
-  {
-    "departure_airport_name": "Toronto Pearson International Airport",
-    "departure_airport_city": "Toronto",
-    "departure_airport_country": "Canada",
-    "departure_airport_code": "YYZ",
-    "departure_date": "2024-11-30",
-    "departure_time": "23:00:00",
-    "arrival_airport_name": "John F. Kennedy International Airport",
-    "arrival_airport_city": "New York",
-    "arrival_airport_country": "United States",
-    "arrival_airport_code": "JFK",
-    "arrival_date": "2024-12-07",
-    "arrival_time": "06:00:00",
-    "duration": "14h 0m",
-    "connections_or_stops": 2,
-    "aircraft_type": "Airbus A320",
-    "flight_id": "FL977",
-    "economy_class_price": 287.16,
-    "business_class_price": 860.58,
-    "first_class_price": 2060.5
-  },
-  {
-    "departure_airport_name": "Chhatrapati Shivaji Maharaj International Airport",
-    "departure_airport_city": "Mumbai",
-    "departure_airport_country": "India",
-    "departure_airport_code": "BOM",
-    "departure_date": "2024-11-28",
-    "departure_time": "14:00:00",
-    "arrival_airport_name": "Toronto Pearson International Airport",
-    "arrival_airport_city": "Toronto",
-    "arrival_airport_country": "Canada",
-    "arrival_airport_code": "YYZ",
-    "arrival_date": "2024-11-29",
-    "arrival_time": "23:15:00",
-    "duration": "6h 15m",
-    "connections_or_stops": 1,
-    "aircraft_type": "Airbus A320",
-    "flight_id": "FL232",
-    "economy_class_price": 281.74,
-    "business_class_price": 855.61,
-    "first_class_price": 2041.42
-  },
-  {
-    "departure_airport_name": "Singapore Changi Airport",
-    "departure_airport_city": "Singapore",
-    "departure_airport_country": "Singapore",
-    "departure_airport_code": "SIN",
-    "departure_date": "2024-12-03",
-    "departure_time": "12:30:00",
-    "arrival_airport_name": "Toronto Pearson International Airport",
-    "arrival_airport_city": "Toronto",
-    "arrival_airport_country": "Canada",
-    "arrival_airport_code": "YYZ",
-    "arrival_date": "2024-11-30",
-    "arrival_time": "10:00:00",
-    "duration": "6h 30m",
-    "connections_or_stops": 0,
-    "aircraft_type": "Boeing 777",
-    "flight_id": "FL858",
-    "economy_class_price": 225.19,
-    "business_class_price": 881.16,
-    "first_class_price": 2102.12
-  },
-  {
-    "departure_airport_name": "Toronto Pearson International Airport",
-    "departure_airport_city": "Toronto",
-    "departure_airport_country": "Canada",
-    "departure_airport_code": "YYZ",
-    "departure_date": "2024-11-25",
-    "departure_time": "18:30:00",
-    "arrival_airport_name": "Heathrow Airport",
-    "arrival_airport_city": "London",
-    "arrival_airport_country": "United Kingdom",
-    "arrival_airport_code": "LHR",
-    "arrival_date": "2024-11-30",
-    "arrival_time": "13:30:00",
-    "duration": "15h 15m",
-    "connections_or_stops": 0,
-    "aircraft_type": "Boeing 737",
-    "flight_id": "FL298",
-    "economy_class_price": 313.17,
-    "business_class_price": 949.47,
-    "first_class_price": 2065.07
-  },
-  {
-    "departure_airport_name": "Heathrow Airport",
-    "departure_airport_city": "London",
-    "departure_airport_country": "United Kingdom",
-    "departure_airport_code": "LHR",
-    "departure_date": "2024-11-25",
-    "departure_time": "19:45:00",
-    "arrival_airport_name": "John F. Kennedy International Airport",
-    "arrival_airport_city": "New York",
-    "arrival_airport_country": "United States",
-    "arrival_airport_code": "JFK",
-    "arrival_date": "2024-12-05",
-    "arrival_time": "17:30:00",
-    "duration": "6h 30m",
-    "connections_or_stops": 2,
-    "aircraft_type": "Embraer 190",
-    "flight_id": "FL323",
-    "economy_class_price": 168.32,
-    "business_class_price": 864.17,
-    "first_class_price": 2070.89
-  },
-  {
-    "departure_airport_name": "John F. Kennedy International Airport",
-    "departure_airport_city": "New York",
-    "departure_airport_country": "United States",
-    "departure_airport_code": "JFK",
-    "departure_date": "2024-11-29",
-    "departure_time": "12:30:00",
-    "arrival_airport_name": "Heathrow Airport",
-    "arrival_airport_city": "London",
-    "arrival_airport_country": "United Kingdom",
-    "arrival_airport_code": "LHR",
-    "arrival_date": "2024-12-01",
-    "arrival_time": "18:00:00",
-    "duration": "14h 30m",
-    "connections_or_stops": 2,
-    "aircraft_type": "Airbus A380",
-    "flight_id": "FL981",
-    "economy_class_price": 158.28,
-    "business_class_price": 946.65,
-    "first_class_price": 2045.22
-  },
-  {
-    "departure_airport_name": "Heathrow Airport",
-    "departure_airport_city": "London",
-    "departure_airport_country": "United Kingdom",
-    "departure_airport_code": "LHR",
-    "departure_date": "2024-11-29",
-    "departure_time": "14:00:00",
-    "arrival_airport_name": "John F. Kennedy International Airport",
-    "arrival_airport_city": "New York",
-    "arrival_airport_country": "United States",
-    "arrival_airport_code": "JFK",
-    "arrival_date": "2024-12-09",
-    "arrival_time": "21:30:00",
-    "duration": "15h 30m",
-    "connections_or_stops": 0,
-    "aircraft_type": "Airbus A380",
-    "flight_id": "FL536",
-    "economy_class_price": 241.52,
-    "business_class_price": 891.42,
-    "first_class_price": 2143.16
-  },
-  {
-    "departure_airport_name": "Chhatrapati Shivaji Maharaj International Airport",
-    "departure_airport_city": "Mumbai",
-    "departure_airport_country": "India",
-    "departure_airport_code": "BOM",
-    "departure_date": "2024-12-01",
-    "departure_time": "15:45:00",
-    "arrival_airport_name": "Singapore Changi Airport",
-    "arrival_airport_city": "Singapore",
-    "arrival_airport_country": "Singapore",
-    "arrival_airport_code": "SIN",
-    "arrival_date": "2024-12-09",
-    "arrival_time": "12:45:00",
-    "duration": "12h 15m",
-    "connections_or_stops": 0,
-    "aircraft_type": "Embraer 190",
-    "flight_id": "FL290",
-    "economy_class_price": 247.21,
-    "business_class_price": 872.99,
-    "first_class_price": 2003.87
-  },
-  {
-    "departure_airport_name": "Toronto Pearson International Airport",
-    "departure_airport_city": "Toronto",
-    "departure_airport_country": "Canada",
-    "departure_airport_code": "YYZ",
-    "departure_date": "2024-12-03",
-    "departure_time": "17:45:00",
-    "arrival_airport_name": "Heathrow Airport",
-    "arrival_airport_city": "London",
-    "arrival_airport_country": "United Kingdom",
-    "arrival_airport_code": "LHR",
-    "arrival_date": "2024-11-29",
-    "arrival_time": "23:15:00",
-    "duration": "3h 45m",
-    "connections_or_stops": 2,
-    "aircraft_type": "Airbus A380",
-    "flight_id": "FL405",
-    "economy_class_price": 167.09,
-    "business_class_price": 755.75,
-    "first_class_price": 1956.43
-  },
-  {
-    "departure_airport_name": "Chhatrapati Shivaji Maharaj International Airport",
-    "departure_airport_city": "Mumbai",
-    "departure_airport_country": "India",
-    "departure_airport_code": "BOM",
-    "departure_date": "2024-11-29",
-    "departure_time": "23:45:00",
-    "arrival_airport_name": "John F. Kennedy International Airport",
-    "arrival_airport_city": "New York",
-    "arrival_airport_country": "United States",
-    "arrival_airport_code": "JFK",
-    "arrival_date": "2024-11-29",
-    "arrival_time": "20:45:00",
-    "duration": "6h 45m",
-    "connections_or_stops": 1,
-    "aircraft_type": "Embraer 190",
-    "flight_id": "FL849",
-    "economy_class_price": 304.65,
-    "business_class_price": 808.21,
-    "first_class_price": 2099.06
-  },
-  {
-    "departure_airport_name": "Heathrow Airport",
-    "departure_airport_city": "London",
-    "departure_airport_country": "United Kingdom",
-    "departure_airport_code": "LHR",
-    "departure_date": "2024-12-03",
-    "departure_time": "10:45:00",
-    "arrival_airport_name": "Chhatrapati Shivaji Maharaj International Airport",
-    "arrival_airport_city": "Mumbai",
-    "arrival_airport_country": "India",
-    "arrival_airport_code": "BOM",
-    "arrival_date": "2024-12-09",
-    "arrival_time": "08:00:00",
-    "duration": "5h 15m",
-    "connections_or_stops": 1,
-    "aircraft_type": "Boeing 777",
-    "flight_id": "FL498",
-    "economy_class_price": 189.93,
-    "business_class_price": 837.87,
-    "first_class_price": 1982.66
-  },
-  {
-    "departure_airport_name": "Chhatrapati Shivaji Maharaj International Airport",
-    "departure_airport_city": "Mumbai",
-    "departure_airport_country": "India",
-    "departure_airport_code": "BOM",
-    "departure_date": "2024-12-01",
-    "departure_time": "14:30:00",
-    "arrival_airport_name": "Toronto Pearson International Airport",
-    "arrival_airport_city": "Toronto",
-    "arrival_airport_country": "Canada",
-    "arrival_airport_code": "YYZ",
-    "arrival_date": "2024-12-04",
-    "arrival_time": "20:00:00",
-    "duration": "2h 45m",
-    "connections_or_stops": 1,
-    "aircraft_type": "Airbus A320",
-    "flight_id": "FL637",
-    "economy_class_price": 202.71,
-    "business_class_price": 810.66,
-    "first_class_price": 2039.87
-  },
-  {
-    "departure_airport_name": "Singapore Changi Airport",
-    "departure_airport_city": "Singapore",
-    "departure_airport_country": "Singapore",
-    "departure_airport_code": "SIN",
-    "departure_date": "2024-12-03",
-    "departure_time": "08:45:00",
-    "arrival_airport_name": "Heathrow Airport",
-    "arrival_airport_city": "London",
-    "arrival_airport_country": "United Kingdom",
-    "arrival_airport_code": "LHR",
-    "arrival_date": "2024-11-29",
-    "arrival_time": "07:30:00",
-    "duration": "1h 0m",
-    "connections_or_stops": 1,
-    "aircraft_type": "Airbus A320",
-    "flight_id": "FL123",
-    "economy_class_price": 183.42,
-    "business_class_price": 906.81,
-    "first_class_price": 2013.03
-  },
-  {
-    "departure_airport_name": "John F. Kennedy International Airport",
-    "departure_airport_city": "New York",
-    "departure_airport_country": "United States",
-    "departure_airport_code": "JFK",
-    "departure_date": "2024-12-01",
-    "departure_time": "06:15:00",
-    "arrival_airport_name": "Heathrow Airport",
-    "arrival_airport_city": "London",
-    "arrival_airport_country": "United Kingdom",
-    "arrival_airport_code": "LHR",
-    "arrival_date": "2024-12-07",
-    "arrival_time": "11:30:00",
-    "duration": "8h 0m",
-    "connections_or_stops": 2,
-    "aircraft_type": "Boeing 777",
-    "flight_id": "FL699",
-    "economy_class_price": 221.93,
-    "business_class_price": 829.82,
-    "first_class_price": 2103.29
-  },
-  {
-    "departure_airport_name": "Heathrow Airport",
-    "departure_airport_city": "London",
-    "departure_airport_country": "United Kingdom",
-    "departure_airport_code": "LHR",
-    "departure_date": "2024-11-30",
-    "departure_time": "10:45:00",
-    "arrival_airport_name": "Toronto Pearson International Airport",
-    "arrival_airport_city": "Toronto",
-    "arrival_airport_country": "Canada",
-    "arrival_airport_code": "YYZ",
-    "arrival_date": "2024-11-26",
-    "arrival_time": "11:30:00",
-    "duration": "9h 45m",
-    "connections_or_stops": 2,
-    "aircraft_type": "Airbus A380",
-    "flight_id": "FL376",
-    "economy_class_price": 280.86,
-    "business_class_price": 827.63,
-    "first_class_price": 2149.29
-  },
-  {
-    "departure_airport_name": "Toronto Pearson International Airport",
-    "departure_airport_city": "Toronto",
-    "departure_airport_country": "Canada",
-    "departure_airport_code": "YYZ",
-    "departure_date": "2024-11-27",
-    "departure_time": "18:45:00",
-    "arrival_airport_name": "John F. Kennedy International Airport",
-    "arrival_airport_city": "New York",
-    "arrival_airport_country": "United States",
-    "arrival_airport_code": "JFK",
-    "arrival_date": "2024-12-04",
-    "arrival_time": "16:00:00",
-    "duration": "8h 0m",
-    "connections_or_stops": 1,
-    "aircraft_type": "Boeing 777",
-    "flight_id": "FL136",
-    "economy_class_price": 318.05,
-    "business_class_price": 812.02,
-    "first_class_price": 2005.19
-  },
-  {
-    "departure_airport_name": "Chhatrapati Shivaji Maharaj International Airport",
-    "departure_airport_city": "Mumbai",
-    "departure_airport_country": "India",
-    "departure_airport_code": "BOM",
-    "departure_date": "2024-11-27",
-    "departure_time": "20:15:00",
-    "arrival_airport_name": "John F. Kennedy International Airport",
-    "arrival_airport_city": "New York",
-    "arrival_airport_country": "United States",
-    "arrival_airport_code": "JFK",
-    "arrival_date": "2024-11-29",
-    "arrival_time": "18:15:00",
-    "duration": "4h 0m",
-    "connections_or_stops": 2,
-    "aircraft_type": "Embraer 190",
-    "flight_id": "FL113",
-    "economy_class_price": 250.22,
-    "business_class_price": 896.88,
-    "first_class_price": 1996.53
-  },
-  {
-    "departure_airport_name": "Singapore Changi Airport",
-    "departure_airport_city": "Singapore",
-    "departure_airport_country": "Singapore",
-    "departure_airport_code": "SIN",
-    "departure_date": "2024-11-29",
-    "departure_time": "05:45:00",
-    "arrival_airport_name": "Heathrow Airport",
-    "arrival_airport_city": "London",
-    "arrival_airport_country": "United Kingdom",
-    "arrival_airport_code": "LHR",
-    "arrival_date": "2024-12-09",
-    "arrival_time": "08:00:00",
-    "duration": "5h 0m",
-    "connections_or_stops": 1,
-    "aircraft_type": "Airbus A380",
-    "flight_id": "FL806",
-    "economy_class_price": 288.7,
-    "business_class_price": 940.53,
-    "first_class_price": 1971.45
-  },
-  {
-    "departure_airport_name": "Toronto Pearson International Airport",
-    "departure_airport_city": "Toronto",
-    "departure_airport_country": "Canada",
-    "departure_airport_code": "YYZ",
-    "departure_date": "2024-11-29",
-    "departure_time": "09:30:00",
-    "arrival_airport_name": "Heathrow Airport",
-    "arrival_airport_city": "London",
-    "arrival_airport_country": "United Kingdom",
-    "arrival_airport_code": "LHR",
-    "arrival_date": "2024-11-30",
-    "arrival_time": "14:30:00",
-    "duration": "13h 45m",
-    "connections_or_stops": 0,
-    "aircraft_type": "Boeing 777",
-    "flight_id": "FL750",
-    "economy_class_price": 266.97,
-    "business_class_price": 863.98,
-    "first_class_price": 2025.28
-  },
-  {
-    "departure_airport_name": "John F. Kennedy International Airport",
-    "departure_airport_city": "New York",
-    "departure_airport_country": "United States",
-    "departure_airport_code": "JFK",
-    "departure_date": "2024-12-01",
-    "departure_time": "11:15:00",
-    "arrival_airport_name": "Heathrow Airport",
-    "arrival_airport_city": "London",
-    "arrival_airport_country": "United Kingdom",
-    "arrival_airport_code": "LHR",
-    "arrival_date": "2024-12-03",
-    "arrival_time": "23:00:00",
-    "duration": "13h 30m",
-    "connections_or_stops": 1,
-    "aircraft_type": "Embraer 190",
-    "flight_id": "FL799",
-    "economy_class_price": 290.25,
-    "business_class_price": 904.43,
-    "first_class_price": 2026.03
-  },
-  {
-    "departure_airport_name": "John F. Kennedy International Airport",
-    "departure_airport_city": "New York",
-    "departure_airport_country": "United States",
-    "departure_airport_code": "JFK",
-    "departure_date": "2024-11-30",
-    "departure_time": "07:45:00",
-    "arrival_airport_name": "Chhatrapati Shivaji Maharaj International Airport",
-    "arrival_airport_city": "Mumbai",
-    "arrival_airport_country": "India",
-    "arrival_airport_code": "BOM",
-    "arrival_date": "2024-12-02",
-    "arrival_time": "17:45:00",
-    "duration": "10h 45m",
-    "connections_or_stops": 1,
-    "aircraft_type": "Embraer 190",
-    "flight_id": "FL897",
-    "economy_class_price": 280.64,
-    "business_class_price": 884.63,
-    "first_class_price": 2000.71
-  },
-  {
-    "departure_airport_name": "Heathrow Airport",
-    "departure_airport_city": "London",
-    "departure_airport_country": "United Kingdom",
-    "departure_airport_code": "LHR",
-    "departure_date": "2024-12-03",
-    "departure_time": "09:00:00",
-    "arrival_airport_name": "Singapore Changi Airport",
-    "arrival_airport_city": "Singapore",
-    "arrival_airport_country": "Singapore",
-    "arrival_airport_code": "SIN",
-    "arrival_date": "2024-12-05",
-    "arrival_time": "21:30:00",
-    "duration": "3h 45m",
-    "connections_or_stops": 0,
-    "aircraft_type": "Embraer 190",
-    "flight_id": "FL813",
-    "economy_class_price": 172.23,
-    "business_class_price": 758.19,
-    "first_class_price": 2035.92
-  },
-  {
-    "departure_airport_name": "Chhatrapati Shivaji Maharaj International Airport",
-    "departure_airport_city": "Mumbai",
-    "departure_airport_country": "India",
-    "departure_airport_code": "BOM",
-    "departure_date": "2024-12-03",
-    "departure_time": "16:15:00",
-    "arrival_airport_name": "Singapore Changi Airport",
-    "arrival_airport_city": "Singapore",
-    "arrival_airport_country": "Singapore",
-    "arrival_airport_code": "SIN",
-    "arrival_date": "2024-11-26",
-    "arrival_time": "18:15:00",
-    "duration": "14h 0m",
-    "connections_or_stops": 2,
-    "aircraft_type": "Boeing 777",
-    "flight_id": "FL933",
-    "economy_class_price": 281.61,
-    "business_class_price": 858.62,
-    "first_class_price": 2148.86
-  },
-  {
-    "departure_airport_name": "John F. Kennedy International Airport",
-    "departure_airport_city": "New York",
-    "departure_airport_country": "United States",
-    "departure_airport_code": "JFK",
-    "departure_date": "2024-12-03",
-    "departure_time": "10:30:00",
-    "arrival_airport_name": "Heathrow Airport",
-    "arrival_airport_city": "London",
-    "arrival_airport_country": "United Kingdom",
-    "arrival_airport_code": "LHR",
-    "arrival_date": "2024-12-02",
-    "arrival_time": "17:30:00",
-    "duration": "11h 30m",
-    "connections_or_stops": 0,
-    "aircraft_type": "Airbus A320",
-    "flight_id": "FL818",
-    "economy_class_price": 322.69,
-    "business_class_price": 877.19,
-    "first_class_price": 2024.05
-  },
-  {
-    "departure_airport_name": "Heathrow Airport",
-    "departure_airport_city": "London",
-    "departure_airport_country": "United Kingdom",
-    "departure_airport_code": "LHR",
-    "departure_date": "2024-12-03",
-    "departure_time": "22:00:00",
-    "arrival_airport_name": "Singapore Changi Airport",
-    "arrival_airport_city": "Singapore",
-    "arrival_airport_country": "Singapore",
-    "arrival_airport_code": "SIN",
-    "arrival_date": "2024-12-07",
-    "arrival_time": "20:45:00",
-    "duration": "1h 0m",
-    "connections_or_stops": 0,
-    "aircraft_type": "Boeing 737",
-    "flight_id": "FL526",
-    "economy_class_price": 222.99,
-    "business_class_price": 925.83,
-    "first_class_price": 2050.3
-  },
-  {
-    "departure_airport_name": "Chhatrapati Shivaji Maharaj International Airport",
-    "departure_airport_city": "Mumbai",
-    "departure_airport_country": "India",
-    "departure_airport_code": "BOM",
-    "departure_date": "2024-12-03",
-    "departure_time": "23:30:00",
-    "arrival_airport_name": "John F. Kennedy International Airport",
-    "arrival_airport_city": "New York",
-    "arrival_airport_country": "United States",
-    "arrival_airport_code": "JFK",
-    "arrival_date": "2024-12-09",
-    "arrival_time": "18:15:00",
-    "duration": "6h 30m",
-    "connections_or_stops": 2,
-    "aircraft_type": "Boeing 737",
-    "flight_id": "FL340",
-    "economy_class_price": 290.24,
-    "business_class_price": 877.06,
-    "first_class_price": 2071.52
-  },
-  {
-    "departure_airport_name": "Toronto Pearson International Airport",
-    "departure_airport_city": "Toronto",
-    "departure_airport_country": "Canada",
-    "departure_airport_code": "YYZ",
-    "departure_date": "2024-11-28",
-    "departure_time": "21:15:00",
-    "arrival_airport_name": "Singapore Changi Airport",
-    "arrival_airport_city": "Singapore",
-    "arrival_airport_country": "Singapore",
-    "arrival_airport_code": "SIN",
-    "arrival_date": "2024-12-01",
-    "arrival_time": "22:15:00",
-    "duration": "9h 30m",
-    "connections_or_stops": 0,
-    "aircraft_type": "Boeing 777",
-    "flight_id": "FL678",
-    "economy_class_price": 283.15,
-    "business_class_price": 823.72,
-    "first_class_price": 2124.07
-  },
-  {
-    "departure_airport_name": "Heathrow Airport",
-    "departure_airport_city": "London",
-    "departure_airport_country": "United Kingdom",
-    "departure_airport_code": "LHR",
-    "departure_date": "2024-12-02",
-    "departure_time": "09:45:00",
-    "arrival_airport_name": "Singapore Changi Airport",
-    "arrival_airport_city": "Singapore",
-    "arrival_airport_country": "Singapore",
-    "arrival_airport_code": "SIN",
-    "arrival_date": "2024-12-05",
-    "arrival_time": "21:15:00",
-    "duration": "2h 15m",
-    "connections_or_stops": 1,
-    "aircraft_type": "Airbus A380",
-    "flight_id": "FL277",
-    "economy_class_price": 239.37,
-    "business_class_price": 933.59,
-    "first_class_price": 1961.37
-  },
-  {
-    "departure_airport_name": "Chhatrapati Shivaji Maharaj International Airport",
-    "departure_airport_city": "Mumbai",
-    "departure_airport_country": "India",
-    "departure_airport_code": "BOM",
-    "departure_date": "2024-12-04",
-    "departure_time": "20:30:00",
-    "arrival_airport_name": "Heathrow Airport",
-    "arrival_airport_city": "London",
-    "arrival_airport_country": "United Kingdom",
-    "arrival_airport_code": "LHR",
-    "arrival_date": "2024-11-28",
-    "arrival_time": "10:30:00",
-    "duration": "13h 45m",
-    "connections_or_stops": 0,
-    "aircraft_type": "Airbus A320",
-    "flight_id": "FL363",
-    "economy_class_price": 272.77,
-    "business_class_price": 846.31,
-    "first_class_price": 2042.02
-  },
-  {
-    "departure_airport_name": "Chhatrapati Shivaji Maharaj International Airport",
-    "departure_airport_city": "Mumbai",
-    "departure_airport_country": "India",
-    "departure_airport_code": "BOM",
-    "departure_date": "2024-11-25",
-    "departure_time": "14:00:00",
-    "arrival_airport_name": "Toronto Pearson International Airport",
-    "arrival_airport_city": "Toronto",
-    "arrival_airport_country": "Canada",
-    "arrival_airport_code": "YYZ",
-    "arrival_date": "2024-12-08",
-    "arrival_time": "11:45:00",
-    "duration": "3h 45m",
-    "connections_or_stops": 2,
-    "aircraft_type": "Airbus A320",
-    "flight_id": "FL384",
-    "economy_class_price": 233.13,
-    "business_class_price": 933.21,
-    "first_class_price": 2122.7
-  },
-  {
-    "departure_airport_name": "Chhatrapati Shivaji Maharaj International Airport",
-    "departure_airport_city": "Mumbai",
-    "departure_airport_country": "India",
-    "departure_airport_code": "BOM",
-    "departure_date": "2024-11-30",
-    "departure_time": "11:15:00",
-    "arrival_airport_name": "Heathrow Airport",
-    "arrival_airport_city": "London",
-    "arrival_airport_country": "United Kingdom",
-    "arrival_airport_code": "LHR",
-    "arrival_date": "2024-11-26",
-    "arrival_time": "16:15:00",
-    "duration": "3h 15m",
-    "connections_or_stops": 1,
-    "aircraft_type": "Airbus A320",
-    "flight_id": "FL118",
-    "economy_class_price": 174.37,
-    "business_class_price": 881.76,
-    "first_class_price": 2137.82
-  }
+    {
+        "departure_airport_name": "Haneda Airport",
+        "departure_airport_city": "Tokyo",
+        "departure_airport_country": "Japan",
+        "departure_airport_code": "HND",
+        "departure_date": "2024-12-13",
+        "departure_time": "04:09:00",
+        "arrival_airport_name": "John F. Kennedy International Airport",
+        "arrival_airport_city": "New York",
+        "arrival_airport_country": "USA",
+        "arrival_airport_code": "JFK",
+        "arrival_date": "2024-12-13",
+        "arrival_time": "08:13:00",
+        "duration": "04h 04m",
+        "connections_or_stops": "1",
+        "connection_city": "Doha",
+        "connection_country": "Qatar",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL5160",
+        "economy_class_price": 266.94,
+        "business_class_price": 934.29,
+        "first_class_price": 2669.4,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Ezeiza International Airport",
+        "departure_airport_city": "Ezeiza",
+        "departure_airport_country": "Argentina",
+        "departure_airport_code": "EZE",
+        "departure_date": "2024-12-15",
+        "departure_time": "23:05:00",
+        "arrival_airport_name": "Haneda Airport",
+        "arrival_airport_city": "Tokyo",
+        "arrival_airport_country": "Japan",
+        "arrival_airport_code": "HND",
+        "arrival_date": "2024-12-15",
+        "arrival_time": "02:57:00",
+        "duration": "21h 52m",
+        "connections_or_stops": "3",
+        "connection_city": "Doha, Istanbul, Istanbul",
+        "connection_country": "Qatar, Turkey, Turkey",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL8696",
+        "economy_class_price": 248.58,
+        "business_class_price": 870.03,
+        "first_class_price": 2485.8,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Ezeiza International Airport",
+        "departure_airport_city": "Ezeiza",
+        "departure_airport_country": "Argentina",
+        "departure_airport_code": "EZE",
+        "departure_date": "2024-12-15",
+        "departure_time": "23:05:00",
+        "arrival_airport_name": "Haneda Airport",
+        "arrival_airport_city": "Tokyo",
+        "arrival_airport_country": "Japan",
+        "arrival_airport_code": "HND",
+        "arrival_date": "2024-12-15",
+        "arrival_time": "02:57:00",
+        "duration": "20h 52m",
+        "connections_or_stops": "2",
+        "connection_city": "Doha, Istanbul, Istanbul",
+        "connection_country": "Qatar, Turkey, Turkey",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL8696",
+        "economy_class_price": 248.58,
+        "business_class_price": 870.03,
+        "first_class_price": 2485.8,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Haneda Airport",
+        "departure_airport_city": "Tokyo",
+        "departure_airport_country": "Japan",
+        "departure_airport_code": "HND",
+        "departure_date": "2024-12-21",
+        "departure_time": "23:05:00",
+        "arrival_airport_name": "Ezeiza International Airport",
+        "arrival_airport_city": "Ezeiza",
+        "arrival_airport_country": "Argentina",
+        "arrival_airport_code": "EZE",
+        "arrival_date": "2024-12-15",
+        "arrival_time": "02:57:00",
+        "duration": "21h 52m",
+        "connections_or_stops": "3",
+        "connection_city": "Doha, Istanbul, Istanbul",
+        "connection_country": "Qatar, Turkey, Turkey",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL8696",
+        "economy_class_price": 248.58,
+        "business_class_price": 870.03,
+        "first_class_price": 2485.8,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Sardar Patel International Airport",
+        "departure_airport_city": "Ahmedabad",
+        "departure_airport_country": "India",
+        "departure_airport_code": "AMD",
+        "departure_date": "2024-12-14",
+        "departure_time": "05:00:00",
+        "arrival_airport_name": "John F. Kennedy International Airport",
+        "arrival_airport_city": "New York",
+        "arrival_airport_country": "USA",
+        "arrival_airport_code": "JFK",
+        "arrival_date": "2024-12-14",
+        "arrival_time": "07:31:00",
+        "duration": "02h 31m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL7482",
+        "economy_class_price": 320.29,
+        "business_class_price": 1121.03,
+        "first_class_price": 3202.94,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Dubai International Airport",
+        "departure_airport_city": "Dubai",
+        "departure_airport_country": "UAE",
+        "departure_airport_code": "DXB",
+        "departure_date": "2024-12-01",
+        "departure_time": "19:03:00",
+        "arrival_airport_name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "arrival_airport_city": "Caracas",
+        "arrival_airport_country": "Venezuela",
+        "arrival_airport_code": "CCS",
+        "arrival_date": "2024-12-01",
+        "arrival_time": "21:53:00",
+        "duration": "02h 50m",
+        "connections_or_stops": "1",
+        "connection_city": "Paris",
+        "connection_country": "France",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL8595",
+        "economy_class_price": 400.68,
+        "business_class_price": 1402.38,
+        "first_class_price": 4006.8,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Dubai International Airport",
+        "departure_airport_city": "Dubai",
+        "departure_airport_country": "UAE",
+        "departure_airport_code": "DXB",
+        "departure_date": "2024-12-30",
+        "departure_time": "22:55:00",
+        "arrival_airport_name": "Haneda Airport",
+        "arrival_airport_city": "Tokyo",
+        "arrival_airport_country": "Japan",
+        "arrival_airport_code": "HND",
+        "arrival_date": "2024-12-30",
+        "arrival_time": "00:45:00",
+        "duration": "-22h 10m",
+        "connections_or_stops": "1",
+        "connection_city": "Singapore",
+        "connection_country": "Singapore",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL7435",
+        "economy_class_price": 399.75,
+        "business_class_price": 1399.13,
+        "first_class_price": 3997.51,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Pearson International Airport",
+        "departure_airport_city": "Toronto",
+        "departure_airport_country": "Canada",
+        "departure_airport_code": "YYZ",
+        "departure_date": "2024-12-30",
+        "departure_time": "14:08:00",
+        "arrival_airport_name": "Dubai International Airport",
+        "arrival_airport_city": "Dubai",
+        "arrival_airport_country": "UAE",
+        "arrival_airport_code": "DXB",
+        "arrival_date": "2024-12-30",
+        "arrival_time": "15:14:00",
+        "duration": "01h 06m",
+        "connections_or_stops": "2",
+        "connection_city": "Paris, Frankfurt",
+        "connection_country": "France, Germany",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL6849",
+        "economy_class_price": 314.93,
+        "business_class_price": 1102.27,
+        "first_class_price": 3149.34,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "John F. Kennedy International Airport",
+        "departure_airport_city": "New York",
+        "departure_airport_country": "USA",
+        "departure_airport_code": "JFK",
+        "departure_date": "2024-12-13",
+        "departure_time": "12:50:00",
+        "arrival_airport_name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "arrival_airport_city": "Caracas",
+        "arrival_airport_country": "Venezuela",
+        "arrival_airport_code": "CCS",
+        "arrival_date": "2024-12-13",
+        "arrival_time": "15:54:00",
+        "duration": "03h 04m",
+        "connections_or_stops": "3",
+        "connection_city": "Doha, Singapore, Frankfurt",
+        "connection_country": "Qatar, Singapore, Germany",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL9741",
+        "economy_class_price": 219.74,
+        "business_class_price": 769.1,
+        "first_class_price": 2197.43,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Dubai International Airport",
+        "departure_airport_city": "Dubai",
+        "departure_airport_country": "UAE",
+        "departure_airport_code": "DXB",
+        "departure_date": "2024-12-15",
+        "departure_time": "03:42:00",
+        "arrival_airport_name": "John F. Kennedy International Airport",
+        "arrival_airport_city": "New York",
+        "arrival_airport_country": "USA",
+        "arrival_airport_code": "JFK",
+        "arrival_date": "2024-12-15",
+        "arrival_time": "06:53:00",
+        "duration": "03h 11m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL8057",
+        "economy_class_price": 269.45,
+        "business_class_price": 943.07,
+        "first_class_price": 2694.48,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Heathrow Airport",
+        "departure_airport_city": "London",
+        "departure_airport_country": "UK",
+        "departure_airport_code": "LHR",
+        "departure_date": "2024-12-12",
+        "departure_time": "10:53:00",
+        "arrival_airport_name": "Ezeiza International Airport",
+        "arrival_airport_city": "Ezeiza",
+        "arrival_airport_country": "Argentina",
+        "arrival_airport_code": "EZE",
+        "arrival_date": "2024-12-12",
+        "arrival_time": "11:44:00",
+        "duration": "01h 09m",
+        "connections_or_stops": "1",
+        "connection_city": "Istanbul",
+        "connection_country": "Turkey",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL3499",
+        "economy_class_price": 298.8,
+        "business_class_price": 1045.81,
+        "first_class_price": 2988.02,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Sardar Patel International Airport",
+        "departure_airport_city": "Ahmedabad",
+        "departure_airport_country": "India",
+        "departure_airport_code": "AMD",
+        "departure_date": "2024-12-07",
+        "departure_time": "20:31:00",
+        "arrival_airport_name": "Pearson International Airport",
+        "arrival_airport_city": "Toronto",
+        "arrival_airport_country": "Canada",
+        "arrival_airport_code": "YYZ",
+        "arrival_date": "2024-12-07",
+        "arrival_time": "21:33:00",
+        "duration": "01h 02m",
+        "connections_or_stops": "3",
+        "connection_city": "Singapore, Frankfurt, Istanbul",
+        "connection_country": "Singapore, Germany, Turkey",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL6278",
+        "economy_class_price": 210.89,
+        "business_class_price": 738.11,
+        "first_class_price": 2108.87,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Sardar Patel International Airport",
+        "departure_airport_city": "Ahmedabad",
+        "departure_airport_country": "India",
+        "departure_airport_code": "AMD",
+        "departure_date": "2024-12-28",
+        "departure_time": "00:02:00",
+        "arrival_airport_name": "Heathrow Airport",
+        "arrival_airport_city": "London",
+        "arrival_airport_country": "UK",
+        "arrival_airport_code": "LHR",
+        "arrival_date": "2024-12-28",
+        "arrival_time": "01:29:00",
+        "duration": "01h 27m",
+        "connections_or_stops": "3",
+        "connection_city": "Frankfurt, Istanbul, Istanbul",
+        "connection_country": "Germany, Turkey, Turkey",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL7396",
+        "economy_class_price": 193.03,
+        "business_class_price": 675.59,
+        "first_class_price": 1930.25,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Pearson International Airport",
+        "departure_airport_city": "Toronto",
+        "departure_airport_country": "Canada",
+        "departure_airport_code": "YYZ",
+        "departure_date": "2024-12-13",
+        "departure_time": "16:47:00",
+        "arrival_airport_name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "arrival_airport_city": "Caracas",
+        "arrival_airport_country": "Venezuela",
+        "arrival_airport_code": "CCS",
+        "arrival_date": "2024-12-13",
+        "arrival_time": "19:55:00",
+        "duration": "03h 08m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL1013",
+        "economy_class_price": 276.69,
+        "business_class_price": 968.4,
+        "first_class_price": 2766.87,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Sardar Patel International Airport",
+        "departure_airport_city": "Ahmedabad",
+        "departure_airport_country": "India",
+        "departure_airport_code": "AMD",
+        "departure_date": "2024-12-10",
+        "departure_time": "15:20:00",
+        "arrival_airport_name": "Pearson International Airport",
+        "arrival_airport_city": "Toronto",
+        "arrival_airport_country": "Canada",
+        "arrival_airport_code": "YYZ",
+        "arrival_date": "2024-12-10",
+        "arrival_time": "18:32:00",
+        "duration": "03h 12m",
+        "connections_or_stops": "1",
+        "connection_city": "Istanbul",
+        "connection_country": "Turkey",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL1110",
+        "economy_class_price": 360.25,
+        "business_class_price": 1260.87,
+        "first_class_price": 3602.48,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Ezeiza International Airport",
+        "departure_airport_city": "Ezeiza",
+        "departure_airport_country": "Argentina",
+        "departure_airport_code": "EZE",
+        "departure_date": "2024-12-12",
+        "departure_time": "04:27:00",
+        "arrival_airport_name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "arrival_airport_city": "Caracas",
+        "arrival_airport_country": "Venezuela",
+        "arrival_airport_code": "CCS",
+        "arrival_date": "2024-12-12",
+        "arrival_time": "07:19:00",
+        "duration": "03h 08m",
+        "connections_or_stops": "2",
+        "connection_city": "Istanbul, Frankfurt",
+        "connection_country": "Turkey, Germany",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL5490",
+        "economy_class_price": 250.18,
+        "business_class_price": 875.61,
+        "first_class_price": 2501.76,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Heathrow Airport",
+        "departure_airport_city": "London",
+        "departure_airport_country": "UK",
+        "departure_airport_code": "LHR",
+        "departure_date": "2024-12-18",
+        "departure_time": "18:37:00",
+        "arrival_airport_name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "arrival_airport_city": "Caracas",
+        "arrival_airport_country": "Venezuela",
+        "arrival_airport_code": "CCS",
+        "arrival_date": "2024-12-18",
+        "arrival_time": "19:19:00",
+        "duration": "01h 18m",
+        "connections_or_stops": "3",
+        "connection_city": "Singapore, Paris, Singapore",
+        "connection_country": "Singapore, France, Singapore",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL1855",
+        "economy_class_price": 175.43,
+        "business_class_price": 614.01,
+        "first_class_price": 1754.31,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Haneda Airport",
+        "departure_airport_city": "Tokyo",
+        "departure_airport_country": "Japan",
+        "departure_airport_code": "HND",
+        "departure_date": "2024-12-27",
+        "departure_time": "02:26:00",
+        "arrival_airport_name": "John F. Kennedy International Airport",
+        "arrival_airport_city": "New York",
+        "arrival_airport_country": "USA",
+        "arrival_airport_code": "JFK",
+        "arrival_date": "2024-12-27",
+        "arrival_time": "03:51:00",
+        "duration": "01h 25m",
+        "connections_or_stops": "3",
+        "connection_city": "Istanbul, Paris, Frankfurt",
+        "connection_country": "Turkey, France, Germany",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL8924",
+        "economy_class_price": 261.51,
+        "business_class_price": 915.29,
+        "first_class_price": 2615.13,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Sardar Patel International Airport",
+        "departure_airport_city": "Ahmedabad",
+        "departure_airport_country": "India",
+        "departure_airport_code": "AMD",
+        "departure_date": "2024-12-15",
+        "departure_time": "19:43:00",
+        "arrival_airport_name": "Heathrow Airport",
+        "arrival_airport_city": "London",
+        "arrival_airport_country": "UK",
+        "arrival_airport_code": "LHR",
+        "arrival_date": "2024-12-15",
+        "arrival_time": "20:47:00",
+        "duration": "01h 04m",
+        "connections_or_stops": "2",
+        "connection_city": "Paris, Doha",
+        "connection_country": "France, Qatar",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL3654",
+        "economy_class_price": 233.11,
+        "business_class_price": 815.89,
+        "first_class_price": 2331.11,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Sardar Patel International Airport",
+        "departure_airport_city": "Ahmedabad",
+        "departure_airport_country": "India",
+        "departure_airport_code": "AMD",
+        "departure_date": "2024-12-04",
+        "departure_time": "00:03:00",
+        "arrival_airport_name": "Haneda Airport",
+        "arrival_airport_city": "Tokyo",
+        "arrival_airport_country": "Japan",
+        "arrival_airport_code": "HND",
+        "arrival_date": "2024-12-04",
+        "arrival_time": "01:32:00",
+        "duration": "01h 29m",
+        "connections_or_stops": "3",
+        "connection_city": "Paris, Istanbul, Doha",
+        "connection_country": "France, Turkey, Qatar",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL7738",
+        "economy_class_price": 278.47,
+        "business_class_price": 974.65,
+        "first_class_price": 2784.72,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "departure_airport_city": "Caracas",
+        "departure_airport_country": "Venezuela",
+        "departure_airport_code": "CCS",
+        "departure_date": "2024-12-01",
+        "departure_time": "18:01:00",
+        "arrival_airport_name": "Ezeiza International Airport",
+        "arrival_airport_city": "Ezeiza",
+        "arrival_airport_country": "Argentina",
+        "arrival_airport_code": "EZE",
+        "arrival_date": "2024-12-01",
+        "arrival_time": "21:29:00",
+        "duration": "03h 28m",
+        "connections_or_stops": "2",
+        "connection_city": "Singapore, Doha",
+        "connection_country": "Singapore, Qatar",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL6638",
+        "economy_class_price": 223.83,
+        "business_class_price": 783.41,
+        "first_class_price": 2238.31,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Ezeiza International Airport",
+        "departure_airport_city": "Ezeiza",
+        "departure_airport_country": "Argentina",
+        "departure_airport_code": "EZE",
+        "departure_date": "2024-12-14",
+        "departure_time": "21:05:00",
+        "arrival_airport_name": "Sardar Patel International Airport",
+        "arrival_airport_city": "Ahmedabad",
+        "arrival_airport_country": "India",
+        "arrival_airport_code": "AMD",
+        "arrival_date": "2024-12-14",
+        "arrival_time": "01:57:00",
+        "duration": "-20h 52m",
+        "connections_or_stops": "2",
+        "connection_city": "Paris, Frankfurt",
+        "connection_country": "France, Germany",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL8551",
+        "economy_class_price": 362.86,
+        "business_class_price": 1270.01,
+        "first_class_price": 3628.6,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "departure_airport_city": "Caracas",
+        "departure_airport_country": "Venezuela",
+        "departure_airport_code": "CCS",
+        "departure_date": "2024-12-29",
+        "departure_time": "05:48:00",
+        "arrival_airport_name": "Sardar Patel International Airport",
+        "arrival_airport_city": "Ahmedabad",
+        "arrival_airport_country": "India",
+        "arrival_airport_code": "AMD",
+        "arrival_date": "2024-12-29",
+        "arrival_time": "06:21:00",
+        "duration": "01h 27m",
+        "connections_or_stops": "3",
+        "connection_city": "Istanbul, Doha, Paris",
+        "connection_country": "Turkey, Qatar, France",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL4243",
+        "economy_class_price": 264.2,
+        "business_class_price": 924.69,
+        "first_class_price": 2641.98,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "John F. Kennedy International Airport",
+        "departure_airport_city": "New York",
+        "departure_airport_country": "USA",
+        "departure_airport_code": "JFK",
+        "departure_date": "2024-12-07",
+        "departure_time": "04:58:00",
+        "arrival_airport_name": "Pearson International Airport",
+        "arrival_airport_city": "Toronto",
+        "arrival_airport_country": "Canada",
+        "arrival_airport_code": "YYZ",
+        "arrival_date": "2024-12-07",
+        "arrival_time": "06:02:00",
+        "duration": "02h 56m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL8649",
+        "economy_class_price": 327.07,
+        "business_class_price": 1144.74,
+        "first_class_price": 3270.67,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Pearson International Airport",
+        "departure_airport_city": "Toronto",
+        "departure_airport_country": "Canada",
+        "departure_airport_code": "YYZ",
+        "departure_date": "2024-12-07",
+        "departure_time": "11:02:00",
+        "arrival_airport_name": "John F. Kennedy International Airport",
+        "arrival_airport_city": "New York",
+        "arrival_airport_country": "USA",
+        "arrival_airport_code": "JFK",
+        "arrival_date": "2024-12-07",
+        "arrival_time": "12:53:00",
+        "duration": "01h 51m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL2934",
+        "economy_class_price": 315.11,
+        "business_class_price": 1102.89,
+        "first_class_price": 3151.11,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "John F. Kennedy International Airport",
+        "departure_airport_city": "New York",
+        "departure_airport_country": "USA",
+        "departure_airport_code": "JFK",
+        "departure_date": "2024-12-11",
+        "departure_time": "14:21:00",
+        "arrival_airport_name": "Ezeiza International Airport",
+        "arrival_airport_city": "Ezeiza",
+        "arrival_airport_country": "Argentina",
+        "arrival_airport_code": "EZE",
+        "arrival_date": "2024-12-11",
+        "arrival_time": "16:25:00",
+        "duration": "02h 04m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL7837",
+        "economy_class_price": 444.39,
+        "business_class_price": 1555.37,
+        "first_class_price": 4443.92,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Pearson International Airport",
+        "departure_airport_city": "Toronto",
+        "departure_airport_country": "Canada",
+        "departure_airport_code": "YYZ",
+        "departure_date": "2024-12-16",
+        "departure_time": "15:47:00",
+        "arrival_airport_name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "arrival_airport_city": "Caracas",
+        "arrival_airport_country": "Venezuela",
+        "arrival_airport_code": "CCS",
+        "arrival_date": "2024-12-16",
+        "arrival_time": "17:29:00",
+        "duration": "02h 18m",
+        "connections_or_stops": "1",
+        "connection_city": "Frankfurt",
+        "connection_country": "Germany",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL7691",
+        "economy_class_price": 377.08,
+        "business_class_price": 1319.78,
+        "first_class_price": 3770.79,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Heathrow Airport",
+        "departure_airport_city": "London",
+        "departure_airport_country": "UK",
+        "departure_airport_code": "LHR",
+        "departure_date": "2024-12-26",
+        "departure_time": "11:55:00",
+        "arrival_airport_name": "Dubai International Airport",
+        "arrival_airport_city": "Dubai",
+        "arrival_airport_country": "UAE",
+        "arrival_airport_code": "DXB",
+        "arrival_date": "2024-12-26",
+        "arrival_time": "13:10:00",
+        "duration": "02h 45m",
+        "connections_or_stops": "1",
+        "connection_city": "Frankfurt",
+        "connection_country": "Germany",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL1030",
+        "economy_class_price": 323.96,
+        "business_class_price": 1133.86,
+        "first_class_price": 3239.59,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Haneda Airport",
+        "departure_airport_city": "Tokyo",
+        "departure_airport_country": "Japan",
+        "departure_airport_code": "HND",
+        "departure_date": "2024-12-24",
+        "departure_time": "08:48:00",
+        "arrival_airport_name": "Dubai International Airport",
+        "arrival_airport_city": "Dubai",
+        "arrival_airport_country": "UAE",
+        "arrival_airport_code": "DXB",
+        "arrival_date": "2024-12-24",
+        "arrival_time": "09:17:00",
+        "duration": "01h 31m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL7474",
+        "economy_class_price": 421.88,
+        "business_class_price": 1476.57,
+        "first_class_price": 4218.77,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Sardar Patel International Airport",
+        "departure_airport_city": "Ahmedabad",
+        "departure_airport_country": "India",
+        "departure_airport_code": "AMD",
+        "departure_date": "2024-12-12",
+        "departure_time": "10:55:00",
+        "arrival_airport_name": "Heathrow Airport",
+        "arrival_airport_city": "London",
+        "arrival_airport_country": "UK",
+        "arrival_airport_code": "LHR",
+        "arrival_date": "2024-12-12",
+        "arrival_time": "11:37:00",
+        "duration": "01h 18m",
+        "connections_or_stops": "3",
+        "connection_city": "Frankfurt, Paris, Doha",
+        "connection_country": "Germany, France, Qatar",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL6912",
+        "economy_class_price": 278.94,
+        "business_class_price": 976.29,
+        "first_class_price": 2789.4,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Pearson International Airport",
+        "departure_airport_city": "Toronto",
+        "departure_airport_country": "Canada",
+        "departure_airport_code": "YYZ",
+        "departure_date": "2024-12-06",
+        "departure_time": "11:05:00",
+        "arrival_airport_name": "Ezeiza International Airport",
+        "arrival_airport_city": "Ezeiza",
+        "arrival_airport_country": "Argentina",
+        "arrival_airport_code": "EZE",
+        "arrival_date": "2024-12-06",
+        "arrival_time": "15:25:00",
+        "duration": "04h 20m",
+        "connections_or_stops": "1",
+        "connection_city": "Singapore",
+        "connection_country": "Singapore",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL7135",
+        "economy_class_price": 351.4,
+        "business_class_price": 1229.89,
+        "first_class_price": 3513.96,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "John F. Kennedy International Airport",
+        "departure_airport_city": "New York",
+        "departure_airport_country": "USA",
+        "departure_airport_code": "JFK",
+        "departure_date": "2024-12-22",
+        "departure_time": "20:54:00",
+        "arrival_airport_name": "Haneda Airport",
+        "arrival_airport_city": "Tokyo",
+        "arrival_airport_country": "Japan",
+        "arrival_airport_code": "HND",
+        "arrival_date": "2024-12-22",
+        "arrival_time": "23:59:00",
+        "duration": "03h 05m",
+        "connections_or_stops": "2",
+        "connection_city": "Singapore, Singapore",
+        "connection_country": "Singapore, Singapore",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL4149",
+        "economy_class_price": 209.28,
+        "business_class_price": 732.48,
+        "first_class_price": 2092.8,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Haneda Airport",
+        "departure_airport_city": "Tokyo",
+        "departure_airport_country": "Japan",
+        "departure_airport_code": "HND",
+        "departure_date": "2024-12-07",
+        "departure_time": "21:20:00",
+        "arrival_airport_name": "Heathrow Airport",
+        "arrival_airport_city": "London",
+        "arrival_airport_country": "UK",
+        "arrival_airport_code": "LHR",
+        "arrival_date": "2024-12-07",
+        "arrival_time": "23:19:00",
+        "duration": "02h 01m",
+        "connections_or_stops": "2",
+        "connection_city": "Singapore, Paris",
+        "connection_country": "Singapore, France",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL3785",
+        "economy_class_price": 296.18,
+        "business_class_price": 1036.62,
+        "first_class_price": 2961.78,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Pearson International Airport",
+        "departure_airport_city": "Toronto",
+        "departure_airport_country": "Canada",
+        "departure_airport_code": "YYZ",
+        "departure_date": "2024-12-17",
+        "departure_time": "08:10:00",
+        "arrival_airport_name": "Ezeiza International Airport",
+        "arrival_airport_city": "Ezeiza",
+        "arrival_airport_country": "Argentina",
+        "arrival_airport_code": "EZE",
+        "arrival_date": "2024-12-17",
+        "arrival_time": "09:24:00",
+        "duration": "01h 14m",
+        "connections_or_stops": "1",
+        "connection_city": "Doha",
+        "connection_country": "Qatar",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL9814",
+        "economy_class_price": 279.08,
+        "business_class_price": 976.78,
+        "first_class_price": 2790.79,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "departure_airport_city": "Caracas",
+        "departure_airport_country": "Venezuela",
+        "departure_airport_code": "CCS",
+        "departure_date": "2024-12-05",
+        "departure_time": "15:34:00",
+        "arrival_airport_name": "John F. Kennedy International Airport",
+        "arrival_airport_city": "New York",
+        "arrival_airport_country": "USA",
+        "arrival_airport_code": "JFK",
+        "arrival_date": "2024-12-05",
+        "arrival_time": "18:46:00",
+        "duration": "03h 12m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL6879",
+        "economy_class_price": 323.19,
+        "business_class_price": 1131.16,
+        "first_class_price": 3231.89,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Ezeiza International Airport",
+        "departure_airport_city": "Ezeiza",
+        "departure_airport_country": "Argentina",
+        "departure_airport_code": "EZE",
+        "departure_date": "2024-12-19",
+        "departure_time": "03:01:00",
+        "arrival_airport_name": "Dubai International Airport",
+        "arrival_airport_city": "Dubai",
+        "arrival_airport_country": "UAE",
+        "arrival_airport_code": "DXB",
+        "arrival_date": "2024-12-19",
+        "arrival_time": "07:59:00",
+        "duration": "04h 58m",
+        "connections_or_stops": "1",
+        "connection_city": "Singapore",
+        "connection_country": "Singapore",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL4268",
+        "economy_class_price": 392.83,
+        "business_class_price": 1374.89,
+        "first_class_price": 3928.26,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "departure_airport_city": "Caracas",
+        "departure_airport_country": "Venezuela",
+        "departure_airport_code": "CCS",
+        "departure_date": "2024-12-22",
+        "departure_time": "13:18:00",
+        "arrival_airport_name": "Dubai International Airport",
+        "arrival_airport_city": "Dubai",
+        "arrival_airport_country": "UAE",
+        "arrival_airport_code": "DXB",
+        "arrival_date": "2024-12-22",
+        "arrival_time": "16:48:00",
+        "duration": "03h 30m",
+        "connections_or_stops": "2",
+        "connection_city": "Frankfurt, Frankfurt",
+        "connection_country": "Germany, Germany",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL2655",
+        "economy_class_price": 285.22,
+        "business_class_price": 998.26,
+        "first_class_price": 2852.16,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Heathrow Airport",
+        "departure_airport_city": "London",
+        "departure_airport_country": "UK",
+        "departure_airport_code": "LHR",
+        "departure_date": "2024-12-07",
+        "departure_time": "04:58:00",
+        "arrival_airport_name": "Dubai International Airport",
+        "arrival_airport_city": "Dubai",
+        "arrival_airport_country": "UAE",
+        "arrival_airport_code": "DXB",
+        "arrival_date": "2024-12-07",
+        "arrival_time": "07:44:00",
+        "duration": "03h 14m",
+        "connections_or_stops": "1",
+        "connection_city": "Singapore",
+        "connection_country": "Singapore",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL1464",
+        "economy_class_price": 397.01,
+        "business_class_price": 1389.53,
+        "first_class_price": 3970.09,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Pearson International Airport",
+        "departure_airport_city": "Toronto",
+        "departure_airport_country": "Canada",
+        "departure_airport_code": "YYZ",
+        "departure_date": "2024-12-04",
+        "departure_time": "16:41:00",
+        "arrival_airport_name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "arrival_airport_city": "Caracas",
+        "arrival_airport_country": "Venezuela",
+        "arrival_airport_code": "CCS",
+        "arrival_date": "2024-12-04",
+        "arrival_time": "18:49:00",
+        "duration": "02h 08m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL4051",
+        "economy_class_price": 463.17,
+        "business_class_price": 1621.1,
+        "first_class_price": 4631.71,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Pearson International Airport",
+        "departure_airport_city": "Toronto",
+        "departure_airport_country": "Canada",
+        "departure_airport_code": "YYZ",
+        "departure_date": "2024-12-03",
+        "departure_time": "14:05:00",
+        "arrival_airport_name": "Dubai International Airport",
+        "arrival_airport_city": "Dubai",
+        "arrival_airport_country": "UAE",
+        "arrival_airport_code": "DXB",
+        "arrival_date": "2024-12-03",
+        "arrival_time": "18:20:00",
+        "duration": "04h 15m",
+        "connections_or_stops": "2",
+        "connection_city": "Singapore, Doha",
+        "connection_country": "Singapore, Qatar",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL8525",
+        "economy_class_price": 202.1,
+        "business_class_price": 707.36,
+        "first_class_price": 2021.03,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Haneda Airport",
+        "departure_airport_city": "Tokyo",
+        "departure_airport_country": "Japan",
+        "departure_airport_code": "HND",
+        "departure_date": "2024-12-30",
+        "departure_time": "10:13:00",
+        "arrival_airport_name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "arrival_airport_city": "Caracas",
+        "arrival_airport_country": "Venezuela",
+        "arrival_airport_code": "CCS",
+        "arrival_date": "2024-12-30",
+        "arrival_time": "14:43:00",
+        "duration": "04h 30m",
+        "connections_or_stops": "2",
+        "connection_city": "Frankfurt, Frankfurt",
+        "connection_country": "Germany, Germany",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL8225",
+        "economy_class_price": 244.95,
+        "business_class_price": 857.31,
+        "first_class_price": 2449.45,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "John F. Kennedy International Airport",
+        "departure_airport_city": "New York",
+        "departure_airport_country": "USA",
+        "departure_airport_code": "JFK",
+        "departure_date": "2024-12-16",
+        "departure_time": "05:12:00",
+        "arrival_airport_name": "Heathrow Airport",
+        "arrival_airport_city": "London",
+        "arrival_airport_country": "UK",
+        "arrival_airport_code": "LHR",
+        "arrival_date": "2024-12-16",
+        "arrival_time": "08:32:00",
+        "duration": "03h 20m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL8921",
+        "economy_class_price": 358.56,
+        "business_class_price": 1254.95,
+        "first_class_price": 3585.56,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Pearson International Airport",
+        "departure_airport_city": "Toronto",
+        "departure_airport_country": "Canada",
+        "departure_airport_code": "YYZ",
+        "departure_date": "2024-12-26",
+        "departure_time": "00:37:00",
+        "arrival_airport_name": "Dubai International Airport",
+        "arrival_airport_city": "Dubai",
+        "arrival_airport_country": "UAE",
+        "arrival_airport_code": "DXB",
+        "arrival_date": "2024-12-26",
+        "arrival_time": "02:38:00",
+        "duration": "02h 01m",
+        "connections_or_stops": "2",
+        "connection_city": "Doha, Frankfurt",
+        "connection_country": "Qatar, Germany",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL4534",
+        "economy_class_price": 322.44,
+        "business_class_price": 1128.55,
+        "first_class_price": 3224.44,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "departure_airport_city": "Caracas",
+        "departure_airport_country": "Venezuela",
+        "departure_airport_code": "CCS",
+        "departure_date": "2024-12-10",
+        "departure_time": "23:40:00",
+        "arrival_airport_name": "Ezeiza International Airport",
+        "arrival_airport_city": "Ezeiza",
+        "arrival_airport_country": "Argentina",
+        "arrival_airport_code": "EZE",
+        "arrival_date": "2024-12-10",
+        "arrival_time": "03:59:00",
+        "duration": "-20h 19m",
+        "connections_or_stops": "1",
+        "connection_city": "Doha",
+        "connection_country": "Qatar",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL2610",
+        "economy_class_price": 285.92,
+        "business_class_price": 1000.74,
+        "first_class_price": 2859.24,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Haneda Airport",
+        "departure_airport_city": "Tokyo",
+        "departure_airport_country": "Japan",
+        "departure_airport_code": "HND",
+        "departure_date": "2024-12-14",
+        "departure_time": "10:05:00",
+        "arrival_airport_name": "Pearson International Airport",
+        "arrival_airport_city": "Toronto",
+        "arrival_airport_country": "Canada",
+        "arrival_airport_code": "YYZ",
+        "arrival_date": "2024-12-14",
+        "arrival_time": "11:33:00",
+        "duration": "01h 28m",
+        "connections_or_stops": "2",
+        "connection_city": "Frankfurt, Frankfurt",
+        "connection_country": "Germany, Germany",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL5286",
+        "economy_class_price": 217.81,
+        "business_class_price": 762.35,
+        "first_class_price": 2178.14,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Heathrow Airport",
+        "departure_airport_city": "London",
+        "departure_airport_country": "UK",
+        "departure_airport_code": "LHR",
+        "departure_date": "2024-12-27",
+        "departure_time": "01:31:00",
+        "arrival_airport_name": "John F. Kennedy International Airport",
+        "arrival_airport_city": "New York",
+        "arrival_airport_country": "USA",
+        "arrival_airport_code": "JFK",
+        "arrival_date": "2024-12-27",
+        "arrival_time": "05:35:00",
+        "duration": "04h 04m",
+        "connections_or_stops": "1",
+        "connection_city": "Istanbul",
+        "connection_country": "Turkey",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL1472",
+        "economy_class_price": 266.71,
+        "business_class_price": 933.47,
+        "first_class_price": 2667.07,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Ezeiza International Airport",
+        "departure_airport_city": "Ezeiza",
+        "departure_airport_country": "Argentina",
+        "departure_airport_code": "EZE",
+        "departure_date": "2024-12-14",
+        "departure_time": "06:52:00",
+        "arrival_airport_name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "arrival_airport_city": "Caracas",
+        "arrival_airport_country": "Venezuela",
+        "arrival_airport_code": "CCS",
+        "arrival_date": "2024-12-14",
+        "arrival_time": "09:43:00",
+        "duration": "03h 09m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL8903",
+        "economy_class_price": 387.47,
+        "business_class_price": 1356.16,
+        "first_class_price": 3874.73,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "John F. Kennedy International Airport",
+        "departure_airport_city": "New York",
+        "departure_airport_country": "USA",
+        "departure_airport_code": "JFK",
+        "departure_date": "2024-12-15",
+        "departure_time": "04:29:00",
+        "arrival_airport_name": "Heathrow Airport",
+        "arrival_airport_city": "London",
+        "arrival_airport_country": "UK",
+        "arrival_airport_code": "LHR",
+        "arrival_date": "2024-12-15",
+        "arrival_time": "08:02:00",
+        "duration": "04h 27m",
+        "connections_or_stops": "2",
+        "connection_city": "Paris, Singapore",
+        "connection_country": "France, Singapore",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL1460",
+        "economy_class_price": 306.7,
+        "business_class_price": 1073.45,
+        "first_class_price": 3067.01,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Ezeiza International Airport",
+        "departure_airport_city": "Ezeiza",
+        "departure_airport_country": "Argentina",
+        "departure_airport_code": "EZE",
+        "departure_date": "2024-12-28",
+        "departure_time": "08:48:00",
+        "arrival_airport_name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "arrival_airport_city": "Caracas",
+        "arrival_airport_country": "Venezuela",
+        "arrival_airport_code": "CCS",
+        "arrival_date": "2024-12-28",
+        "arrival_time": "11:20:00",
+        "duration": "03h 28m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL8711",
+        "economy_class_price": 439.31,
+        "business_class_price": 1537.6,
+        "first_class_price": 4393.14,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "John F. Kennedy International Airport",
+        "departure_airport_city": "New York",
+        "departure_airport_country": "USA",
+        "departure_airport_code": "JFK",
+        "departure_date": "2024-12-19",
+        "departure_time": "05:43:00",
+        "arrival_airport_name": "Ezeiza International Airport",
+        "arrival_airport_city": "Ezeiza",
+        "arrival_airport_country": "Argentina",
+        "arrival_airport_code": "EZE",
+        "arrival_date": "2024-12-19",
+        "arrival_time": "06:59:00",
+        "duration": "01h 16m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL7422",
+        "economy_class_price": 376.67,
+        "business_class_price": 1318.35,
+        "first_class_price": 3766.72,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "John F. Kennedy International Airport",
+        "departure_airport_city": "New York",
+        "departure_airport_country": "USA",
+        "departure_airport_code": "JFK",
+        "departure_date": "2024-12-04",
+        "departure_time": "11:39:00",
+        "arrival_airport_name": "Sardar Patel International Airport",
+        "arrival_airport_city": "Ahmedabad",
+        "arrival_airport_country": "India",
+        "arrival_airport_code": "AMD",
+        "arrival_date": "2024-12-04",
+        "arrival_time": "15:51:00",
+        "duration": "04h 12m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL4403",
+        "economy_class_price": 288.96,
+        "business_class_price": 1011.34,
+        "first_class_price": 2889.56,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Sardar Patel International Airport",
+        "departure_airport_city": "Ahmedabad",
+        "departure_airport_country": "India",
+        "departure_airport_code": "AMD",
+        "departure_date": "2024-12-10",
+        "departure_time": "08:09:00",
+        "arrival_airport_name": "John F. Kennedy International Airport",
+        "arrival_airport_city": "New York",
+        "arrival_airport_country": "USA",
+        "arrival_airport_code": "JFK",
+        "arrival_date": "2024-12-10",
+        "arrival_time": "12:18:00",
+        "duration": "04h 09m",
+        "connections_or_stops": "2",
+        "connection_city": "Frankfurt, Frankfurt",
+        "connection_country": "Germany, Germany",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL7847",
+        "economy_class_price": 333.31,
+        "business_class_price": 1166.58,
+        "first_class_price": 3333.1,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "John F. Kennedy International Airport",
+        "departure_airport_city": "New York",
+        "departure_airport_country": "USA",
+        "departure_airport_code": "JFK",
+        "departure_date": "2024-12-08",
+        "departure_time": "22:10:00",
+        "arrival_airport_name": "Pearson International Airport",
+        "arrival_airport_city": "Toronto",
+        "arrival_airport_country": "Canada",
+        "arrival_airport_code": "YYZ",
+        "arrival_date": "2024-12-08",
+        "arrival_time": "01:41:00",
+        "duration": "-21h 31m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL9909",
+        "economy_class_price": 325.11,
+        "business_class_price": 1137.87,
+        "first_class_price": 3251.06,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Heathrow Airport",
+        "departure_airport_city": "London",
+        "departure_airport_country": "UK",
+        "departure_airport_code": "LHR",
+        "departure_date": "2024-12-27",
+        "departure_time": "23:36:00",
+        "arrival_airport_name": "Pearson International Airport",
+        "arrival_airport_city": "Toronto",
+        "arrival_airport_country": "Canada",
+        "arrival_airport_code": "YYZ",
+        "arrival_date": "2024-12-27",
+        "arrival_time": "01:23:00",
+        "duration": "-22h 13m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL3922",
+        "economy_class_price": 417.78,
+        "business_class_price": 1462.24,
+        "first_class_price": 4177.83,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "John F. Kennedy International Airport",
+        "departure_airport_city": "New York",
+        "departure_airport_country": "USA",
+        "departure_airport_code": "JFK",
+        "departure_date": "2024-12-07",
+        "departure_time": "07:39:00",
+        "arrival_airport_name": "Heathrow Airport",
+        "arrival_airport_city": "London",
+        "arrival_airport_country": "UK",
+        "arrival_airport_code": "LHR",
+        "arrival_date": "2024-12-07",
+        "arrival_time": "11:43:00",
+        "duration": "04h 04m",
+        "connections_or_stops": "3",
+        "connection_city": "Singapore, Singapore, Paris",
+        "connection_country": "Singapore, Singapore, France",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL8321",
+        "economy_class_price": 240.41,
+        "business_class_price": 841.42,
+        "first_class_price": 2404.06,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Dubai International Airport",
+        "departure_airport_city": "Dubai",
+        "departure_airport_country": "UAE",
+        "departure_airport_code": "DXB",
+        "departure_date": "2024-12-15",
+        "departure_time": "00:54:00",
+        "arrival_airport_name": "Ezeiza International Airport",
+        "arrival_airport_city": "Ezeiza",
+        "arrival_airport_country": "Argentina",
+        "arrival_airport_code": "EZE",
+        "arrival_date": "2024-12-15",
+        "arrival_time": "01:42:00",
+        "duration": "01h 12m",
+        "connections_or_stops": "3",
+        "connection_city": "Frankfurt, Singapore, Istanbul",
+        "connection_country": "Germany, Singapore, Turkey",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL9322",
+        "economy_class_price": 263.67,
+        "business_class_price": 922.83,
+        "first_class_price": 2636.66,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "departure_airport_city": "Caracas",
+        "departure_airport_country": "Venezuela",
+        "departure_airport_code": "CCS",
+        "departure_date": "2024-12-01",
+        "departure_time": "09:22:00",
+        "arrival_airport_name": "John F. Kennedy International Airport",
+        "arrival_airport_city": "New York",
+        "arrival_airport_country": "USA",
+        "arrival_airport_code": "JFK",
+        "arrival_date": "2024-12-01",
+        "arrival_time": "12:48:00",
+        "duration": "03h 26m",
+        "connections_or_stops": "1",
+        "connection_city": "Frankfurt",
+        "connection_country": "Germany",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL7869",
+        "economy_class_price": 459.86,
+        "business_class_price": 1609.52,
+        "first_class_price": 4598.62,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Pearson International Airport",
+        "departure_airport_city": "Toronto",
+        "departure_airport_country": "Canada",
+        "departure_airport_code": "YYZ",
+        "departure_date": "2024-12-30",
+        "departure_time": "01:46:00",
+        "arrival_airport_name": "John F. Kennedy International Airport",
+        "arrival_airport_city": "New York",
+        "arrival_airport_country": "USA",
+        "arrival_airport_code": "JFK",
+        "arrival_date": "2024-12-30",
+        "arrival_time": "05:08:00",
+        "duration": "04h 38m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL1334",
+        "economy_class_price": 464.53,
+        "business_class_price": 1625.85,
+        "first_class_price": 4645.27,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Pearson International Airport",
+        "departure_airport_city": "Toronto",
+        "departure_airport_country": "Canada",
+        "departure_airport_code": "YYZ",
+        "departure_date": "2024-12-22",
+        "departure_time": "12:51:00",
+        "arrival_airport_name": "John F. Kennedy International Airport",
+        "arrival_airport_city": "New York",
+        "arrival_airport_country": "USA",
+        "arrival_airport_code": "JFK",
+        "arrival_date": "2024-12-22",
+        "arrival_time": "16:41:00",
+        "duration": "04h 10m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL1297",
+        "economy_class_price": 462.15,
+        "business_class_price": 1617.51,
+        "first_class_price": 4621.45,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Dubai International Airport",
+        "departure_airport_city": "Dubai",
+        "departure_airport_country": "UAE",
+        "departure_airport_code": "DXB",
+        "departure_date": "2024-12-21",
+        "departure_time": "02:57:00",
+        "arrival_airport_name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "arrival_airport_city": "Caracas",
+        "arrival_airport_country": "Venezuela",
+        "arrival_airport_code": "CCS",
+        "arrival_date": "2024-12-21",
+        "arrival_time": "04:35:00",
+        "duration": "02h 22m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL5693",
+        "economy_class_price": 270.96,
+        "business_class_price": 948.34,
+        "first_class_price": 2709.55,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Haneda Airport",
+        "departure_airport_city": "Tokyo",
+        "departure_airport_country": "Japan",
+        "departure_airport_code": "HND",
+        "departure_date": "2024-12-01",
+        "departure_time": "18:17:00",
+        "arrival_airport_name": "John F. Kennedy International Airport",
+        "arrival_airport_city": "New York",
+        "arrival_airport_country": "USA",
+        "arrival_airport_code": "JFK",
+        "arrival_date": "2024-12-01",
+        "arrival_time": "21:45:00",
+        "duration": "03h 28m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL7246",
+        "economy_class_price": 290.71,
+        "business_class_price": 1017.48,
+        "first_class_price": 2907.08,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "John F. Kennedy International Airport",
+        "departure_airport_city": "New York",
+        "departure_airport_country": "USA",
+        "departure_airport_code": "JFK",
+        "departure_date": "2024-12-01",
+        "departure_time": "14:31:00",
+        "arrival_airport_name": "Pearson International Airport",
+        "arrival_airport_city": "Toronto",
+        "arrival_airport_country": "Canada",
+        "arrival_airport_code": "YYZ",
+        "arrival_date": "2024-12-01",
+        "arrival_time": "16:21:00",
+        "duration": "02h 10m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL8633",
+        "economy_class_price": 272.92,
+        "business_class_price": 955.22,
+        "first_class_price": 2729.19,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Haneda Airport",
+        "departure_airport_city": "Tokyo",
+        "departure_airport_country": "Japan",
+        "departure_airport_code": "HND",
+        "departure_date": "2024-12-03",
+        "departure_time": "10:40:00",
+        "arrival_airport_name": "Ezeiza International Airport",
+        "arrival_airport_city": "Ezeiza",
+        "arrival_airport_country": "Argentina",
+        "arrival_airport_code": "EZE",
+        "arrival_date": "2024-12-03",
+        "arrival_time": "13:02:00",
+        "duration": "03h 38m",
+        "connections_or_stops": "1",
+        "connection_city": "Frankfurt",
+        "connection_country": "Germany",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL9474",
+        "economy_class_price": 333.11,
+        "business_class_price": 1165.88,
+        "first_class_price": 3331.1,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Heathrow Airport",
+        "departure_airport_city": "London",
+        "departure_airport_country": "UK",
+        "departure_airport_code": "LHR",
+        "departure_date": "2024-12-17",
+        "departure_time": "02:45:00",
+        "arrival_airport_name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "arrival_airport_city": "Caracas",
+        "arrival_airport_country": "Venezuela",
+        "arrival_airport_code": "CCS",
+        "arrival_date": "2024-12-17",
+        "arrival_time": "03:45:00",
+        "duration": "01h 00m",
+        "connections_or_stops": "3",
+        "connection_city": "Paris, Paris, Singapore",
+        "connection_country": "France, France, Singapore",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL3329",
+        "economy_class_price": 319.69,
+        "business_class_price": 1118.92,
+        "first_class_price": 3196.92,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Sardar Patel International Airport",
+        "departure_airport_city": "Ahmedabad",
+        "departure_airport_country": "India",
+        "departure_airport_code": "AMD",
+        "departure_date": "2024-12-10",
+        "departure_time": "14:40:00",
+        "arrival_airport_name": "John F. Kennedy International Airport",
+        "arrival_airport_city": "New York",
+        "arrival_airport_country": "USA",
+        "arrival_airport_code": "JFK",
+        "arrival_date": "2024-12-10",
+        "arrival_time": "18:08:00",
+        "duration": "04h 32m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL3030",
+        "economy_class_price": 351.84,
+        "business_class_price": 1231.46,
+        "first_class_price": 3518.45,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Ezeiza International Airport",
+        "departure_airport_city": "Ezeiza",
+        "departure_airport_country": "Argentina",
+        "departure_airport_code": "EZE",
+        "departure_date": "2024-12-14",
+        "departure_time": "08:05:00",
+        "arrival_airport_name": "John F. Kennedy International Airport",
+        "arrival_airport_city": "New York",
+        "arrival_airport_country": "USA",
+        "arrival_airport_code": "JFK",
+        "arrival_date": "2024-12-14",
+        "arrival_time": "09:35:00",
+        "duration": "01h 30m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL9644",
+        "economy_class_price": 351.85,
+        "business_class_price": 1231.48,
+        "first_class_price": 3518.51,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Ezeiza International Airport",
+        "departure_airport_city": "Ezeiza",
+        "departure_airport_country": "Argentina",
+        "departure_airport_code": "EZE",
+        "departure_date": "2024-12-29",
+        "departure_time": "14:37:00",
+        "arrival_airport_name": "Haneda Airport",
+        "arrival_airport_city": "Tokyo",
+        "arrival_airport_country": "Japan",
+        "arrival_airport_code": "HND",
+        "arrival_date": "2024-12-29",
+        "arrival_time": "16:25:00",
+        "duration": "02h 12m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL4471",
+        "economy_class_price": 389.89,
+        "business_class_price": 1364.62,
+        "first_class_price": 3898.91,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "departure_airport_city": "Caracas",
+        "departure_airport_country": "Venezuela",
+        "departure_airport_code": "CCS",
+        "departure_date": "2024-12-23",
+        "departure_time": "20:45:00",
+        "arrival_airport_name": "Sardar Patel International Airport",
+        "arrival_airport_city": "Ahmedabad",
+        "arrival_airport_country": "India",
+        "arrival_airport_code": "AMD",
+        "arrival_date": "2024-12-23",
+        "arrival_time": "23:02:00",
+        "duration": "03h 43m",
+        "connections_or_stops": "3",
+        "connection_city": "Singapore, Istanbul, Singapore",
+        "connection_country": "Singapore, Turkey, Singapore",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL5115",
+        "economy_class_price": 256.35,
+        "business_class_price": 897.23,
+        "first_class_price": 2563.53,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Haneda Airport",
+        "departure_airport_city": "Tokyo",
+        "departure_airport_country": "Japan",
+        "departure_airport_code": "HND",
+        "departure_date": "2024-12-30",
+        "departure_time": "21:15:00",
+        "arrival_airport_name": "John F. Kennedy International Airport",
+        "arrival_airport_city": "New York",
+        "arrival_airport_country": "USA",
+        "arrival_airport_code": "JFK",
+        "arrival_date": "2024-12-30",
+        "arrival_time": "00:14:00",
+        "duration": "-21h 01m",
+        "connections_or_stops": "1",
+        "connection_city": "Istanbul",
+        "connection_country": "Turkey",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL6236",
+        "economy_class_price": 291.11,
+        "business_class_price": 1018.88,
+        "first_class_price": 2911.09,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Heathrow Airport",
+        "departure_airport_city": "London",
+        "departure_airport_country": "UK",
+        "departure_airport_code": "LHR",
+        "departure_date": "2024-12-07",
+        "departure_time": "12:24:00",
+        "arrival_airport_name": "John F. Kennedy International Airport",
+        "arrival_airport_city": "New York",
+        "arrival_airport_country": "USA",
+        "arrival_airport_code": "JFK",
+        "arrival_date": "2024-12-07",
+        "arrival_time": "15:18:00",
+        "duration": "03h 06m",
+        "connections_or_stops": "3",
+        "connection_city": "Doha, Singapore, Istanbul",
+        "connection_country": "Qatar, Singapore, Turkey",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL4825",
+        "economy_class_price": 257.11,
+        "business_class_price": 899.9,
+        "first_class_price": 2571.15,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Ezeiza International Airport",
+        "departure_airport_city": "Ezeiza",
+        "departure_airport_country": "Argentina",
+        "departure_airport_code": "EZE",
+        "departure_date": "2024-12-19",
+        "departure_time": "04:41:00",
+        "arrival_airport_name": "John F. Kennedy International Airport",
+        "arrival_airport_city": "New York",
+        "arrival_airport_country": "USA",
+        "arrival_airport_code": "JFK",
+        "arrival_date": "2024-12-19",
+        "arrival_time": "06:02:00",
+        "duration": "02h 39m",
+        "connections_or_stops": "3",
+        "connection_city": "Doha, Istanbul, Istanbul",
+        "connection_country": "Qatar, Turkey, Turkey",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL6827",
+        "economy_class_price": 296.32,
+        "business_class_price": 1037.13,
+        "first_class_price": 2963.22,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "departure_airport_city": "Caracas",
+        "departure_airport_country": "Venezuela",
+        "departure_airport_code": "CCS",
+        "departure_date": "2024-12-16",
+        "departure_time": "13:58:00",
+        "arrival_airport_name": "John F. Kennedy International Airport",
+        "arrival_airport_city": "New York",
+        "arrival_airport_country": "USA",
+        "arrival_airport_code": "JFK",
+        "arrival_date": "2024-12-16",
+        "arrival_time": "14:32:00",
+        "duration": "01h 26m",
+        "connections_or_stops": "1",
+        "connection_city": "Istanbul",
+        "connection_country": "Turkey",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL7667",
+        "economy_class_price": 319.92,
+        "business_class_price": 1119.7,
+        "first_class_price": 3199.15,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "departure_airport_city": "Caracas",
+        "departure_airport_country": "Venezuela",
+        "departure_airport_code": "CCS",
+        "departure_date": "2024-12-28",
+        "departure_time": "18:31:00",
+        "arrival_airport_name": "Dubai International Airport",
+        "arrival_airport_city": "Dubai",
+        "arrival_airport_country": "UAE",
+        "arrival_airport_code": "DXB",
+        "arrival_date": "2024-12-28",
+        "arrival_time": "22:25:00",
+        "duration": "04h 06m",
+        "connections_or_stops": "3",
+        "connection_city": "Paris, Istanbul, Singapore",
+        "connection_country": "France, Turkey, Singapore",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL6981",
+        "economy_class_price": 168.36,
+        "business_class_price": 589.28,
+        "first_class_price": 1683.65,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "departure_airport_city": "Caracas",
+        "departure_airport_country": "Venezuela",
+        "departure_airport_code": "CCS",
+        "departure_date": "2024-12-11",
+        "departure_time": "08:33:00",
+        "arrival_airport_name": "Haneda Airport",
+        "arrival_airport_city": "Tokyo",
+        "arrival_airport_country": "Japan",
+        "arrival_airport_code": "HND",
+        "arrival_date": "2024-12-11",
+        "arrival_time": "09:33:00",
+        "duration": "01h 00m",
+        "connections_or_stops": "3",
+        "connection_city": "Singapore, Istanbul, Doha",
+        "connection_country": "Singapore, Turkey, Qatar",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL1302",
+        "economy_class_price": 279.96,
+        "business_class_price": 979.87,
+        "first_class_price": 2799.62,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Haneda Airport",
+        "departure_airport_city": "Tokyo",
+        "departure_airport_country": "Japan",
+        "departure_airport_code": "HND",
+        "departure_date": "2024-12-12",
+        "departure_time": "13:53:00",
+        "arrival_airport_name": "Ezeiza International Airport",
+        "arrival_airport_city": "Ezeiza",
+        "arrival_airport_country": "Argentina",
+        "arrival_airport_code": "EZE",
+        "arrival_date": "2024-12-12",
+        "arrival_time": "16:12:00",
+        "duration": "03h 41m",
+        "connections_or_stops": "1",
+        "connection_city": "Frankfurt",
+        "connection_country": "Germany",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL4757",
+        "economy_class_price": 367.09,
+        "business_class_price": 1284.81,
+        "first_class_price": 3670.89,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Haneda Airport",
+        "departure_airport_city": "Tokyo",
+        "departure_airport_country": "Japan",
+        "departure_airport_code": "HND",
+        "departure_date": "2024-12-22",
+        "departure_time": "19:08:00",
+        "arrival_airport_name": "Sardar Patel International Airport",
+        "arrival_airport_city": "Ahmedabad",
+        "arrival_airport_country": "India",
+        "arrival_airport_code": "AMD",
+        "arrival_date": "2024-12-22",
+        "arrival_time": "20:10:00",
+        "duration": "01h 02m",
+        "connections_or_stops": "2",
+        "connection_city": "Doha, Istanbul",
+        "connection_country": "Qatar, Turkey",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL5694",
+        "economy_class_price": 234.88,
+        "business_class_price": 822.09,
+        "first_class_price": 2348.82,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Ezeiza International Airport",
+        "departure_airport_city": "Ezeiza",
+        "departure_airport_country": "Argentina",
+        "departure_airport_code": "EZE",
+        "departure_date": "2024-12-15",
+        "departure_time": "00:04:00",
+        "arrival_airport_name": "Heathrow Airport",
+        "arrival_airport_city": "London",
+        "arrival_airport_country": "UK",
+        "arrival_airport_code": "LHR",
+        "arrival_date": "2024-12-15",
+        "arrival_time": "03:28:00",
+        "duration": "03h 24m",
+        "connections_or_stops": "2",
+        "connection_city": "Paris, Paris",
+        "connection_country": "France, France",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL3287",
+        "economy_class_price": 257.02,
+        "business_class_price": 899.56,
+        "first_class_price": 2570.18,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Ezeiza International Airport",
+        "departure_airport_city": "Ezeiza",
+        "departure_airport_country": "Argentina",
+        "departure_airport_code": "EZE",
+        "departure_date": "2024-12-16",
+        "departure_time": "05:56:00",
+        "arrival_airport_name": "Dubai International Airport",
+        "arrival_airport_city": "Dubai",
+        "arrival_airport_country": "UAE",
+        "arrival_airport_code": "DXB",
+        "arrival_date": "2024-12-16",
+        "arrival_time": "06:22:00",
+        "duration": "01h 34m",
+        "connections_or_stops": "2",
+        "connection_city": "Singapore, Doha",
+        "connection_country": "Singapore, Qatar",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL3689",
+        "economy_class_price": 312.17,
+        "business_class_price": 1092.58,
+        "first_class_price": 3121.66,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Haneda Airport",
+        "departure_airport_city": "Tokyo",
+        "departure_airport_country": "Japan",
+        "departure_airport_code": "HND",
+        "departure_date": "2024-12-24",
+        "departure_time": "22:47:00",
+        "arrival_airport_name": "Heathrow Airport",
+        "arrival_airport_city": "London",
+        "arrival_airport_country": "UK",
+        "arrival_airport_code": "LHR",
+        "arrival_date": "2024-12-24",
+        "arrival_time": "00:05:00",
+        "duration": "-22h 42m",
+        "connections_or_stops": "3",
+        "connection_city": "Doha, Paris, Istanbul",
+        "connection_country": "Qatar, France, Turkey",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL1410",
+        "economy_class_price": 185.63,
+        "business_class_price": 649.69,
+        "first_class_price": 1856.27,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Dubai International Airport",
+        "departure_airport_city": "Dubai",
+        "departure_airport_country": "UAE",
+        "departure_airport_code": "DXB",
+        "departure_date": "2024-12-21",
+        "departure_time": "15:37:00",
+        "arrival_airport_name": "Haneda Airport",
+        "arrival_airport_city": "Tokyo",
+        "arrival_airport_country": "Japan",
+        "arrival_airport_code": "HND",
+        "arrival_date": "2024-12-21",
+        "arrival_time": "19:22:00",
+        "duration": "04h 15m",
+        "connections_or_stops": "1",
+        "connection_city": "Paris",
+        "connection_country": "France",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL4041",
+        "economy_class_price": 350.4,
+        "business_class_price": 1226.4,
+        "first_class_price": 3504.01,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Ezeiza International Airport",
+        "departure_airport_city": "Ezeiza",
+        "departure_airport_country": "Argentina",
+        "departure_airport_code": "EZE",
+        "departure_date": "2024-12-15",
+        "departure_time": "13:49:00",
+        "arrival_airport_name": "Heathrow Airport",
+        "arrival_airport_city": "London",
+        "arrival_airport_country": "UK",
+        "arrival_airport_code": "LHR",
+        "arrival_date": "2024-12-15",
+        "arrival_time": "15:48:00",
+        "duration": "02h 01m",
+        "connections_or_stops": "1",
+        "connection_city": "Paris",
+        "connection_country": "France",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL4011",
+        "economy_class_price": 412.27,
+        "business_class_price": 1442.93,
+        "first_class_price": 4122.66,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Ezeiza International Airport",
+        "departure_airport_city": "Ezeiza",
+        "departure_airport_country": "Argentina",
+        "departure_airport_code": "EZE",
+        "departure_date": "2024-12-10",
+        "departure_time": "23:42:00",
+        "arrival_airport_name": "John F. Kennedy International Airport",
+        "arrival_airport_city": "New York",
+        "arrival_airport_country": "USA",
+        "arrival_airport_code": "JFK",
+        "arrival_date": "2024-12-10",
+        "arrival_time": "01:41:00",
+        "duration": "-22h 01m",
+        "connections_or_stops": "2",
+        "connection_city": "Istanbul, Istanbul",
+        "connection_country": "Turkey, Turkey",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL5046",
+        "economy_class_price": 196.54,
+        "business_class_price": 687.89,
+        "first_class_price": 1965.4,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Heathrow Airport",
+        "departure_airport_city": "London",
+        "departure_airport_country": "UK",
+        "departure_airport_code": "LHR",
+        "departure_date": "2024-12-06",
+        "departure_time": "03:36:00",
+        "arrival_airport_name": "Sardar Patel International Airport",
+        "arrival_airport_city": "Ahmedabad",
+        "arrival_airport_country": "India",
+        "arrival_airport_code": "AMD",
+        "arrival_date": "2024-12-06",
+        "arrival_time": "07:29:00",
+        "duration": "04h 07m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL4889",
+        "economy_class_price": 434.71,
+        "business_class_price": 1521.49,
+        "first_class_price": 4347.11,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Dubai International Airport",
+        "departure_airport_city": "Dubai",
+        "departure_airport_country": "UAE",
+        "departure_airport_code": "DXB",
+        "departure_date": "2024-12-07",
+        "departure_time": "23:27:00",
+        "arrival_airport_name": "Heathrow Airport",
+        "arrival_airport_city": "London",
+        "arrival_airport_country": "UK",
+        "arrival_airport_code": "LHR",
+        "arrival_date": "2024-12-07",
+        "arrival_time": "00:02:00",
+        "duration": "-23h 25m",
+        "connections_or_stops": "3",
+        "connection_city": "Singapore, Doha, Singapore",
+        "connection_country": "Singapore, Qatar, Singapore",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL7376",
+        "economy_class_price": 333.8,
+        "business_class_price": 1168.3,
+        "first_class_price": 3338.0,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Haneda Airport",
+        "departure_airport_city": "Tokyo",
+        "departure_airport_country": "Japan",
+        "departure_airport_code": "HND",
+        "departure_date": "2024-12-09",
+        "departure_time": "16:54:00",
+        "arrival_airport_name": "Ezeiza International Airport",
+        "arrival_airport_city": "Ezeiza",
+        "arrival_airport_country": "Argentina",
+        "arrival_airport_code": "EZE",
+        "arrival_date": "2024-12-09",
+        "arrival_time": "20:20:00",
+        "duration": "04h 34m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL7176",
+        "economy_class_price": 397.05,
+        "business_class_price": 1389.67,
+        "first_class_price": 3970.49,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Pearson International Airport",
+        "departure_airport_city": "Toronto",
+        "departure_airport_country": "Canada",
+        "departure_airport_code": "YYZ",
+        "departure_date": "2024-12-18",
+        "departure_time": "03:09:00",
+        "arrival_airport_name": "John F. Kennedy International Airport",
+        "arrival_airport_city": "New York",
+        "arrival_airport_country": "USA",
+        "arrival_airport_code": "JFK",
+        "arrival_date": "2024-12-18",
+        "arrival_time": "06:12:00",
+        "duration": "03h 03m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL4728",
+        "economy_class_price": 363.37,
+        "business_class_price": 1271.8,
+        "first_class_price": 3633.7,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Heathrow Airport",
+        "departure_airport_city": "London",
+        "departure_airport_country": "UK",
+        "departure_airport_code": "LHR",
+        "departure_date": "2024-12-26",
+        "departure_time": "01:14:00",
+        "arrival_airport_name": "Sardar Patel International Airport",
+        "arrival_airport_city": "Ahmedabad",
+        "arrival_airport_country": "India",
+        "arrival_airport_code": "AMD",
+        "arrival_date": "2024-12-26",
+        "arrival_time": "03:02:00",
+        "duration": "02h 12m",
+        "connections_or_stops": "2",
+        "connection_city": "Doha, Frankfurt",
+        "connection_country": "Qatar, Germany",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL7871",
+        "economy_class_price": 380.37,
+        "business_class_price": 1331.31,
+        "first_class_price": 3803.75,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Dubai International Airport",
+        "departure_airport_city": "Dubai",
+        "departure_airport_country": "UAE",
+        "departure_airport_code": "DXB",
+        "departure_date": "2024-12-01",
+        "departure_time": "23:15:00",
+        "arrival_airport_name": "Haneda Airport",
+        "arrival_airport_city": "Tokyo",
+        "arrival_airport_country": "Japan",
+        "arrival_airport_code": "HND",
+        "arrival_date": "2024-12-01",
+        "arrival_time": "01:21:00",
+        "duration": "-22h 06m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL8581",
+        "economy_class_price": 418.6,
+        "business_class_price": 1465.09,
+        "first_class_price": 4185.97,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Haneda Airport",
+        "departure_airport_city": "Tokyo",
+        "departure_airport_country": "Japan",
+        "departure_airport_code": "HND",
+        "departure_date": "2024-12-24",
+        "departure_time": "10:12:00",
+        "arrival_airport_name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "arrival_airport_city": "Caracas",
+        "arrival_airport_country": "Venezuela",
+        "arrival_airport_code": "CCS",
+        "arrival_date": "2024-12-24",
+        "arrival_time": "11:31:00",
+        "duration": "01h 19m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL6689",
+        "economy_class_price": 357.03,
+        "business_class_price": 1249.59,
+        "first_class_price": 3570.27,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Pearson International Airport",
+        "departure_airport_city": "Toronto",
+        "departure_airport_country": "Canada",
+        "departure_airport_code": "YYZ",
+        "departure_date": "2024-12-12",
+        "departure_time": "17:41:00",
+        "arrival_airport_name": "Sardar Patel International Airport",
+        "arrival_airport_city": "Ahmedabad",
+        "arrival_airport_country": "India",
+        "arrival_airport_code": "AMD",
+        "arrival_date": "2024-12-12",
+        "arrival_time": "19:01:00",
+        "duration": "02h 40m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL9969",
+        "economy_class_price": 467.83,
+        "business_class_price": 1637.41,
+        "first_class_price": 4678.32,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Pearson International Airport",
+        "departure_airport_city": "Toronto",
+        "departure_airport_country": "Canada",
+        "departure_airport_code": "YYZ",
+        "departure_date": "2024-12-08",
+        "departure_time": "19:38:00",
+        "arrival_airport_name": "John F. Kennedy International Airport",
+        "arrival_airport_city": "New York",
+        "arrival_airport_country": "USA",
+        "arrival_airport_code": "JFK",
+        "arrival_date": "2024-12-08",
+        "arrival_time": "20:48:00",
+        "duration": "01h 10m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL2305",
+        "economy_class_price": 278.98,
+        "business_class_price": 976.44,
+        "first_class_price": 2789.83,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Pearson International Airport",
+        "departure_airport_city": "Toronto",
+        "departure_airport_country": "Canada",
+        "departure_airport_code": "YYZ",
+        "departure_date": "2024-12-08",
+        "departure_time": "21:39:00",
+        "arrival_airport_name": "John F. Kennedy International Airport",
+        "arrival_airport_city": "New York",
+        "arrival_airport_country": "USA",
+        "arrival_airport_code": "JFK",
+        "arrival_date": "2024-12-08",
+        "arrival_time": "01:39:00",
+        "duration": "-20h 00m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL1019",
+        "economy_class_price": 461.97,
+        "business_class_price": 1616.91,
+        "first_class_price": 4619.73,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Sardar Patel International Airport",
+        "departure_airport_city": "Ahmedabad",
+        "departure_airport_country": "India",
+        "departure_airport_code": "AMD",
+        "departure_date": "2024-12-20",
+        "departure_time": "02:12:00",
+        "arrival_airport_name": "Dubai International Airport",
+        "arrival_airport_city": "Dubai",
+        "arrival_airport_country": "UAE",
+        "arrival_airport_code": "DXB",
+        "arrival_date": "2024-12-20",
+        "arrival_time": "04:34:00",
+        "duration": "02h 22m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL2674",
+        "economy_class_price": 287.36,
+        "business_class_price": 1005.76,
+        "first_class_price": 2873.61,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "departure_airport_city": "Caracas",
+        "departure_airport_country": "Venezuela",
+        "departure_airport_code": "CCS",
+        "departure_date": "2024-12-14",
+        "departure_time": "15:52:00",
+        "arrival_airport_name": "Sardar Patel International Airport",
+        "arrival_airport_city": "Ahmedabad",
+        "arrival_airport_country": "India",
+        "arrival_airport_code": "AMD",
+        "arrival_date": "2024-12-14",
+        "arrival_time": "16:40:00",
+        "duration": "01h 12m",
+        "connections_or_stops": "3",
+        "connection_city": "Frankfurt, Doha, Frankfurt",
+        "connection_country": "Germany, Qatar, Germany",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL6633",
+        "economy_class_price": 195.86,
+        "business_class_price": 685.51,
+        "first_class_price": 1958.61,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "departure_airport_city": "Caracas",
+        "departure_airport_country": "Venezuela",
+        "departure_airport_code": "CCS",
+        "departure_date": "2024-12-13",
+        "departure_time": "04:51:00",
+        "arrival_airport_name": "Pearson International Airport",
+        "arrival_airport_city": "Toronto",
+        "arrival_airport_country": "Canada",
+        "arrival_airport_code": "YYZ",
+        "arrival_date": "2024-12-13",
+        "arrival_time": "05:05:00",
+        "duration": "01h 46m",
+        "connections_or_stops": "3",
+        "connection_city": "Doha, Singapore, Frankfurt",
+        "connection_country": "Qatar, Singapore, Germany",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL2961",
+        "economy_class_price": 344.77,
+        "business_class_price": 1206.7,
+        "first_class_price": 3447.71,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "John F. Kennedy International Airport",
+        "departure_airport_city": "New York",
+        "departure_airport_country": "USA",
+        "departure_airport_code": "JFK",
+        "departure_date": "2024-12-26",
+        "departure_time": "18:30:00",
+        "arrival_airport_name": "Haneda Airport",
+        "arrival_airport_city": "Tokyo",
+        "arrival_airport_country": "Japan",
+        "arrival_airport_code": "HND",
+        "arrival_date": "2024-12-26",
+        "arrival_time": "22:59:00",
+        "duration": "04h 29m",
+        "connections_or_stops": "1",
+        "connection_city": "Singapore",
+        "connection_country": "Singapore",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL9806",
+        "economy_class_price": 351.65,
+        "business_class_price": 1230.78,
+        "first_class_price": 3516.53,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Pearson International Airport",
+        "departure_airport_city": "Toronto",
+        "departure_airport_country": "Canada",
+        "departure_airport_code": "YYZ",
+        "departure_date": "2024-12-08",
+        "departure_time": "06:12:00",
+        "arrival_airport_name": "Haneda Airport",
+        "arrival_airport_city": "Tokyo",
+        "arrival_airport_country": "Japan",
+        "arrival_airport_code": "HND",
+        "arrival_date": "2024-12-08",
+        "arrival_time": "07:25:00",
+        "duration": "01h 13m",
+        "connections_or_stops": "1",
+        "connection_city": "Doha",
+        "connection_country": "Qatar",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL9492",
+        "economy_class_price": 377.78,
+        "business_class_price": 1322.21,
+        "first_class_price": 3777.75,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Ezeiza International Airport",
+        "departure_airport_city": "Ezeiza",
+        "departure_airport_country": "Argentina",
+        "departure_airport_code": "EZE",
+        "departure_date": "2024-12-19",
+        "departure_time": "02:00:00",
+        "arrival_airport_name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "arrival_airport_city": "Caracas",
+        "arrival_airport_country": "Venezuela",
+        "arrival_airport_code": "CCS",
+        "arrival_date": "2024-12-19",
+        "arrival_time": "03:28:00",
+        "duration": "01h 28m",
+        "connections_or_stops": "3",
+        "connection_city": "Paris, Paris, Doha",
+        "connection_country": "France, France, Qatar",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL1057",
+        "economy_class_price": 316.99,
+        "business_class_price": 1109.45,
+        "first_class_price": 3169.87,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Ezeiza International Airport",
+        "departure_airport_city": "Ezeiza",
+        "departure_airport_country": "Argentina",
+        "departure_airport_code": "EZE",
+        "departure_date": "2024-12-10",
+        "departure_time": "17:11:00",
+        "arrival_airport_name": "Sardar Patel International Airport",
+        "arrival_airport_city": "Ahmedabad",
+        "arrival_airport_country": "India",
+        "arrival_airport_code": "AMD",
+        "arrival_date": "2024-12-10",
+        "arrival_time": "19:16:00",
+        "duration": "02h 05m",
+        "connections_or_stops": "2",
+        "connection_city": "Singapore, Doha",
+        "connection_country": "Singapore, Qatar",
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL5866",
+        "economy_class_price": 342.37,
+        "business_class_price": 1198.3,
+        "first_class_price": 3423.7,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "departure_airport_city": "Caracas",
+        "departure_airport_country": "Venezuela",
+        "departure_airport_code": "CCS",
+        "departure_date": "2024-12-03",
+        "departure_time": "01:47:00",
+        "arrival_airport_name": "Haneda Airport",
+        "arrival_airport_city": "Tokyo",
+        "arrival_airport_country": "Japan",
+        "arrival_airport_code": "HND",
+        "arrival_date": "2024-12-03",
+        "arrival_time": "04:50:00",
+        "duration": "03h 03m",
+        "connections_or_stops": "2",
+        "connection_city": "Paris, Doha",
+        "connection_country": "France, Qatar",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL1673",
+        "economy_class_price": 323.24,
+        "business_class_price": 1131.33,
+        "first_class_price": 3232.37,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Dubai International Airport",
+        "departure_airport_city": "Dubai",
+        "departure_airport_country": "UAE",
+        "departure_airport_code": "DXB",
+        "departure_date": "2024-12-28",
+        "departure_time": "08:17:00",
+        "arrival_airport_name": "Ezeiza International Airport",
+        "arrival_airport_city": "Ezeiza",
+        "arrival_airport_country": "Argentina",
+        "arrival_airport_code": "EZE",
+        "arrival_date": "2024-12-28",
+        "arrival_time": "10:29:00",
+        "duration": "02h 12m",
+        "connections_or_stops": "3",
+        "connection_city": "Paris, Doha, Doha",
+        "connection_country": "France, Qatar, Qatar",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL3265",
+        "economy_class_price": 212.9,
+        "business_class_price": 745.14,
+        "first_class_price": 2128.96,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Haneda Airport",
+        "departure_airport_city": "Tokyo",
+        "departure_airport_country": "Japan",
+        "departure_airport_code": "HND",
+        "departure_date": "2024-12-29",
+        "departure_time": "15:54:00",
+        "arrival_airport_name": "Ezeiza International Airport",
+        "arrival_airport_city": "Ezeiza",
+        "arrival_airport_country": "Argentina",
+        "arrival_airport_code": "EZE",
+        "arrival_date": "2024-12-29",
+        "arrival_time": "16:12:00",
+        "duration": "01h 42m",
+        "connections_or_stops": "2",
+        "connection_city": "Singapore, Paris",
+        "connection_country": "Singapore, France",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL2631",
+        "economy_class_price": 286.1,
+        "business_class_price": 1001.35,
+        "first_class_price": 2861.01,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    }
 ]

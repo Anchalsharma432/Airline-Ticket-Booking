@@ -46,7 +46,7 @@ a {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 7em 0; }
+  padding: 1em 0; }
   .probootstrap-cover .overlay {
     position: absolute;
     background: rgba(0, 0, 0, 0.5);
@@ -97,6 +97,8 @@ a {
 
 .navbar-toggler span i {
   font-size: 30px; }
+  
+
 
 .probootstrap_navbar {
   position: absolute;

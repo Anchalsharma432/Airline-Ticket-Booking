@@ -45,6 +45,8 @@
 	};
 	scrollWindow();
 
+
+
 	// login-signup starts
 
 	document.addEventListener("DOMContentLoaded", function () {
@@ -227,9 +229,6 @@
 		  from: document.getElementById('id_label_single').value,
 		  to: document.getElementById('id_label_single2').value,
 		  flightClass: document.getElementById('flight_class').value,
-		  adults: document.getElementById('num_of_adult').value,
-		  children: document.getElementById('num_of_kids').value,
-		  infants: document.getElementById('num_of_infs').value,
 		  departureDate: document.getElementById('probootstrap-date-departure').value,
 		  arrivalDate: document.getElementById('probootstrap-date-arrival').value,
 		};

@@ -121,148 +121,74 @@
                 <label for="flight_class">Class</label>
                 <select class="js-example-basic-single form-control" id="flight_class" style="width: 100%;">
                   <option value="economy">Economy Class</option>
-                  <option value="premium_economy">Premium Economy</option>
                   <option value="business">Business Class</option>
                   <option value="first">First Class</option>
                 </select>
               </div>
             </div>
-            <!-- <label for="probootstrap-date-departure">Passengers</label> -->
             <div class="col-md-2">
               <div class="form-group">
-                <label for="probootstrap-date-departure">Adults</label>
+                <label for="probootstrap-date-departure">Departure</label>
                 <div class="probootstrap-date-wrap">
-                  <input type="number" id="num_of_adult" class="form-control">
+                  <input type="date" id="probootstrap-date-departure" class="form-control">
                 </div>
               </div>
             </div>
             <div class="col-md-2">
               <div class="form-group">
-                <label>Children</label>
+                <label for="probootstrap-date-arrival">Return</label>
                 <div class="probootstrap-date-wrap">
-                  <input type="number" id="num_of_kids" class="form-control">
+                  <input type="date" id="probootstrap-date-arrival" class="form-control">
                 </div>
               </div>
             </div>
             <div class="col-md-2">
-              <div class="form-group">
-                <label>Infants</label>
-                <div class="probootstrap-date-wrap">
-                  <input type="number" id="num_of_infs" class="form-control">
+              <div class="form-group" style="margin-top: 1.5em;">
+                <div class="col-md">
+                  <label for="round" class="mr-5"><input type="radio" id="round" name="direction"
+                      onclick="toggleTextInput(false)" value="round-trip">Round</label>
+                  <label for="oneway"><input type="radio" id="oneway" name="direction"
+                      onclick="toggleTextInput(true)" value="one-way">Oneway</label>
                 </div>
               </div>
             </div>
-          </div>
-<<<<<<< Updated upstream
-        </div>
-        <!-- END row -->
-        <div class="row mb-5">
-          <div class="col-md-3">
-            <div class="form-group">
-              <label for="probootstrap-date-departure">Departure</label>
-              <div class="probootstrap-date-wrap">
-                <input type="date" id="probootstrap-date-departure" class="form-control">
-              </div>
+            <div class="col-md">
+              <input type="submit" value="Search Flights" class="btn btn-primary btn-block">
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="form-group">
-              <label for="probootstrap-date-arrival">Arrival</label>
-              <div class="probootstrap-date-wrap">
-                <input type="date" id="probootstrap-date-arrival" class="form-control">
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3" style="margin-top:2.6em;">
-            <label for="round" class="mr-5"><input type="radio" id="round" name="direction"
-                onclick="toggleTextInput(false)">Round</label>
-            <label for="oneway"><input type="radio" id="oneway" name="direction"
-                onclick="toggleTextInput(true)">Oneway</label>
-          </div>
-          <div class="col-md-3" style="margin-top: 1.8em;">
-            <input type="submit" value="Search Flights" class="btn btn-primary btn-block">
-          </div>
-        </div>
-        <!-- END row -->
-        <div class="row">
-=======
         </form>
       </div>
+      <div class="sort-container">
+        <label for="sort-price">Sort by Price:</label>
+        <select id="sort-price">
+            <option value="low-to-high">Low to High</option>
+            <option value="high-to-low">High to Low</option>
+        </select>
+    
+        <label for="sort-stops">Number of Stops:</label>
+        <select id="sort-stops">
+            <option value="all">All</option>
+            <option value="1">1 Stop</option>
+            <option value="2">2 Stops</option>
+            <option value="3">3 Stops</option>
+            <option value="direct">Direct</option>
+        </select>
+    </div>    
     </div>
     
-    <section class="probootstrap_section bg-light" id="section-contact" style="padding: 3em;">
+    <section class="probootstrap_section bg-light" id="section-contact" style="padding: 0.2em;">
       <div id="containar_for_card">
         <!--searched cards will be loaded here dynamically-->
       </div>
         
     </section>
     <!-- END section -->
->>>>>>> Stashed changes
 
         </div>
     </div>
     </form>
   </div>
   </div>
-
-  <section class="probootstrap_section bg-light" id="section-contact" style="padding: 3em;">
-
-    <div class="card">
-      <div class="card-content">
-        <!-- Left Section -->
-        <div class="card-left">
-          <div class="card-details">
-            <!-- Departure Information -->
-            <div class="departure-info">
-              <span class="departure-code">YYZ</span>
-              <span class="departure-time">13:55</span>
-            </div>
-
-            <!-- Additional Details Above Line -->
-            <div class="middle-details">
-              <div class="">
-                <span class="travel-time">44 hrs 5 mins</span>
-              </div>
-
-              <!-- Horizontal Line -->
-              <div class="divider"></div>
-
-              <!-- Additional Details Below Line -->
-              <div class="stop-info">
-                <span class="stops">1 stop</span>
-              </div>
-            </div>
-
-            <!-- Arrival Information -->
-            <div class="arrival-info">
-              <span class="arrival-code">AMD</span>
-              <span class="arrival-time">13:55</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Section -->
-        <div class="card-right">
-          <div class="card-cabin">
-            <span class="cabin-price">Type</span>
-            <span class="cabin-price">F-ID</span>
-          </div>
-          <div class="card-cabin">
-            <span class="cabin-name">Economy</span>
-            <span class="cabin-price">CAD 2,200.20</span>
-          </div>
-          <div class="card-cabin">
-            <span class="cabin-name">Business</span>
-            <span class="cabin-price">CAD 3,500.50</span>
-          </div>
-          <div class="card-cabin">
-            <span class="cabin-name">First</span>
-            <span class="cabin-price">CAD 6,800.75</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
   <!-- END section -->
 
 
