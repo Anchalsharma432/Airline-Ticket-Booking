@@ -24,7 +24,7 @@ body {
   }
   
   .card {
-    width: 30%; /* Set a fixed size for consistency */
+    max-width: 30%; /* Set a fixed size for consistency */
     background: white;
     border-radius: 8px;
     overflow: hidden;
@@ -144,5 +144,19 @@ body {
   
   .favorite-btn:hover {
     transform: scale(1.2); /* Slight enlarge on hover */
+  }
+
+  @media (max-width: 768px) {
+    .card{
+      max-width: 80%;
+    }
+
+  }
+
+  @media (max-width: 480px) {
+    .card{
+      max-width: 100%;
+    }
+
   }
   

@@ -1,3 +1,13 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.main {
+  flex: 1;  /* Allows the main content area to grow and push the footer down */
+}
+
 /* Position the video background */
 .video-background {
   position: fixed;
@@ -23,6 +33,9 @@
   padding: 20px;
   padding-bottom: 0px;
   max-height: 80%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the content takes full viewport height */
 }
 
 
@@ -124,4 +137,11 @@
   display: inline-block;
   background-color: lightgrey;
   border-radius: 10px;
+}
+
+footer {
+  background: #ECECEC;
+  border-top: 1px solid #ECECEC;
+  text-align: center;
+  padding: 10px;
 }
