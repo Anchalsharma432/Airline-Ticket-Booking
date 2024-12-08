@@ -33,14 +33,6 @@ document.getElementById("sort-stops").addEventListener("change", function () {
   });
 }); */
 
-const validCoupons = {
-  SAVE10: 0.1, // 10% discount
-  SAVE20: 0.2, // 20% discount
-};
-
-let total = 0;
-let discount = 0;
-
 document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener('load', function () {
     // Retrieve the form data from sessionStorage
@@ -175,11 +167,11 @@ document.addEventListener("DOMContentLoaded", function () {
               <span class="cabin-price">CAD ${flight.economy_class_price.toFixed(2)}</span>
               <span>
                 <button
-                  class="btn-primary btn-cart"
+                  class="btn-primary btn-cart btn-add-to-cart"
                   data-flight-id="${flight.flight_id}"
                   data-price="${flight.economy_class_price.toFixed(2)}"
-                  data-departure="${flight.departure_airport_city}"
-                  data-destination="${flight.arrival_airport_city}"
+                  data-departure_city="${flight.departure_airport_city}"
+                  data-destination_city="${flight.arrival_airport_city}"
                   style="font-size: x-small;">
                     Add to Cart
                 </button>
@@ -190,11 +182,11 @@ document.addEventListener("DOMContentLoaded", function () {
               <span class="cabin-price">CAD ${flight.business_class_price.toFixed(2)}</span>
               <span>
                 <button
-                  class="btn-primary btn-cart"
+                  class="btn-primary btn-cart btn-add-to-cart"
                   data-flight-id="${flight.flight_id}"
                   data-price="${flight.business_class_price.toFixed(2)}"
-                  data-departure="${flight.departure_airport_city}"
-                  data-destination="${flight.arrival_airport_city}"
+                  data-departure_city="${flight.departure_airport_city}"
+                  data-destination_city="${flight.arrival_airport_city}"
                   style="font-size: x-small;">
                     Add to Cart
                 </button>
@@ -205,11 +197,11 @@ document.addEventListener("DOMContentLoaded", function () {
               <span class="cabin-price">CAD ${flight.first_class_price.toFixed(2)}</span>
               <span>
                 <button
-                  class="btn-primary btn-cart"
+                  class="btn-primary btn-cart btn-add-to-cart"
                   data-flight-id="${flight.flight_id}"
                   data-price="${flight.first_class_price.toFixed(2)}"
-                  data-departure="${flight.departure_airport_city}"
-                  data-destination="${flight.arrival_airport_city}"
+                  data-departure_city="${flight.departure_airport_city}"
+                  data-destination_city="${flight.arrival_airport_city}"
                   style="font-size: x-small;">
                     Add to Cart
                 </button>
@@ -230,20 +222,6 @@ document.addEventListener("DOMContentLoaded", function () {
     sessionStorage.removeItem('direction');
   });
 
-  ////////////////// CART MANAGEMENT /////////////////////
-
-  // Initialize the cart array (either load from LocalStorage or start with an empty array)
-  let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-  // Toggle sidebar visibility
-  const toggleBar =  document.getElementById("cartSidebar")
-  const toggleSidebar = () => toggleBar.classList.toggle("open");
-  const closeSidebar = document.getElementById('closeSidebar');
-  const cartIcon = document.getElementById("cartIcon");
-
-  cartIcon.addEventListener("click", toggleSidebar);
-  closeSidebar.addEventListener("click", toggleSidebar);
-
   // Function to display flight cards
   window.displayFlights = (flights) => {
     const container = document.getElementById('containar_for_card');
@@ -251,209 +229,5 @@ document.addEventListener("DOMContentLoaded", function () {
   
     flights.map((flight, index) => 
       container.innerHTML += createFlightCard(flight, index));
-    /*
-    flights.forEach((flight) => {
-      container.innerHTML += createFlightCard(flight);
-    });
-    */
-
-    /////////////////////////////////////////////////////////
-    //                   Event Listeners             
-    //        Adding Flights from search to the Cart
-    //////////////////////////////////////////////////////////
-
-    // Adding event listeners for adding to cart from flight cards
-    const cartButtons = document.getElementsByClassName("btn-cart");
-
-    // Loop through the collection of buttons and add an event listener to each
-    Array.from(cartButtons).forEach((button) => {
-        button.addEventListener('click', () => handleAddToCartButtonClick(button));
-    });
-
-    // Function to handle the Add to Cart button (called when clicked)
-    function handleAddToCartButtonClick(button) {
-      // All these values are data attributes that were added to the "Add to Cart button"
-      const flightId = button.getAttribute('data-flight-id');
-      const price = button.getAttribute('data-price');
-      const departure = button.getAttribute('data-departure');
-      const destination = button.getAttribute('data-destination');
-      addToCart(flightId, price, departure, destination);
-    }
-
   }
-
-  // ------------------------------
-  // Functions: Local Storage Handling
-  // ------------------------------
-
-  // Save cart into Browser's Local Storage
-  const saveCartToLocalStorage = () => {
-    // Step 1: Log Cart Data (Debugging)
-    console.log("Saving cart to localStorage:", cart);
-
-    // Step 2: Serialize and Save Data:
-    localStorage.setItem("cart", JSON.stringify(cart));
-  };
-
-  // Load cart from localStorage
-  const loadCartFromLocalStorage = () => {
-    // Step 1: Get Data from localStorage
-    const savedCart = localStorage.getItem("cart"); 
-    console.log(savedCart)
-    console.log("Saved cart from localStorage:", savedCart); // Debug
-
-    if (savedCart) {
-      try {
-        // Step 2: Parse the Retrieved Data
-        const parsedCart = JSON.parse(savedCart);
-        console.log("Parsed cart:", parsedCart); // Debug
-
-        // Step 3: Validate the Parsed Data:
-        if (Array.isArray(parsedCart)) {
-          cart.push(...parsedCart); // Only push if it's an array
-        } else {
-          console.error("Parsed cart is not an array:", parsedCart);
-        }
-      } catch (error) { // Step 4: Handle Parsing Errors
-        console.error("Error parsing cart data from localStorage:", error);
-      }
-    }
-  };
-  
-  // ADD TO CART FUNCTION
-  window.addToCart = (flight_id, price, departure_city, destination_city)  => {
-    // Check if the flight is already in the cart
-    const existingItem = cart.find(item => item.flight_id === flight_id && item.price === price);
-    
-    if (existingItem) {
-      // If item already in cart, increase the quantity
-      existingItem.quantity += 1;
-      console.log("Flight quantity was increased");
-    } else {
-      // If it's a new item, add it to the cart
-      cart.push({
-        flight_id,
-        price,
-        departure_city,
-        destination_city,
-        image_name: destination_city.toLowerCase() + ".jpeg",
-        quantity: 1
-      });
-      console.log("Flight Added to the cart");
-    }
-
-    updateCartCount();
-    updateCartSidebar();
-    updateOrderSummary();
-    saveCartToLocalStorage(); // Save chnages to Local Storage
-  }
-
-  // Update the cart count displayed on the cart icon
-  function updateCartCount() {
-    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-    document.getElementById("cartCount").textContent = totalItems;
-    document.getElementById("totalItems").textContent = `Total Flights: ${totalItems}`;
-  }
-  updateCartCount();
-
-  // Function to update the cart sidebar
-  const cartItems = document.getElementById('cartItems');
-  const updateCartSidebar = () => {
-    cartItems.innerHTML = cart.map((item) => `
-      <div class="cart-item">
-        <div class="item-pic">
-          <div id="item_descrip">
-            <h3>${item.destination_city}</h3>
-            <p>Flight ID: ${item.flight_id}</p>
-            <p>Departure: ${item.departure_city}</p>
-            <p>Price: $${item.price}</p>
-            <div class="cart-item-actions">
-              <button onclick="changeQuantity('${item.flight_id}', '${item.price}', -1)">-</button>
-              <span>Quantity: ${item.quantity}</span>
-              <button onclick="changeQuantity('${item.flight_id}', '${item.price}', 1)">+</button>
-            </div>
-          </div>
-          <div id="car_img">
-            <img src="./assets/images/${item.image_name}" alt="Cart" width="150" height="90">
-          </div>
-        </div>
-        <div class="cart-item-actions">
-          <button id ="removeBtn" onclick="removeItemFromCart('${item.flight_id}', '${item.price}',)">Remove</button>
-        </div>
-      </div>
-    `).join("");
-  };
-  updateCartSidebar();
-
-  // Function to update the order summary (total price)
-  window.updateOrderSummary = () => {
-    total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-    document.getElementById("totalPrice").textContent =  `Total Price: $${(total - discount).toFixed(2)}`;
-  }
-  updateOrderSummary();
-
-  // Apply a discount coupon
-  function applyCoupon()  {
-  const couponInput = document.getElementById('couponInput');
-  const discountInfo = document.getElementById('discountInfo');
-  const applyCoupon = document.getElementById('applyCoupon');
-
-  const couponCode = couponInput.value.trim().toUpperCase();
-  if (validCoupons[couponCode]) {
-    const discountRate = validCoupons[couponCode];
-    discount = total * discountRate;
-
-    // Update UI
-    discountInfo.style.display = "block";
-    discountInfo.textContent = `Discount Applied: -$${discount.toFixed(2)} (${couponCode})`;
-    couponInput.style.display = "none";
-    applyCoupon.style.display = "none";
-
-    // Update total
-    updateOrderSummary();
-  } else {
-      toastr.error("Invalid coupon code! Please try again.");
-  }
-};
-
-// Add event Listener to Apply Coupon Button
-document.getElementById('applyCoupon').addEventListener("click", applyCoupon);
-
-  window.changeQuantity = (flight_id, price, change) => {
-    const flight = cart.find(item => item.flight_id === flight_id && item.price === price);
-    if (flight) {
-      flight.quantity += change;
-      if (flight.quantity === 0) {
-        removeItemFromCart(flight_id, price); // Remove item if quantity is zero
-      } else {
-        updateCartCount(); // Update the cart count
-        updateCartSidebar(); // Update the cart display
-        updateOrderSummary(); // Update total price
-        saveCartToLocalStorage(); // Save chnages to Local Storage
-      }
-    }
-  } 
-
-  const clearAllCart = () => {
-    cart.length = 0;  // Clear all items in the cart
-
-    updateCartCount(); // Update the cart count
-    updateCartSidebar(); // Update the cart sidebar
-    updateOrderSummary(); // Update the order summary
-    saveCartToLocalStorage(); // Save changes to local storage
-  };
-
-  // Add event listener to the Clear All button
-  document.getElementById("clearAllButton").addEventListener("click", clearAllCart);
-
-  // Remove item from cart (called when the user clicks the "Remove" button)
-  window.removeItemFromCart = (flight_id, price) => {
-    cart = cart.filter(flight => !(flight.flight_id === flight_id && flight.price === price));// Remove the item from the cart array
-    console.log("removeItemFromCart - cart: ", cart)
-    updateCartCount(); // Update the cart count
-    updateCartSidebar(); // Update the cart UI
-    updateOrderSummary(); // Update the order summary (total price)
-    saveCartToLocalStorage(); // Save chnages to Local Storage
-  }
-
 });
