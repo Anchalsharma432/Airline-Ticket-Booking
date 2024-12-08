@@ -1,5 +1,3 @@
-// TODO: Copy functionality for all buttons in cart and cart items from passing.js
-
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -210,49 +208,3 @@ function addToCart(flight_id, destination_city, price) {
   updateOrderSummary();
   updateCartSidebar();
 }
-
-    /*
-  
-    function updateFavoritesDisplay() {
-      favoritesList.innerHTML = favorites.map((favorite, index) => `
-        <div class="card">
-          <img src="./assets/images/${favorite.city.toLowerCase()}.jpeg" alt="${favorite.city}" class="destination-image">
-          <h2>${favorite.city}, ${favorite.country}</h2>
-          <p>Promotion Expires: ${favorite.promotionExpirationDate || 'N/A'}</p>
-          <p>Price: $${favorite.price}</p>
-          <div class="quantity-control">
-            <button class="quantity-btn" onclick="decreaseQuantity(${index})">-</button>
-            <span>${favorite.quantity}</span>
-            <button class="quantity-btn" onclick="increaseQuantity(${index})">+</button>
-          </div>
-          <button class="remove-btn" onclick="removeFavorite(${index})">
-            🗑️ Remove
-          </button>
-        </div>
-      `).join('');
-    }
-  
-    window.increaseQuantity = function (index) {
-      favorites[index].quantity += 1;
-      localStorage.setItem('favorites', JSON.stringify(favorites));
-      updateFavoritesDisplay();
-    };
-  
-    window.decreaseQuantity = function (index) {
-      if (favorites[index].quantity > 1) {
-        favorites[index].quantity -= 1;
-        localStorage.setItem('favorites', JSON.stringify(favorites));
-        updateFavoritesDisplay();
-      }
-    };
-  
-    window.removeFavorite = function (index) {
-      favorites.splice(index, 1);
-      localStorage.setItem('favorites', JSON.stringify(favorites));
-      updateFavoritesDisplay();
-    };
-  
-    // Initial rendering of favorites
-    updateFavoritesDisplay();
-  });
-  */
