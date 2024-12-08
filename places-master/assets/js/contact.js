@@ -1,14 +1,12 @@
-// TODO: Copy functionality for all buttons in cart and cart items from passing.js
+const validCoupons = {
+  SAVE10: 0.1, // 10% discount
+  SAVE20: 0.2, // 20% discount
+};
+
+let total = 0;
+let discount = 0;
+
 document.addEventListener('DOMContentLoaded', () => {
-
-    const validCoupons = {
-        SAVE10: 0.1, // 10% discount
-        SAVE20: 0.2, // 20% discount
-      };
-
-    let total = 0;
-    let discount = 0;
-
     // Toggle sidebar visibility
     const toggleBar =  document.getElementById("cartSidebar")
     const toggleSidebar = () => toggleBar.classList.toggle("open");
@@ -35,7 +33,7 @@ function updateCartCount() {
 function updateOrderSummary() {
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
     total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-    document.getElementById("totalPrice").textContent = `Total: $${total.toFixed(2)}`;
+    document.getElementById("totalPrice").textContent = `Total Price: $${(total - discount).toFixed(2)}`;
 }
   
 function updateCartSidebar() {
@@ -68,15 +66,6 @@ function updateCartSidebar() {
 
  // Apply a discount coupon
  function applyCoupon()  {
-
-    const validCoupons = {
-      SAVE10: 0.1, // 10% discount
-      SAVE20: 0.2, // 20% discount
-    };
-  
-    let total = 0;
-    let discount = 0;
-
     const couponInput = document.getElementById('couponInput');
     const discountInfo = document.getElementById('discountInfo');
     const applyCoupon = document.getElementById('applyCoupon');

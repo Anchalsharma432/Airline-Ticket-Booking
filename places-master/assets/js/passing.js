@@ -33,18 +33,15 @@ document.getElementById("sort-stops").addEventListener("change", function () {
   });
 }); */
 
+const validCoupons = {
+  SAVE10: 0.1, // 10% discount
+  SAVE20: 0.2, // 20% discount
+};
 
+let total = 0;
+let discount = 0;
 
 document.addEventListener("DOMContentLoaded", function () {
-
-  const validCoupons = {
-    SAVE10: 0.1, // 10% discount
-    SAVE20: 0.2, // 20% discount
-  };
-
-  let total = 0;
-  let discount = 0;
-
   window.addEventListener('load', function () {
     // Retrieve the form data from sessionStorage
     const data = JSON.parse(sessionStorage.getItem('searchData'));
@@ -391,16 +388,15 @@ document.addEventListener("DOMContentLoaded", function () {
   // Function to update the order summary (total price)
   window.updateOrderSummary = () => {
     total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-    document.getElementById("totalPrice").textContent = `Total: $${total.toFixed(2)}`;
+    document.getElementById("totalPrice").textContent =  `Total Price: $${(total - discount).toFixed(2)}`;
   }
   updateOrderSummary();
+
   // Apply a discount coupon
   function applyCoupon()  {
-
   const couponInput = document.getElementById('couponInput');
   const discountInfo = document.getElementById('discountInfo');
   const applyCoupon = document.getElementById('applyCoupon');
-
 
   const couponCode = couponInput.value.trim().toUpperCase();
   if (validCoupons[couponCode]) {

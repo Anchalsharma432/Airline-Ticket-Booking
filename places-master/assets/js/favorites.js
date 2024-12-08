@@ -1,3 +1,11 @@
+const validCoupons = {
+  SAVE10: 0.1, // 10% discount
+  SAVE20: 0.2, // 20% discount
+};
+
+let total = 0;
+let discount = 0;
+
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -103,24 +111,14 @@ function updateCartCount() {
 function updateOrderSummary() {
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
   total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-  document.getElementById("totalPrice").textContent = `Total: $${total.toFixed(2)}`;
+  document.getElementById("totalPrice").textContent =  `Total Price: $${(total - discount).toFixed(2)}`;
 }
 
   // Apply a discount coupon
-  function applyCoupon()  {
-
-    const validCoupons = {
-      SAVE10: 0.1, // 10% discount
-      SAVE20: 0.2, // 20% discount
-    };
-  
-    let total = 0;
-    let discount = 0;
-
+  function applyCoupon()  { 
     const couponInput = document.getElementById('couponInput');
     const discountInfo = document.getElementById('discountInfo');
-    const applyCoupon = document.getElementById('applyCoupon');
-  
+    const applyCoupon = document.getElementById('applyCoupon');  
   
     const couponCode = couponInput.value.trim().toUpperCase();
     if (validCoupons[couponCode]) {
