@@ -1,35 +1,41 @@
 [
     {
+      "FlightId": "PR4831",
       "Country": "Canada",
       "City": "Toronto",
       "PromotionExpirationDate": "2024-12-31",
       "Price": 1500
     },
     {
+      "FlightId": "PR2672",
       "Country": "USA",
       "City": "New York",
       "PromotionExpirationDate": "2024-12-15",
       "Price": 2000
     },
     {
+      "FlightId": "PR8613",
       "Country": "France",
       "City": "Paris",
       "PromotionExpirationDate": "2025-01-01",
       "Price": 2500
     },
     {
+      "FlightId": "PR8424",
       "Country": "Japan",
       "City": "Tokyo",
       "PromotionExpirationDate": "2024-11-30",
       "Price": 3000
     },
     {
+      "FlightId": "PR1595",
       "Country": "Italy",
       "City": "Rome",
       "PromotionExpirationDate": "2025-02-15",
       "Price": 1800
     },
     {
+      "FlightId": "PR3576",
       "Country": "Australia",
       "City": "Sydney",
       "PromotionExpirationDate": "2025-03-10",

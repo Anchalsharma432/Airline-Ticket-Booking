@@ -7,9 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="card">
           <img src="./assets/images/${destination.City.toLowerCase()}.jpeg" alt="${destination.City}" class="destination-image">
           <h2>${destination.City}, ${destination.Country}</h2>
-          <p>Promotion Expires: ${destination.PromotionExpirationDate}</p> 
           <p>Price: $${destination.Price}</p>
-          <button class="favorite-btn" onclick="toggleFavorite('${destination.City}', '${destination.Country}', ${destination.Price}, '${destination.PromotionExpirationDate}', this)">
+          <p>Flight ID: ${destination.FlightId}</p>
+          <p>Promotion Expires: ${destination.PromotionExpirationDate}</p> 
+          <button class="favorite-btn" onclick="toggleFavorite('${destination.FlightId}', '${destination.City}', '${destination.Country}', ${destination.Price}, '${destination.PromotionExpirationDate}', this)">
             <span class="heart-icon">&#9825;</span>
           </button>
         </div>
@@ -21,14 +22,14 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-  
-function toggleFavorite(city, country, price, expirationDate, button) {
+function toggleFavorite(flight_id, city, country, price, expirationDate, button) {
   let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
-  const existingIndex = favorites.findIndex(item => item.city === city && item.country === country);
+  const existingIndex = favorites.findIndex(item => item.flight_id === flight_id);
 
   if (existingIndex === -1) {
     // Add to favorites with PromotionExpirationDate
     favorites.push({
+      flight_id,
       city,
       country,
       price,
@@ -49,17 +50,15 @@ function toggleFavorite(city, country, price, expirationDate, button) {
   button.querySelector('.heart-icon').style.color = existingIndex === -1 ? 'red' : 'black';
 }
 
-  
-  
 // Add effect on each destination card 
-  document.querySelectorAll('.card').forEach(image => {
-    image.addEventListener('mouseover', () => {
-      image.style.transform = 'scale(1.1)';
-      image.style.transition = 'transform 0.3s ease';
-    });
-  
-    image.addEventListener('mouseout', () => {
-      image.style.transform = 'scale(1)';
-    });
+document.querySelectorAll('.card').forEach(image => {
+  image.addEventListener('mouseover', () => {
+    image.style.transform = 'scale(1.1)';
+    image.style.transition = 'transform 0.3s ease';
   });
+
+  image.addEventListener('mouseout', () => {
+    image.style.transform = 'scale(1)';
+  });
+});
   

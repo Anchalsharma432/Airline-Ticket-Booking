@@ -1,0 +1,233 @@
+/* Sidebar styling */
+
+#cartSidebar {
+  position: fixed;
+  right: -100%; /* Completely hides the sidebar initially */
+  top: 0;
+  width: 400px;
+  height: 90%;
+  background: white;
+  box-shadow: -5px 0 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: right 0.3s ease-in-out; /* Smooth slide-in effect */
+  overflow-y: auto; /* Enables vertical scrollbar */
+  z-index: 200;
+  margin-top: 5%;
+}
+
+#cartSidebar.open {
+  right: 0;
+}
+
+#sidebarContent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: Arial, sans-serif;
+}
+
+/* 
+#cartSidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  transform: translateX(100%); /* Initially off-screen 
+  transition: transform 0.3s ease;
+}
+
+#cartSidebar.open {
+  transform: translateX(0); /* When 'open' class is added, move the sidebar into view 
+}
+
+#sidebarContent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: Arial, sans-serif;
+}
+*/
+.CartResumenContainer h2{
+  display: inline;
+}
+
+/* Styling for the close button */
+#closeSidebar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+  background-color: #4facfe;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+#closeSidebar:hover {
+  background-color: #f44336;
+}
+
+#clearAllButton{
+  right: 25%;
+  height: 26px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-left: 22%;
+  background-color: #4facfe;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0px 20px;
+}
+
+#clearAllButton:hover {
+  background-color: #f44336;
+}
+
+#cartIcon{
+  padding:0;
+}
+
+/* Cart Sidebar Item Styling */
+.cart-item {
+  justify-content: space-between; /* Space between content */
+  align-items: center; /* Vertically align content */
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+#cartItems .cart-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.cart-item-actions button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4facfe;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cart-item-actions button:hover {
+  background-color: #f44336;
+}
+
+#car_img{
+  display: inline;
+  width: 48%;
+  margin-left: 30px;
+  height: auto;
+}
+
+.cart-item span {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+#car_img img{
+  margin-top: 25%;
+  height: 60%;
+}
+  
+#item_descrip{ 
+  width: 48%;
+}
+
+#item_descrip h3{ 
+  font-size: 15px;
+}
+
+#item_descrip p{ 
+  font-size: 14px;
+}
+  
+.item-pic{
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  width: 350px;
+  height: auto;
+  padding-top: 20px;
+}
+
+.cart-item-actions {
+  display: flex; /* Flex layout for buttons */
+  align-items: center; /* Vertically align buttons */
+  gap: 10px; /* Space between buttons */
+}
+
+/* Order Summary Styles */
+#orderSummary {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+#totalPrice {
+  font-weight: bold;
+}
+
+#checkoutButton{
+  position: sticky; /* Stick the button at the bottom */
+  bottom: 20px; /* Space from the bottom */
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #4facfe;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+  
+#checkoutButton:hover{
+  background: #e05500;
+}
+
+#couponInput {
+  width: 47px; 
+  text-align: center; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+#applyCoupon {
+  height: 21.3px;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-top: 0;
+  background-color: #4facfe;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0px 20px;
+}
+
+#applyCoupon:hover {
+  background-color: #f44336;
+}
+
+#discountInfo {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: green;
+}
+
+@media (max-width: 992px) {
+  #cartIcon{
+    right: 0%;
+  }
+
+  #clearAllButton{
+    margin-left: 27%;
+  }
+}
