@@ -54,6 +54,12 @@
   display: inline;
 }
 
+.CartResumenContainer h3{
+  font-size: 1.17em;
+  padding: 0px;
+  padding-top: 7px;
+}
+
 /* Styling for the close button */
 #closeSidebar {
   position: absolute;
@@ -72,18 +78,24 @@
   background-color: #f44336;
 }
 
-#clearAllButton{
-  right: 25%;
+#removeBtn{
+  margin-top: 5px;
+  margin-left: 11%;
+}
+
+#clearAllButton{  
   height: 26px;
   padding-top: 0px;
-  padding-bottom: 0px;
-  margin-left: 22%;
+  padding-bottom: 0px; 
   background-color: #4facfe;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  padding: 0px 20px;
+  position: absolute;
+  left: 65%;
+  width: 18%;
+  top: 4%;
 }
 
 #clearAllButton:hover {
@@ -193,15 +205,19 @@
 }
 
 #couponInput {
-  width: 47px; 
+  width: 65px; 
   text-align: center; 
   margin-left: auto; 
   margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0;
+  height: 30px;
 }
 
 #applyCoupon {
   height: 21.3px;
-  padding-bottom: 0;
+  padding-bottom: 30px;
   padding-top: 0;
   margin-top: 0;
   background-color: #4facfe;
@@ -209,8 +225,9 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  padding: 0px 20px;
 }
+
+
 
 #applyCoupon:hover {
   background-color: #f44336;

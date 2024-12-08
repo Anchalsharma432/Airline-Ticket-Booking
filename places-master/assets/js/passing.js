@@ -381,7 +381,7 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
         </div>
         <div class="cart-item-actions">
-          <button onclick="removeItemFromCart('${item.flight_id}', '${item.price}',)">Remove</button>
+          <button id ="removeBtn" onclick="removeItemFromCart('${item.flight_id}', '${item.price}',)">Remove</button>
         </div>
       </div>
     `).join("");
@@ -395,7 +395,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   updateOrderSummary();
   // Apply a discount coupon
-  const applyCoupon = () => {
+  function applyCoupon()  {
 
   const couponInput = document.getElementById('couponInput');
   const discountInfo = document.getElementById('discountInfo');
@@ -416,9 +416,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // Update total
     updateOrderSummary();
   } else {
-    toastr.error("Invalid coupon code! Please try again.");
+      toastr.error("Invalid coupon code! Please try again.");
   }
 };
+
+// Add event Listener to Apply Coupon Button
+document.getElementById('applyCoupon').addEventListener("click", applyCoupon);
 
   window.changeQuantity = (flight_id, price, change) => {
     const flight = cart.find(item => item.flight_id === flight_id && item.price === price);

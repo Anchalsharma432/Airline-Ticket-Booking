@@ -3,14 +3,7 @@
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 document.addEventListener('DOMContentLoaded', () => {
-  const validCoupons = {
-    SAVE10: 0.1, // 10% discount
-    SAVE20: 0.2, // 20% discount
-  };
-
-  let total = 0;
-  let discount = 0;
-
+  
   const favoritesList = document.getElementById('favorites-list');
   const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
   const totalPriceElement = document.getElementById('total-price');
@@ -115,31 +108,42 @@ function updateOrderSummary() {
   document.getElementById("totalPrice").textContent = `Total: $${total.toFixed(2)}`;
 }
 
-// Apply a discount coupon
-const applyCoupon = () => {
+  // Apply a discount coupon
+  function applyCoupon()  {
 
-  const couponInput = document.getElementById('couponInput');
-  const discountInfo = document.getElementById('discountInfo');
-  const applyCoupon = document.getElementById('applyCoupon');
+    const validCoupons = {
+      SAVE10: 0.1, // 10% discount
+      SAVE20: 0.2, // 20% discount
+    };
+  
+    let total = 0;
+    let discount = 0;
 
+    const couponInput = document.getElementById('couponInput');
+    const discountInfo = document.getElementById('discountInfo');
+    const applyCoupon = document.getElementById('applyCoupon');
+  
+  
+    const couponCode = couponInput.value.trim().toUpperCase();
+    if (validCoupons[couponCode]) {
+      const discountRate = validCoupons[couponCode];
+      discount = total * discountRate;
+  
+      // Update UI
+      discountInfo.style.display = "block";
+      discountInfo.textContent = `Discount Applied: -$${discount.toFixed(2)} (${couponCode})`;
+      couponInput.style.display = "none";
+      applyCoupon.style.display = "none";
+  
+      // Update total
+      updateOrderSummary();
+    } else {
+        toastr.error("Invalid coupon code! Please try again.");
+    }
+  };
 
-  const couponCode = couponInput.value.trim().toUpperCase();
-  if (validCoupons[couponCode]) {
-    const discountRate = validCoupons[couponCode];
-    discount = total * discountRate;
-
-    // Update UI
-    discountInfo.style.display = "block";
-    discountInfo.textContent = `Discount Applied: -$${discount.toFixed(2)} (${couponCode})`;
-    couponInput.style.display = "none";
-    applyCoupon.style.display = "none";
-
-    // Update total
-    updateOrderSummary();
-  } else {
-    toastr.error("Invalid coupon code! Please try again.");
-  }
-};
+  // Add event Listener to Apply Coupon Button
+  document.getElementById('applyCoupon').addEventListener("click", applyCoupon);
 
 // Remove item from cart (called when the user clicks the "Remove" button)
 function removeItemFromCart(flight_id, price) {
@@ -174,7 +178,7 @@ function updateCartSidebar() {
         </div>
       </div>
       <div class="cart-item-actions">
-        <button onclick="removeItemFromCart('${item.flight_id}', '${item.price}')">Remove</button>
+        <button id ="removeBtn" onclick="removeItemFromCart('${item.flight_id}', '${item.price}')">Remove</button>
       </div>
     </div>
   `).join("");
