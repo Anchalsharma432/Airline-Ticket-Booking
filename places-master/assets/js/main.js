@@ -265,15 +265,15 @@
 	//
 	
 	// Get today's date in YYYY-MM-DD format
-	const today = new Date();
-	const year = today.getFullYear();
-	const month = String(today.getMonth() + 1).padStart(2, '0'); // Add leading zero if needed
-	const day = String(today.getDate()).padStart(2, '0'); // Add leading zero if needed
-	const todayDate = `${year}-${month}-${day}`;
+	// const today = new Date();
+	// const year = today.getFullYear();
+	// const month = String(today.getMonth() + 1).padStart(2, '0'); // Add leading zero if needed
+	// const day = String(today.getDate()).padStart(2, '0'); // Add leading zero if needed
+	// const todayDate = `${year}-${month}-${day}`;
 
-	// Set the min attribute to today's date for the relevant date inputs
-	document.getElementById('probootstrap-date-departure').setAttribute('min', todayDate);
-	document.getElementById('probootstrap-date-arrival').setAttribute('min', todayDate);
+	// // Set the min attribute to today's date for the relevant date inputs
+	// document.getElementById('probootstrap-date-departure').setAttribute('min', todayDate);
+	// document.getElementById('probootstrap-date-arrival').setAttribute('min', todayDate);
 
 	//
 	
