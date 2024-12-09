@@ -209,7 +209,29 @@
 			location.reload(); // Reload to reflect changes
 		});
 
+		$('#myModal .btn-primary').click(function () {
+			// Add your desired action here
+			console.log('Save changes button clicked');
+					event.preventDefault(); // Prevent the form from refreshing the page
 		
+				const data = {
+				  from: document.getElementById('id_label_single').value,
+				  to: document.getElementById('id_label_single2').value,
+				  flightClass: document.getElementById('flight_class').value,
+				  departureDate: document.getElementById('probootstrap-date-departure').value,
+				  arrivalDate: document.getElementById('probootstrap-date-arrival').value,
+				};
+				const direction = document.querySelector('input[name="direction"]:checked');
+			    const di_val = direction ? direction.value : '';
+				// Save form data in sessionStorage
+				sessionStorage.setItem('searchData', JSON.stringify(data));
+				sessionStorage.setItem('direction',di_val);
+				// Optionally, redirect to search page
+				window.location.href = 'loader.html'; // Or wherever you need to go
+	  
+			// You can also close the modal programmatically
+			$('#myModal').modal('hide');
+		  });
 		
 
 	});
@@ -217,29 +239,26 @@
 	// login-signup ends
 
 	//search form starts
+  
 
-		function search_Button(){
-
-		}
-
-	document.getElementById('form_search').addEventListener('submit', function(event) {
-		event.preventDefault(); // Prevent the form from refreshing the page
+	// document.getElementById('form_search').addEventListener('submit', function(event) {
+	// 	event.preventDefault(); // Prevent the form from refreshing the page
 		
-		const data = {
-		  from: document.getElementById('id_label_single').value,
-		  to: document.getElementById('id_label_single2').value,
-		  flightClass: document.getElementById('flight_class').value,
-		  departureDate: document.getElementById('probootstrap-date-departure').value,
-		  arrivalDate: document.getElementById('probootstrap-date-arrival').value,
-		};
-		const direction = document.querySelector('input[name="direction"]:checked');
-	    const di_val = direction ? direction.value : '';
-		// Save form data in sessionStorage
-		sessionStorage.setItem('searchData', JSON.stringify(data));
-		sessionStorage.setItem('direction',di_val);
-		// Optionally, redirect to search page
-		window.location.href = 'loader.html'; // Or wherever you need to go
-	  });
+	// 	const data = {
+	// 	  from: document.getElementById('id_label_single').value,
+	// 	  to: document.getElementById('id_label_single2').value,
+	// 	  flightClass: document.getElementById('flight_class').value,
+	// 	  departureDate: document.getElementById('probootstrap-date-departure').value,
+	// 	  arrivalDate: document.getElementById('probootstrap-date-arrival').value,
+	// 	};
+	// 	const direction = document.querySelector('input[name="direction"]:checked');
+	//     const di_val = direction ? direction.value : '';
+	// 	// Save form data in sessionStorage
+	// 	sessionStorage.setItem('searchData', JSON.stringify(data));
+	// 	sessionStorage.setItem('direction',di_val);
+	// 	// Optionally, redirect to search page
+	// 	window.location.href = 'loader.html'; // Or wherever you need to go
+	//   });
 	  
 	//search form ends
 	

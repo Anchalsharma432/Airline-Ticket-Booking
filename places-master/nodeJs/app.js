@@ -239,6 +239,61 @@ app.post('/api/reset-password', async (req, res) => {
     res.json({ message: 'Password reset successful' });
 });
 
+const flightsFile = "./assets/data/flights_data.json";
+
+// Helper function to read/write data
+const readFlights = () => JSON.parse(fs.readFileSync(flightsFile));
+const writeFlights = (data) => fs.writeFileSync(flightsFile, JSON.stringify(data, null, 2));
+
+// Get All Flights
+app.get("/flights", (req, res) => {
+    const flights = readFlights();
+    res.status(200).json(flights);
+});
+
+// Add a New Flight
+app.post("/flights", (req, res) => {
+    const newFlight = req.body;
+    const flights = readFlights();
+    flights.push(newFlight);
+    writeFlights(flights);
+    res.status(201).json({ message: "Flight added successfully!", flight: newFlight });
+});
+
+// Update Flight
+app.put("/flights/:id", (req, res) => {
+    const { id } = req.params;
+    const updatedData = req.body;
+    const flights = readFlights();
+    const index = flights.findIndex(flight => flight.flight_id === id);
+
+    if (index === -1) {
+        return res.status(404).json({ message: "Flight not found!" });
+    }
+
+    flights[index] = { ...flights[index], ...updatedData };
+    writeFlights(flights);
+    res.status(200).json({ message: "Flight updated successfully!", flight: flights[index] });
+});
+
+// Delete Flight
+app.delete("/flights/:id", (req, res) => {
+    const { id } = req.params;
+    const flights = readFlights();
+    const filteredFlights = flights.filter(flight => flight.flight_id !== id);
+
+    if (flights.length === filteredFlights.length) {
+        return res.status(404).json({ message: "Flight not found!" });
+    }
+
+    writeFlights(filteredFlights);
+    res.status(200).json({ message: "Flight deleted successfully!" });
+});
+
+
+
+
+
 // Start Server
 const PORT = 4200;
 app.listen(PORT, () => {

@@ -27,8 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
           
           <!-- Promotion expiration date -->
           <p>Promotion Expires: ${destination.PromotionExpirationDate}</p> 
-          
-          <!-- Button to toggle favorite status, passing the necessary data to the function -->
+          <div class="star-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
           <button class="favorite-btn" onclick="toggleFavorite('${destination.FlightId}', '${destination.City}', '${destination.Country}', ${destination.Price}, '${destination.PromotionExpirationDate}', this)">
             <span class="heart-icon">&#9825;</span>
           </button>
@@ -63,14 +68,15 @@ function toggleFavorite(flight_id, city, country, price, expirationDate, button)
       quantity: 1, // Default quantity of 1
       PromotionExpirationDate: expirationDate 
     });
-    alert(`${city}, ${country} added to favorites!`);
+    toastr.success(`${city}, ${country} added to favorites!`);
+    // alert(`${city}, ${country} added to favorites!`);
   } else {
     // If the destination is already in favorites, remove it from the list
     favorites.splice(existingIndex, 1);
-
-    // Show alert indicating that the destination was removed from favorites
-    alert(`${city}, ${country} removed from favorites!`);
+    toastr.success(`${city}, ${country} removed from favorites!`);
+    // alert(`${city}, ${country} removed from favorites!`);
   }
+  console.log("set to ls favorites",favorites);
 
   // Save the updated favorites list back to localStorage
   localStorage.setItem('favorites', JSON.stringify(favorites));

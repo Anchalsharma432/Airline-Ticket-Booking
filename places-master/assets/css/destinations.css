@@ -24,7 +24,8 @@ body {
   }
   
   .card {
-    max-width: 30%; /* Set a fixed size for consistency */
+    /* max-width: 30%; Set a fixed size for consistency */
+    /* width: 30%; */
     background: white;
     border-radius: 8px;
     overflow: hidden;
@@ -56,9 +57,7 @@ body {
     cursor: pointer;
   }
   
-  button:hover {
-    background-color: #0056b3;
-  }
+
   
   #view-favorites {
     margin-top: 40px;
@@ -84,9 +83,6 @@ body {
     transition: background-color 0.3s;
   }
   
-  .heart-button:hover {
-    background-color: rgba(255, 82, 82, 0.1);
-  }
   
   .heart {
     font-size: 1.5rem;

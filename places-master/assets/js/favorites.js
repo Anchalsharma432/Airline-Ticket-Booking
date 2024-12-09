@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Get the elements where the favorites list and total price will be displayed
   const favoritesList = document.getElementById('favorites-list');
   const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+  console.log("favourite", favorites);
   const totalPriceElement = document.getElementById('total-price');
 
   // Empty favorites list before appending the new content

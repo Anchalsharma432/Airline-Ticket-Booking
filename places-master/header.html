@@ -13,7 +13,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark probootstrap_navbar" id="probootstrap-navbar">
       <div class="container">
-        <a class="navbar-brand" href="#">Places</a>
+        <a class="navbar-brand" href="index.html">BlueWings</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#probootstrap-menu"
           aria-controls="probootstrap-menu" aria-expanded="false" aria-label="Toggle navigation">
           <span><i class="ion-navicon"></i></span>
@@ -21,19 +21,30 @@
         <div class="collapse navbar-collapse" id="probootstrap-menu">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="travel.html">Travel With Us</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="travel.html">Travel With Us</a></li> -->
             <li class="nav-item"><a class="nav-link" href="favorites.html">Favorites</a></li>
-            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
-            <!-- Cart icon and span for the item count -->
-            <li class="nav-item">
-              <a class="nav-link" href="#" id="cartIcon" data-toggle="sidebar">
-                  <img src="./assets/images/cart_icon.png" alt="Cart" style="width: 25px; height: 25px;">
-                  <span id="cartCount" style="position: relative; top: -10px; left: -10px; color: white; background: red; border-radius: 50%; padding: 3px 8px; font-size: 12px;">0</span>
+            <li class="nav-item"><a class="nav-link" href="searchflights.html">Booking</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item" id="login-link"><a class="nav-link" href="login.html">Login</a></li>
+            <li class="nav-item dropdown" id="user-profile">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                <span id="profile-name"></span>
               </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="profile.html">Profile</a>
+                <button class="dropdown-item" id="logout-button">Logout</button>
+              </div>
+            </li>
+            <!-- Cart icon and span for the item count -->
+            <li id="cartIcon">
+                <img src="./assets/images/cart_icon.png" alt="Cart" style="width: 25px; height: 25px;">
+                <span id="cartCount" style="position: relative; top: -10px; left: -10px; color: white; background: red; border-radius: 50%; padding: 3px 8px; font-size: 12px;">0</span>
             </li>
           </ul>
         </div>
+
+
       </div>
     </nav>
   </header>
