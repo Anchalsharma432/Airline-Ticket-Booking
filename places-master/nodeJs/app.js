@@ -10,6 +10,7 @@ app.use(cors());
 
 app.use(bodyParser.json());
 
+app.use(express.static(path.join(__dirname, '../')));
 const USERS_FILE = './users.json'; // JSON file to store user data
 
 // Helper to read users from JSON
