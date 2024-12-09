@@ -40,12 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       `).join(''); // Join the generated HTML strings into one block to insert into the destination list
     });
-
-
-  // Add event listener to the "view-favorites" button to navigate to the favorites page  
-  document.getElementById('view-favorites').addEventListener('click', () => {
-    window.location.href = './favorites.html'; // Redirect to the favorites page
-  });
 });
 
 
