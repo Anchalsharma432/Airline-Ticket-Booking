@@ -152,7 +152,7 @@
             return;
         }
 
-        fetch(`http://localhost:4200/api/user/${currentUser.email}`)
+        fetch(`https://airline-ticket-booking-33hk.onrender.com/api/user/${currentUser.email}`)
                 .then((response) => response.json())
                 .then((data) => {
                     if (data.success) {
@@ -183,7 +183,7 @@
                                 username: document.getElementById("edit-username").value.trim(),
                             };
     
-                            fetch(`http://localhost:4200/api/user/update`, {
+                            fetch(`https://airline-ticket-booking-33hk.onrender.com/api/user/update`, {
                                 method: "PUT",
                                 headers: { "Content-Type": "application/json" },
                                 body: JSON.stringify(updatedUser),
