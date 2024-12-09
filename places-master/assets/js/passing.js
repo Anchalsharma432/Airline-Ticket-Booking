@@ -98,7 +98,7 @@ document.getElementById('form_search').addEventListener('submit', function (even
   sessionStorage.setItem('searchData', JSON.stringify(searchData));
   sessionStorage.setItem('direction', direction);
 
-  fetch('./assets/data/flight_data.json')
+  fetch('./assets/data/flights_data.json')
     .then((response) => response.json())
     .then((flightsData) => {
       const filteredFlights = filterFlights(flightsData, searchData, direction);
