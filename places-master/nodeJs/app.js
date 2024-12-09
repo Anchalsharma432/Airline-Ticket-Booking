@@ -130,7 +130,9 @@ app.post('/api/login', (req, res) => {
     });
 });
 
-
+app.get('/',(req,res)=>{
+    return res.status(404).send({ success: false, message: "Successfully Deployed" });
+})
 
 app.get('/api/user/:email', (req, res) => {
     const email = req.params.email;
