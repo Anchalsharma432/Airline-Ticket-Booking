@@ -130,7 +130,7 @@ function applyCoupon()  {
   
 // Add event Listener to Apply Coupon Button
 document.getElementById('applyCoupon').addEventListener("click", applyCoupon);
-  
+
 // Remove item from cart (called when the user clicks the "Remove" button)
 function removeItemFromCart(flight_id, price) {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];

@@ -93,7 +93,7 @@
 				};
 
 				// Call API
-				fetch('https://airline-ticket-booking-33hk.onrender.com/api/signup', {
+				fetch('http://localhost:4200/api/signup', {
 					method: 'POST',
 					headers: {
 						'Content-Type': 'application/json',
@@ -136,7 +136,7 @@
 				};
 		
 				// API Call to validate user
-				fetch("https://airline-ticket-booking-33hk.onrender.com/api/login", {
+				fetch("http://localhost:4200/api/login", {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json",

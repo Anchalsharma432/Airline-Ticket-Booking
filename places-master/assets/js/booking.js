@@ -1,54 +1,61 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const n = 3; // Number of passengers
+  let n=3;
   const container = document.getElementById("containar_for_card");
 
   // Create passenger forms dynamically
-  for (let i = 1; i <= n; i++) {
-    const passengerForm = document.createElement("div");
-    passengerForm.className = "card mb-3";
-
-    passengerForm.innerHTML = `
-      <div class="card-header">
-        <h5>Passenger ${i} Details</h5>
-      </div>
-      <div class="card-body">
-        <div class="form-row align-items-center">
-          <div class="form-group col-md-2">
-            <label for="title-${i}">Title</label>
-            <select class="form-control form-control-sm" id="title-${i}" name="title-${i}">
-              <option value="Mr">Mr</option>
-              <option value="Ms">Ms</option>
-              <option value="Mrs">Mrs</option>
-              <option value="Dr">Dr</option>
-            </select>
-          </div>
-          <div class="form-group col-md-3">
-            <label for="first-name-${i}">First Name</label>
-            <input type="text" class="form-control form-control-sm" id="first-name-${i}" name="first-name-${i}" required>
-          </div>
-          <div class="form-group col-md-3">
-            <label for="last-name-${i}">Last Name</label>
-            <input type="text" class="form-control form-control-sm" id="last-name-${i}" name="last-name-${i}" required>
-          </div>
-          <div class="form-group col-md-2">
-            <label for="date-of-birth-${i}">Date of Birth</label>
-            <input type="date" class="form-control form-control-sm" id="date-of-birth-${i}" name="date-of-birth-${i}" required>
-          </div>
-          <div class="form-group col-md-2">
-            <label for="passenger-type-${i}">Passenger Type</label>
-            <select class="form-control form-control-sm" id="passenger-type-${i}" name="passenger-type-${i}">
-              <option value="Adult">Adult</option>
-              <option value="Child">Child</option>
-              <option value="Infant">Infant</option>
-            </select>
-          </div>
-        </div>
-      </div>
-    `;
-    container.appendChild(passengerForm);
-  }
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  let noPassenger = 0;
+  let totalCost = 0;
+  cart.map((item)=>{
+    
+    for(let i=0; i<item.quantity;i++){
+      noPassenger+=1;
+      totalCost+=Number(item.price);
+      container.innerHTML +=  `<div class="card mb-3">
+      <div class="card-header" style="display: flex; justify-content: space-between;">
+              <h5>Passenger ${noPassenger} Details</h5>
+              <h5> ${item.departure_city} - ${item.destination_city}</h5>
+              <h5>Flight No: ${item.flight_id}</h5>
+            </div>
+            <div class="card-body">
+              <div class="form-row align-items-center">
+                <div class="form-group col-md-2">
+                  <label for="title-${noPassenger}">Title</label>
+                  <select class="form-control form-control-sm" id="title-${noPassenger}" name="title-${noPassenger}">
+                    <option value="Mr">Mr</option>
+                    <option value="Ms">Ms</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Dr">Dr</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="first-name-${noPassenger}">First Name</label>
+                  <input type="text" class="form-control form-control-sm" id="first-name-${noPassenger}" name="first-name-${noPassenger}" required>
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="last-name-${noPassenger}">Last Name</label>
+                  <input type="text" class="form-control form-control-sm" id="last-name-${noPassenger}" name="last-name-${noPassenger}" required>
+                </div>
+                <div class="form-group col-md-2">
+                  <label for="date-of-birth-${noPassenger}">Date of Birth</label>
+                  <input type="date" class="form-control form-control-sm" id="date-of-birth-${noPassenger}" name="date-of-birth-${noPassenger}" required>
+                </div>
+                <div class="form-group col-md-2">
+                  <label for="passenger-type-${noPassenger}">Passenger Type</label>
+                  <select class="form-control form-control-sm" id="passenger-type-${noPassenger}" name="passenger-type-${noPassenger}">
+                    <option value="Adult">Adult</option>
+                    <option value="Child">Child</option>
+                    <option value="Infant">Infant</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            </div>`;
+    }
+  })
 
   // Add contact details form
+  if(cart.length>0){
   const contactForm = document.createElement("div");
   contactForm.className = "card mb-3";
   contactForm.innerHTML = `
@@ -84,10 +91,26 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
   `;
   container.appendChild(contactForm);
-
+  }
+  if(cart.length>0){
+  const totalSection = document.createElement("div");
+  totalSection.className = "card mb-3";
+  totalSection.innerHTML = ` <div class="card-header" style="display: flex; justify-content: center; align-items: center;">
+      <h5>Total Cost: ${totalCost}</h5>
+    </div>`;
+  container.appendChild(totalSection);  
+  }
+  if(cart.length==0){
+    const totalSection = document.createElement("div");
+    totalSection.className = "card mb-3";
+    totalSection.innerHTML = ` <div class="card-header" style="display: flex; justify-content: center; align-items: center;">
+        <h5>Please add tickets for checking Out</h5>
+      </div>`;
+    container.appendChild(totalSection);  
+    }
   // Add the submit button
   const submitButton = document.createElement("div");
-  submitButton.className = "text-center";
+  submitButton.className = "card mb-3";
   submitButton.innerHTML = `
     <button type="button" id="generate-pdf" class="btn btn-primary btn-sm">Continue for Checkout</button>
   `;
@@ -108,7 +131,11 @@ document.addEventListener("DOMContentLoaded", function () {
     pdf.setFontSize(12);
 
     // Loop through passengers and add their details in a table-like format
-    for (let i = 1; i <= n; i++) {
+    for(let j=0;j<cart.length;j++){
+      pdf.text(`${cart[j].departure_city}-${cart[j].destination_city}`, 5, yPosition);
+      pdf.text(`Flight No${cart[j].flight_id}`, 90, yPosition);
+      yPosition += 10;
+    for (let i = 1; i <= cart[j].quantity; i++) {
       pdf.text(`Passenger ${i}`, 10, yPosition);
       yPosition += 10;
 
@@ -125,8 +152,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
       pdf.text(`Date of Birth: ${dob}`, 20, yPosition);
       pdf.text(`Passenger Type: ${type}`, 120, yPosition);
-      yPosition += 20; // Add space between passengers
+      yPosition += 10; // Add space between passengers
     }
+    yPosition += 10;
+  }
 
     // Add contact details
     pdf.text("Contact Details", 10, yPosition);
@@ -144,7 +173,9 @@ document.addEventListener("DOMContentLoaded", function () {
     pdf.text(`Email: ${email}`, 20, yPosition);
     yPosition += 10;
     pdf.text(`Country: ${country}`, 20, yPosition);
-
+    yPosition += 20;
+    pdf.text(`Total Price:${totalCost}`, 60, yPosition)
+    pdf.text(`${totalCost}`, 100, yPosition)
     // Save the PDF
     pdf.save("BookingDetails.pdf");
   });
