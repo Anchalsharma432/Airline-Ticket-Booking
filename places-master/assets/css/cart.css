@@ -71,17 +71,15 @@
   right: 10px;
   cursor: pointer;
   font-size: 18px;
-  font-weight: 600;
-  color: #4facfe;
-  background-color: white;
+  color: white;
+  background-color: #4facfe;
   border: none;
   border-radius: 5px;
-  padding: 1px 9px;
+  padding: 10px 20px;
 }
 
 #closeSidebar:hover {
   background-color: #f44336;
-  color: white;
 }
 
 #removeBtn{
