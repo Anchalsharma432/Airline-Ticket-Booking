@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:4200/flights";
+const API_URL = "https://airline-ticket-booking-33hk.onrender.com/flights";
 
 let editingFlightId = null; // Track editing state
 
