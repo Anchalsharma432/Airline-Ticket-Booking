@@ -69,6 +69,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  max-height: 70vh;
+  overflow-y: auto;
 }
 
 .favorite-card {
@@ -119,6 +121,19 @@ body {
 #total-price-container{
   opacity: 0.8;
 }
+
+@media only screen and (max-width: 600px) {
+  .favorites-list-container {
+      width: 350%;
+      gap: 10px;
+      max-height: 70vh;
+    overflow-y: auto;
+  }
+  .favorite-card {
+      font-size: 14px;
+  }
+}
+
 
 #total-price-container h3{
   background-color: lightgray; /* Light gray background */

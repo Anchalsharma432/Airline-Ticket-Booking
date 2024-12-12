@@ -78,34 +78,37 @@ document.addEventListener("DOMContentLoaded", function () {
       .catch((error) => console.error('Error fetching flights data:', error));
   }); // end of load
   
-// Event listener for form submission
-document.getElementById('form_search').addEventListener('submit', function (event) {
-  event.preventDefault();
+  const searchFlightsForm = document.getElementById("form_search");
+  if(searchFlightsForm){
+    // Event listener for form submission
+    searchFlightsForm.addEventListener('submit', function (event) {
+      event.preventDefault();
 
-  const from = document.getElementById('id_label_single').value;
-  const to = document.getElementById('id_label_single2').value;
-  const departureDate = document.getElementById('probootstrap-date-departure').value;
-  const arrivalDate = document.getElementById('probootstrap-date-arrival').value;
-  const direction = document.querySelector('input[name="direction"]:checked').value;
+      const from = document.getElementById('id_label_single').value;
+      const to = document.getElementById('id_label_single2').value;
+      const departureDate = document.getElementById('probootstrap-date-departure').value;
+      const arrivalDate = document.getElementById('probootstrap-date-arrival').value;
+      const direction = document.querySelector('input[name="direction"]:checked').value;
 
-  const searchData = {
-    from,
-    to,
-    departureDate,
-    arrivalDate,
-  };
+      const searchData = {
+        from,
+        to,
+        departureDate,
+        arrivalDate,
+      };
 
-  sessionStorage.setItem('searchData', JSON.stringify(searchData));
-  sessionStorage.setItem('direction', direction);
+      sessionStorage.setItem('searchData', JSON.stringify(searchData));
+      sessionStorage.setItem('direction', direction);
 
-  fetch('./assets/data/flights_data.json')
-    .then((response) => response.json())
-    .then((flightsData) => {
-      const filteredFlights = filterFlights(flightsData, searchData, direction);
-      displayFlights(filteredFlights);
-    })
-    .catch((error) => console.error('Error fetching flights data:', error));
-});
+      fetch('./assets/data/flights_data.json')
+        .then((response) => response.json())
+        .then((flightsData) => {
+          const filteredFlights = filterFlights(flightsData, searchData, direction);
+          displayFlights(filteredFlights);
+        })
+        .catch((error) => console.error('Error fetching flights data:', error));
+    });
+  }
   
   // Function to filter flights based on search criteria
   function filterFlights(flightsData, data, direction) {

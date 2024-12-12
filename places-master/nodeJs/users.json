@@ -7,5 +7,32 @@
     "password": "abhishek",
     "dob": "2009-02-10",
     "gender": "male"
+  },
+  {
+    "name": "Anchal Sharma",
+    "username": "anchal432",
+    "email": "anchal@gmail.com",
+    "phone": "1111111242",
+    "password": "password",
+    "dob": "2003-02-04",
+    "gender": "female"
+  },
+  {
+    "name": "Alex",
+    "username": "Alex",
+    "email": "mayealexandra93@gmail.com",
+    "phone": "4375993372",
+    "password": "Alex123",
+    "dob": "1993-03-06",
+    "gender": "female"
+  },
+  {
+    "name": "Anjali",
+    "username": "anjali1",
+    "email": "anjali@gmail.com",
+    "phone": "8493498240",
+    "password": "password",
+    "dob": "2000-10-17",
+    "gender": "female"
   }
 ]

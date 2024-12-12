@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +19,9 @@
             padding: 0;
             font-family: 'Poppins', sans-serif;
             background-color: #f5f6f8;
+            background: url(./assets/images/airplane-view.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -64,7 +68,7 @@
 
         .profile-card .details div {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             margin: 8px 0;
         }
 
@@ -106,6 +110,7 @@
         .logout-button:hover {
             background-color: #e04c4c;
         }
+
         #save-button {
             background-color: #28a745;
         }
@@ -115,6 +120,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="profile-card">
         <div class="profile-image"></div>
@@ -142,22 +148,22 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-        const currentUser = JSON.parse(localStorage.getItem("currentUser")); // Parse the object from localStorage
-        const editButton = document.getElementById("edit-button");
-        const saveButton = document.getElementById("save-button");
+            const currentUser = JSON.parse(localStorage.getItem("currentUser")); // Parse the object from localStorage
+            const editButton = document.getElementById("edit-button");
+            const saveButton = document.getElementById("save-button");
 
-        if (!currentUser || !currentUser.email) {
-            toastr.error("No logged-in user found. Please log in.");
-            window.location.href = "login.html";
-            return;
-        }
+            if (!currentUser || !currentUser.email) {
+                toastr.error("No logged-in user found. Please log in.");
+                window.location.href = "login.html";
+                return;
+            }
 
-        fetch(`https://airline-ticket-booking-33hk.onrender.com/api/user/${currentUser.email}`)
+            fetch(`https://airline-ticket-booking-33hk.onrender.com//api/user/${currentUser.email}`)
                 .then((response) => response.json())
                 .then((data) => {
                     if (data.success) {
                         const user = data.user;
-    
+
                         // Populate profile details
                         document.getElementById("profile-name").textContent = user.name || "N/A";
                         document.getElementById("profile-email").textContent = user.email || "N/A";
@@ -165,13 +171,13 @@
                         document.getElementById("profile-dob").textContent = `Date of Birth: ${user.dob || "N/A"}`;
                         document.getElementById("profile-gender").textContent = user.gender || "N/A";
                         document.getElementById("profile-username").textContent = user.username || "N/A";
-    
+
                         // Edit profile logic
                         editButton.addEventListener("click", () => {
                             // Show input fields for editing
                             toggleEditMode(true, user);
                         });
-    
+
                         saveButton.addEventListener("click", () => {
                             // Save changes to the backend
                             const updatedUser = {
@@ -182,8 +188,8 @@
                                 gender: document.getElementById("edit-gender").value.trim(),
                                 username: document.getElementById("edit-username").value.trim(),
                             };
-    
-                            fetch(`https://airline-ticket-booking-33hk.onrender.com/api/user/update`, {
+
+                            fetch(`https://airline-ticket-booking-33hk.onrender.com//api/user/update`, {
                                 method: "PUT",
                                 headers: { "Content-Type": "application/json" },
                                 body: JSON.stringify(updatedUser),
@@ -213,47 +219,48 @@
                     window.location.href = "login.html";
                 });
 
-        function toggleEditMode(editMode, user) {
-            const profileName = document.getElementById("profile-name");
-            const profileEmail = document.getElementById("profile-email");
-            const profilePhone = document.getElementById("profile-phone");
-            const profileDob = document.getElementById("profile-dob");
-            const profileGender = document.getElementById("profile-gender");
-            const profileUsername = document.getElementById("profile-username");
+            function toggleEditMode(editMode, user) {
+                const profileName = document.getElementById("profile-name");
+                const profileEmail = document.getElementById("profile-email");
+                const profilePhone = document.getElementById("profile-phone");
+                const profileDob = document.getElementById("profile-dob");
+                const profileGender = document.getElementById("profile-gender");
+                const profileUsername = document.getElementById("profile-username");
 
-            if (editMode) {
-                // Replace static fields with input fields
-                profileName.innerHTML = `<input id="edit-name" value="${user.name || ""}" />`;
-                profileEmail.innerHTML = `<input id="edit-email" value="${user.email || ""}" />`;
-                profilePhone.innerHTML = `<input id="edit-phone" value="${user.phone || ""}" />`;
-                profileDob.innerHTML = `<input id="edit-dob" type="date" value="${user.dob || ""}" />`;
-                profileGender.innerHTML = `<input id="edit-gender" value="${user.gender || ""}" />`;
-                profileUsername.innerHTML = `<input id="edit-username" value="${user.username || ""}" />`;
+                if (editMode) {
+                    // Replace static fields with input fields
+                    profileName.innerHTML = `<input id="edit-name" value="${user.name || ""}" />`;
+                    profileEmail.innerHTML = `<input id="edit-email" value="${user.email || ""}" />`;
+                    profilePhone.innerHTML = `<input id="edit-phone" value="${user.phone || ""}" />`;
+                    profileDob.innerHTML = `<input id="edit-dob" type="date" value="${user.dob || ""}" />`;
+                    profileGender.innerHTML = `<input id="edit-gender" value="${user.gender || ""}" />`;
+                    profileUsername.innerHTML = `<input id="edit-username" value="${user.username || ""}" />`;
 
-                editButton.style.display = "none";
-                saveButton.style.display = "block";
-            } else {
-                // Restore static fields
-                profileName.textContent = user.name || "N/A";
-                profileEmail.textContent = user.email || "N/A";
-                profilePhone.textContent = user.phone || "N/A";
-                profileDob.textContent = `Date of Birth: ${user.dob || "N/A"}`;
-                profileGender.textContent = user.gender || "N/A";
-                profileUsername.textContent = user.username || "N/A";
+                    editButton.style.display = "none";
+                    saveButton.style.display = "block";
+                } else {
+                    // Restore static fields
+                    profileName.textContent = user.name || "N/A";
+                    profileEmail.textContent = user.email || "N/A";
+                    profilePhone.textContent = user.phone || "N/A";
+                    profileDob.textContent = `Date of Birth: ${user.dob || "N/A"}`;
+                    profileGender.textContent = user.gender || "N/A";
+                    profileUsername.textContent = user.username || "N/A";
 
-                editButton.style.display = "block";
-                saveButton.style.display = "none";
+                    editButton.style.display = "block";
+                    saveButton.style.display = "none";
+                }
             }
-        }
 
-        document.getElementById("logout-button").addEventListener("click", function () {
-			localStorage.removeItem("currentUser");
-			location.reload(); // Reload to reflect changes
-		});
+            document.getElementById("logout-button").addEventListener("click", function () {
+                localStorage.removeItem("currentUser");
+                location.reload(); // Reload to reflect changes
+            });
 
-    });
+        });
 
     </script>
-    
+
 </body>
+
 </html>
