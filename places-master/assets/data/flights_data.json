@@ -3772,5 +3772,338 @@
                 "hand": "2x7kg"
             }
         }
+    },
+    {
+        "departure_airport_name": "Ezeiza International Airport",
+        "departure_airport_city": "Ezeiza",
+        "departure_airport_country": "Argentina",
+        "departure_airport_code": "EZE",
+        "departure_date": "2024-12-15",
+        "departure_time": "23:05:00",
+        "arrival_airport_name": "Haneda Airport",
+        "arrival_airport_city": "Tokyo",
+        "arrival_airport_country": "Japan",
+        "arrival_airport_code": "HND",
+        "arrival_date": "2024-12-15",
+        "arrival_time": "02:57:00",
+        "duration": "19h 40m",
+        "connections_or_stops": "1",
+        "connection_city": "Doha",
+        "connection_country": "Qatar",
+        "aircraft_type": "Boeing 787",
+        "flight_id": "FL8756",
+        "economy_class_price": 310.45,
+        "business_class_price": 920.50,
+        "first_class_price": 2700.00,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Ezeiza International Airport",
+        "departure_airport_city": "Ezeiza",
+        "departure_airport_country": "Argentina",
+        "departure_airport_code": "EZE",
+        "departure_date": "2024-12-15",
+        "departure_time": "23:05:00",
+        "arrival_airport_name": "Haneda Airport",
+        "arrival_airport_city": "Tokyo",
+        "arrival_airport_country": "Japan",
+        "arrival_airport_code": "HND",
+        "arrival_date": "2024-12-15",
+        "arrival_time": "02:57:00",
+        "duration": "21h 30m",
+        "connections_or_stops": "3",
+        "connection_city": "Sao Paulo, Dubai, Osaka",
+        "connection_country": "Brazil, UAE, Japan",
+        "aircraft_type": "Airbus A350",
+        "flight_id": "FL8823",
+        "economy_class_price": 280.25,
+        "business_class_price": 890.10,
+        "first_class_price": 2550.50,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Ezeiza International Airport",
+        "departure_airport_city": "Ezeiza",
+        "departure_airport_country": "Argentina",
+        "departure_airport_code": "EZE",
+        "departure_date": "2024-12-15",
+        "departure_time": "23:05:00",
+        "arrival_airport_name": "Haneda Airport",
+        "arrival_airport_city": "Tokyo",
+        "arrival_airport_country": "Japan",
+        "arrival_airport_code": "HND",
+        "arrival_date": "2024-12-15",
+        "arrival_time": "02:57:00",
+        "duration": "18h 50m",
+        "connections_or_stops": "0",
+        "connection_city": null,
+        "connection_country": null,
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL8902",
+        "economy_class_price": 350.75,
+        "business_class_price": 980.20,
+        "first_class_price": 3000.00,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Haneda Airport",
+        "departure_airport_city": "Tokyo",
+        "departure_airport_country": "Japan",
+        "departure_airport_code": "HND",
+        "departure_date": "2024-12-21",
+        "departure_time": "23:05:00",
+        "arrival_airport_name": "Ezeiza International Airport",
+        "arrival_airport_city": "Ezeiza",
+        "arrival_airport_country": "Argentina",
+        "arrival_airport_code": "EZE",
+        "arrival_date": "2024-12-21",
+        "arrival_time": "02:57:00",
+        "duration": "20h 15m",
+        "connections_or_stops": "1",
+        "connection_city": "Doha",
+        "connection_country": "Qatar",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL9823",
+        "economy_class_price": 280.25,
+        "business_class_price": 890.10,
+        "first_class_price": 2550.50,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Haneda Airport",
+        "departure_airport_city": "Tokyo",
+        "departure_airport_country": "Japan",
+        "departure_airport_code": "HND",
+        "departure_date": "2024-12-21",
+        "departure_time": "23:05:00",
+        "arrival_airport_name": "Ezeiza International Airport",
+        "arrival_airport_city": "Ezeiza",
+        "arrival_airport_country": "Argentina",
+        "arrival_airport_code": "EZE",
+        "arrival_date": "2024-12-21",
+        "arrival_time": "02:57:00",
+        "duration": "22h 30m",
+        "connections_or_stops": "2",
+        "connection_city": "Sao Paulo, Istanbul",
+        "connection_country": "Brazil, Turkey",
+        "aircraft_type": "Airbus A350",
+        "flight_id": "FL9932",
+        "economy_class_price": 310.45,
+        "business_class_price": 920.50,
+        "first_class_price": 2700.00,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Haneda Airport",
+        "departure_airport_city": "Tokyo",
+        "departure_airport_country": "Japan",
+        "departure_airport_code": "HND",
+        "departure_date": "2024-12-21",
+        "departure_time": "23:05:00",
+        "arrival_airport_name": "Ezeiza International Airport",
+        "arrival_airport_city": "Ezeiza",
+        "arrival_airport_country": "Argentina",
+        "arrival_airport_code": "EZE",
+        "arrival_date": "2024-12-21",
+        "arrival_time": "02:57:00",
+        "duration": "19h 10m",
+        "connections_or_stops": "0",
+        "connection_city": null,
+        "connection_country": null,
+        "aircraft_type": "Boeing 777",
+        "flight_id": "FL9031",
+        "economy_class_price": 350.75,
+        "business_class_price": 980.20,
+        "first_class_price": 3000.00,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Ezeiza International Airport",
+        "departure_airport_city": "Ezeiza",
+        "departure_airport_country": "Argentina",
+        "departure_airport_code": "EZE",
+        "departure_date": "2024-12-28",
+        "departure_time": "08:48:00",
+        "arrival_airport_name": "Simon Bolivar International Airport",
+        "arrival_airport_city": "Caracas",
+        "arrival_airport_country": "Venezuela",
+        "arrival_airport_code": "CCS",
+        "arrival_date": "2024-12-28",
+        "arrival_time": "12:30:00",
+        "duration": "03h 42m",
+        "connections_or_stops": "1",
+        "connection_city": "Bogota",
+        "connection_country": "Colombia",
+        "aircraft_type": "Airbus A320",
+        "flight_id": "FL8722",
+        "economy_class_price": 475.50,
+        "business_class_price": 1580.20,
+        "first_class_price": 4475.00,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Ezeiza International Airport",
+        "departure_airport_city": "Ezeiza",
+        "departure_airport_country": "Argentina",
+        "departure_airport_code": "EZE",
+        "departure_date": "2024-12-28",
+        "departure_time": "08:48:00",
+        "arrival_airport_name": "Simon Bolivar International Airport",
+        "arrival_airport_city": "Caracas",
+        "arrival_airport_country": "Venezuela",
+        "arrival_airport_code": "CCS",
+        "arrival_date": "2024-12-28",
+        "arrival_time": "14:15:00",
+        "duration": "05h 27m",
+        "connections_or_stops": "2",
+        "connection_city": "Lima, Panama City",
+        "connection_country": "Peru, Panama",
+        "aircraft_type": "Boeing 737",
+        "flight_id": "FL8733",
+        "economy_class_price": 420.00,
+        "business_class_price": 1490.00,
+        "first_class_price": 4320.00,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
+    },
+    {
+        "departure_airport_name": "Ezeiza International Airport",
+        "departure_airport_city": "Ezeiza",
+        "departure_airport_country": "Argentina",
+        "departure_airport_code": "EZE",
+        "departure_date": "2024-12-28",
+        "departure_time": "08:48:00",
+        "arrival_airport_name": "Simon Bolivar International Airport",
+        "arrival_airport_city": "Caracas",
+        "arrival_airport_country": "Venezuela",
+        "arrival_airport_code": "CCS",
+        "arrival_date": "2024-12-28",
+        "arrival_time": "11:50:00",
+        "duration": "03h 02m",
+        "connections_or_stops": "non-stop",
+        "connection_city": "None",
+        "connection_country": "None",
+        "aircraft_type": "Airbus A321",
+        "flight_id": "FL8744",
+        "economy_class_price": 460.00,
+        "business_class_price": 1525.00,
+        "first_class_price": 4390.00,
+        "luggage": {
+            "economy_class": {
+                "checked": "2x23kg",
+                "hand": "1x7kg"
+            },
+            "business_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            },
+            "first_class": {
+                "checked": "2x32kg",
+                "hand": "2x7kg"
+            }
+        }
     }
 ]
