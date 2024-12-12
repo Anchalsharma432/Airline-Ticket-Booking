@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
       };
 
       // Call API
-      fetch("https://airline-ticket-booking-33hk.onrender.com//api/signup", {
+      fetch("https://airline-ticket-booking-33hk.onrender.com/api/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
       };
 
       // API Call to validate user
-      fetch("https://airline-ticket-booking-33hk.onrender.com//api/login", {
+      fetch("https://airline-ticket-booking-33hk.onrender.com/api/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
