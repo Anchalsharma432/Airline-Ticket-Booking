@@ -83,21 +83,23 @@ function updateCartSidebar() {
         <div class="cart-item">
             <div class="item-pic">
                 <div id="item_descrip">
-                    <h3>${item.destination_city}</h3>
+                    <h3 style="font-size:20px">${item.departure_city} -> ${item.destination_city}</h3>
                     <p>Flight ID: ${item.flight_id}</p>
                     <p>Departure: ${item.departure_city}</p>
                     <p>Price: $${item.price}</p>
-                    <div class="cart-item-actions">
-                        <button onclick="changeQuantity('${item.flight_id}', '${item.price}', -1)">-</button>
-                        <span>Quantity: ${item.quantity}</span>
-                        <button onclick="changeQuantity('${item.flight_id}', '${item.price}', 1)">+</button>
-                    </div>
+                    
                 </div>
                 <div id="car_img">
                     <img src="./assets/images/${item.image_name}" alt="Cart" width="150" height="90">
                 </div>
+                
             </div>
             <div class="cart-item-actions">
+                        <button onclick="changeQuantity('${item.flight_id}', '${item.price}', -1)">-</button>
+                        <span>No of tickets: ${item.quantity}</span>
+                        <button onclick="changeQuantity('${item.flight_id}', '${item.price}', 1)">+</button>
+                    </div>
+            <div class="cart-item-actions" style="justify-content:end;">
                 <button id="removeBtn" onclick="removeItemFromCart('${item.flight_id}', '${item.price}')">Remove</button>
             </div>
     </div>

@@ -71,35 +71,34 @@
   right: 10px;
   cursor: pointer;
   font-size: 18px;
-  color: white;
-  background-color: #4facfe;
+  font-weight: 900;
+  color: #4facfe;
+  background-color: white;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 1px 9px;
 }
 
 #closeSidebar:hover {
   background-color: #f44336;
+  color:white;
 }
 
 #removeBtn{
   margin-top: 5px;
-  margin-left: 11%;
+  margin-right: 3%;
+  /* margin-left: 11%; */
 }
 
 #clearAllButton{  
-  height: 26px;
-  padding-top: 0px;
-  padding-bottom: 0px; 
+
+  padding-top: 5px;
+  padding-bottom: 5px; 
   background-color: #4facfe;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  position: absolute;
-  left: 65%;
-  width: 18%;
-  top: 4%;
 }
 
 #clearAllButton:hover {
