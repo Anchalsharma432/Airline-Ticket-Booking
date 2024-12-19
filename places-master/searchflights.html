@@ -140,23 +140,33 @@
       <button id="closeSidebar">X</button>
       <div class="CartResumenContainer">
         <h2>Order Summary</h2>
-        <button id="clearAllButton">Clear All</button>
-        <h3 id="totalPrice">Total Price: $0.00</h3>
-        <h3 id="totalItems">Total Flights: 0</h3>
+        
 
         <!-- Apply discount coupon container-->
-        <div style="display: flex; align-items: center;">
-          <label for="coupon" style="margin-right: 8px;">
-            <h6 style="margin: 0;">Apply Discount Coupons:</h6>
-          </label>
-          <input type="text" name="coupon"  id="couponInput" maxlength= "6" placeholder="Coupon">
-          <button id="applyCoupon">Apply</button>
-        </div>
-
-        <p id="discountInfo" style="color: red; display: none;"></p>        
+            
       </div>
       <div id="cartItems"> <!--This will be filled dynamically --> </div>
       <a class="nav-link"id="checkoutButton" href="booking.html">Checkout</a>
+      <div style="display: flex;  flex-flow: column; border-bottom: 1px solid #ccc; padding-bottom: 15px;" class="w-100">
+        <button id="clearAllButton">Remove All Tickets</button>
+        </div>
+      <div style="display: flex;  flex-flow: column; border-bottom: 1px solid #ccc; padding-bottom: 15px;" class="w-100">
+        <label for="coupon" style="margin-right: 8px; margin-bottom: 0px;">
+          <span style="margin: 0;">Apply Discount Coupons:<span>
+        </label>
+        <div style="display: flex; justify-content: space-between; align-items: center;" class="w-100">
+        <input type="text" name="coupon"  id="couponInput" maxlength= "6" placeholder="Coupon" class="w-100">
+        <button id="applyCoupon">Apply</button>
+      </div>
+      </div>
+
+       
+      <div style="display: flex; justify-content: center; align-items: center; flex-flow: column;"> 
+      <h3 id="totalItems">Total Flights: 0</h3>  
+      <h3 id="totalPrice">Total Price: $0.00</h3>
+      <p id="discountInfo" style="color: red; display: none;"></p>
+      </div>
+      <button id="checkoutButton">Checkout</button>
     </div>
   </div>
   
